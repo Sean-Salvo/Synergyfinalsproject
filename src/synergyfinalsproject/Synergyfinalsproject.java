@@ -16,8 +16,8 @@ public class Synergyfinalsproject {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        System.out.println("Tae si Salvo");
-        System.out.println("ASdasdasd");
+        System.out.println("");
+        System.out.println("");
     }
     
 }
