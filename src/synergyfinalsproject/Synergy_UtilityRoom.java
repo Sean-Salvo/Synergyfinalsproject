@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication84;
+package synergyfinalsproject;
 
 /**
  *
@@ -63,9 +63,8 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel2.setLayout(null);
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication84/Abbo.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbo.png")));
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +77,6 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jPanel2.add(jLabel3);
         jLabel3.setBounds(10, 10, 0, 30);
 
-        jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -87,11 +85,10 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton4);
-        jButton4.setBounds(10, 60, 30, 1);
+        jButton4.setBounds(10, 60, 30, 0);
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 255));
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication84/Geaar.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar.png")));
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -102,9 +99,8 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jPanel2.add(jButton6);
         jButton6.setBounds(10, 180, 30, 25);
 
-        jButton7.setBackground(new java.awt.Color(255, 255, 255));
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication84/Abbb.png"))); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbb.png")));
         jButton7.setBorder(null);
         jButton7.setBorderPainted(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -115,25 +111,21 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jPanel2.add(jButton7);
         jButton7.setBounds(10, 240, 30, 25);
 
-        jButton8.setBackground(new java.awt.Color(255, 255, 255));
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication84/aaa.png"))); // NOI18N
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aaa.png")));
         jButton8.setBorder(null);
         jButton8.setBorderPainted(false);
-        jButton8.setRolloverEnabled(true);
         jPanel2.add(jButton8);
         jButton8.setBounds(10, 120, 30, 25);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication84/Logo.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png")));
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(10, 10, 33, 30);
+        jLabel1.setBounds(10, 10, 0, 30);
 
-        jButton9.setBackground(new java.awt.Color(255, 255, 255));
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication84/Homeee.png"))); // NOI18N
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png")));
         jButton9.setBorder(null);
         jButton9.setBorderPainted(false);
-        jButton9.setRolloverEnabled(true);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -149,14 +141,12 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
         jPanel3.setLayout(null);
 
-        jButton5.setBackground(new java.awt.Color(255, 255, 255));
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication84/Backkk.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png")));
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
-        jButton5.setRolloverEnabled(true);
         jPanel3.add(jButton5);
-        jButton5.setBounds(10, 20, 30, 33);
+        jButton5.setBounds(10, 20, 30, 0);
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 2, true));
@@ -170,7 +160,7 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jTextArea1.setLineWrap(true);
 
         jPanel4.add(jScrollPane1);
-        jScrollPane1.setBounds(210, 150, 164, 94);
+        jScrollPane1.setBounds(210, 150, 222, 82);
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
@@ -179,7 +169,7 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jTextArea1.setLineWrap(true);
 
         jPanel4.add(jScrollPane2);
-        jScrollPane2.setBounds(30, 30, 164, 94);
+        jScrollPane2.setBounds(30, 30, 222, 82);
 
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
@@ -188,7 +178,7 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jTextArea1.setLineWrap(true);
 
         jPanel4.add(jScrollPane3);
-        jScrollPane3.setBounds(210, 30, 164, 94);
+        jScrollPane3.setBounds(210, 30, 222, 82);
 
         jLabel4.setBackground(new java.awt.Color(0, 102, 255));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -218,7 +208,7 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jTextArea1.setLineWrap(true);
 
         jPanel4.add(jScrollPane4);
-        jScrollPane4.setBounds(30, 150, 164, 94);
+        jScrollPane4.setBounds(30, 150, 222, 82);
 
         jLabel8.setBackground(new java.awt.Color(0, 102, 255));
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
