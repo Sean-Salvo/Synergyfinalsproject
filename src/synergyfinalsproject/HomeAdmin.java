@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package synergyfinalsproject;
+
+import javax.swing.JFrame;
+
 /**
  *
  * @author Test
@@ -31,11 +34,11 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        BackButton = new javax.swing.JButton();
+        HomeButton = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
+        Settings = new javax.swing.JButton();
+        InfoButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
@@ -127,30 +130,50 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel2.add(jLabel2);
         jLabel2.setBounds(10, 10, 40, 30);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbo.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jPanel2.add(jButton1);
-        jButton1.setBounds(10, 300, 30, 23);
+        BackButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbo.png"))); // NOI18N
+        BackButton.setBorder(null);
+        BackButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(BackButton);
+        BackButton.setBounds(10, 300, 30, 23);
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png"))); // NOI18N
-        jButton10.setBorder(null);
-        jPanel2.add(jButton10);
-        jButton10.setBounds(10, 60, 30, 23);
+        HomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png"))); // NOI18N
+        HomeButton.setBorder(null);
+        HomeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HomeButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(HomeButton);
+        HomeButton.setBounds(10, 60, 30, 24);
 
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
         jButton11.setBorder(null);
         jPanel2.add(jButton11);
         jButton11.setBounds(10, 120, 30, 23);
 
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar_1.png"))); // NOI18N
-        jButton13.setBorder(null);
-        jPanel2.add(jButton13);
-        jButton13.setBounds(10, 180, 30, 23);
+        Settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar_1.png"))); // NOI18N
+        Settings.setBorder(null);
+        Settings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SettingsActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Settings);
+        Settings.setBounds(10, 180, 30, 23);
 
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbb.png"))); // NOI18N
-        jButton14.setBorder(null);
-        jPanel2.add(jButton14);
-        jButton14.setBounds(10, 240, 30, 23);
+        InfoButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbb.png"))); // NOI18N
+        InfoButton.setBorder(null);
+        InfoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InfoButtonActionPerformed(evt);
+            }
+        });
+        jPanel2.add(InfoButton);
+        InfoButton.setBounds(10, 240, 30, 23);
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(10, 20, 50, 350);
@@ -667,6 +690,35 @@ public class HomeAdmin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton12ActionPerformed
 
+    private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed
+        JFrame home = new HomeAdmin();
+        home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        home.setVisible(true);
+    }//GEN-LAST:event_HomeButtonActionPerformed
+
+    private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
+        JFrame settingsFrame = new SettingsNgAdmin();
+        settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settingsFrame.setVisible(true);
+    }//GEN-LAST:event_SettingsActionPerformed
+
+    private void InfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoButtonActionPerformed
+        JFrame info = new Synergy_InfoAboutUS();
+        info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        info.setVisible(true);
+    }//GEN-LAST:event_InfoButtonActionPerformed
+
+    private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
+       
+        JFrame back = new HomeAdmin();
+                if (back != null) {
+        back.setVisible(true);
+    }
+
+    // Close the current frame
+    this.dispose();
+    }//GEN-LAST:event_BackButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -703,12 +755,12 @@ public class HomeAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
+    private javax.swing.JButton BackButton;
+    private javax.swing.JButton HomeButton;
+    private javax.swing.JButton InfoButton;
+    private javax.swing.JButton Settings;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

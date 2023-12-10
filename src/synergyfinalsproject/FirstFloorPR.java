@@ -84,6 +84,9 @@ public class FirstFloorPR extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         BigYellow5 = new javax.swing.JPanel();
         jSeparator10 = new javax.swing.JSeparator();
@@ -427,20 +430,49 @@ public class FirstFloorPR extends javax.swing.JFrame {
         jPanel7.add(jLabel2);
         jLabel2.setBounds(10, 10, 0, 30);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png")));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbo.png"))); // NOI18N
         jButton3.setBorder(null);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel7.add(jButton3);
-        jButton3.setBounds(10, 180, 30, 30);
+        jButton3.setBounds(10, 300, 30, 30);
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png")));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png"))); // NOI18N
         jButton10.setBorder(null);
         jPanel7.add(jButton10);
         jButton10.setBounds(10, 60, 30, 30);
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png")));
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
         jButton9.setBorder(null);
         jPanel7.add(jButton9);
         jButton9.setBounds(10, 120, 30, 30);
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png"))); // NOI18N
+        jPanel7.add(jLabel19);
+        jLabel19.setBounds(10, 10, 33, 32);
+
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar.png"))); // NOI18N
+        jButton11.setBorder(null);
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel7.add(jButton11);
+        jButton11.setBounds(10, 180, 30, 30);
+
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbb.png"))); // NOI18N
+        jButton16.setBorder(null);
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        jPanel7.add(jButton16);
+        jButton16.setBounds(10, 240, 30, 30);
 
         jPanel1.add(jPanel7);
         jPanel7.setBounds(10, 20, 50, 350);
@@ -505,7 +537,7 @@ public class FirstFloorPR extends javax.swing.JFrame {
         jLabel39.setBounds(360, 10, 70, 20);
 
         jPanel8.add(BigYellow5);
-        BigYellow5.setBounds(10, 70, 510, 270);
+        BigYellow5.setBounds(10, 70, 500, 270);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png")));
         jButton1.setBorder(null);
@@ -561,19 +593,19 @@ public class FirstFloorPR extends javax.swing.JFrame {
         jLabel33.setBounds(40, 10, 140, 30);
 
         jPanel1.add(jPanel8);
-        jPanel8.setBounds(70, 20, 530, 350);
+        jPanel8.setBounds(70, 20, 520, 350);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 606, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 595, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -655,6 +687,18 @@ public class FirstFloorPR extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton17ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -703,10 +747,12 @@ public class FirstFloorPR extends javax.swing.JFrame {
     private javax.swing.JTextField TFrole;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -726,6 +772,7 @@ public class FirstFloorPR extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel32;
