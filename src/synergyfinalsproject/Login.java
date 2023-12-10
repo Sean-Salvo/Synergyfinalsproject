@@ -56,6 +56,7 @@ public class Login extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Google Logo.jpg"))); // NOI18N
         jButton1.setText(" Sign in with Google ");
         jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
