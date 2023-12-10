@@ -32,11 +32,13 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton9 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jButton5 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
@@ -64,7 +66,7 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jPanel2.setLayout(null);
 
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbo.png")));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbo.png"))); // NOI18N
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -87,20 +89,8 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jPanel2.add(jButton4);
         jButton4.setBounds(10, 60, 30, 0);
 
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar.png")));
-        jButton6.setBorder(null);
-        jButton6.setBorderPainted(false);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton6);
-        jButton6.setBounds(10, 180, 30, 25);
-
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbb.png")));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar.png"))); // NOI18N
         jButton7.setBorder(null);
         jButton7.setBorderPainted(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -109,14 +99,14 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton7);
-        jButton7.setBounds(10, 240, 30, 25);
+        jButton7.setBounds(10, 180, 30, 25);
 
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aaa.png")));
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png"))); // NOI18N
         jButton8.setBorder(null);
         jButton8.setBorderPainted(false);
         jPanel2.add(jButton8);
-        jButton8.setBounds(10, 120, 30, 25);
+        jButton8.setBounds(10, 60, 30, 25);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png")));
         jPanel2.add(jLabel1);
@@ -133,6 +123,34 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         });
         jPanel2.add(jButton9);
         jButton9.setBounds(10, 60, 30, 25);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png"))); // NOI18N
+        jPanel2.add(jLabel2);
+        jLabel2.setBounds(10, 10, 33, 30);
+
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
+        jButton10.setBorder(null);
+        jButton10.setBorderPainted(false);
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton10);
+        jButton10.setBounds(10, 120, 30, 25);
+
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbb.png"))); // NOI18N
+        jButton3.setBorder(null);
+        jButton3.setBorderPainted(false);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton3);
+        jButton3.setBounds(10, 240, 30, 25);
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(10, 20, 50, 350);
@@ -169,16 +187,16 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         jTextArea1.setLineWrap(true);
 
         jPanel4.add(jScrollPane2);
-        jScrollPane2.setBounds(30, 30, 222, 82);
+        jScrollPane2.setBounds(30, 30, 180, 82);
 
         jTextArea3.setColumns(20);
-        jTextArea3.setRows(5);
+        jTextArea3.setTabSize(0);
         jTextArea3.setBorder(null);
         jScrollPane3.setViewportView(jTextArea3);
         jTextArea1.setLineWrap(true);
 
         jPanel4.add(jScrollPane3);
-        jScrollPane3.setBounds(210, 30, 222, 82);
+        jScrollPane3.setBounds(210, 30, 222, 18);
 
         jLabel4.setBackground(new java.awt.Color(0, 102, 255));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -254,10 +272,6 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
@@ -265,6 +279,14 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -302,14 +324,16 @@ public class Synergy_UtilityRoom extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

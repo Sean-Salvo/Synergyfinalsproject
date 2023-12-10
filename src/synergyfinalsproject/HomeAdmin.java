@@ -123,26 +123,31 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel2.setLayout(null);
 
-        jLabel2.setText("jLabel1");
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png"))); // NOI18N
         jPanel2.add(jLabel2);
         jLabel2.setBounds(10, 10, 40, 30);
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbo.png"))); // NOI18N
         jButton1.setBorder(null);
         jPanel2.add(jButton1);
         jButton1.setBounds(10, 300, 30, 23);
 
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png"))); // NOI18N
         jButton10.setBorder(null);
         jPanel2.add(jButton10);
         jButton10.setBounds(10, 60, 30, 23);
 
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
         jButton11.setBorder(null);
         jPanel2.add(jButton11);
         jButton11.setBounds(10, 120, 30, 23);
 
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar_1.png"))); // NOI18N
         jButton13.setBorder(null);
         jPanel2.add(jButton13);
         jButton13.setBounds(10, 180, 30, 23);
 
+        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbb.png"))); // NOI18N
         jButton14.setBorder(null);
         jPanel2.add(jButton14);
         jButton14.setBounds(10, 240, 30, 23);
