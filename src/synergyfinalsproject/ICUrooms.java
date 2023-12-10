@@ -476,7 +476,7 @@ public class ICUrooms extends javax.swing.JFrame {
         jButton16.setBounds(10, 240, 30, 30);
 
         jPanel1.add(jPanel7);
-        jPanel7.setBounds(10, 20, 50, 350);
+        jPanel7.setBounds(10, 20, 50, 380);
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
@@ -545,10 +545,10 @@ public class ICUrooms extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jList1);
 
         BigYellow5.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 40, 480, 220);
+        jScrollPane1.setBounds(10, 40, 650, 250);
 
         jPanel8.add(BigYellow5);
-        BigYellow5.setBounds(10, 70, 500, 270);
+        BigYellow5.setBounds(10, 70, 670, 300);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png"))); // NOI18N
         jButton1.setBorder(null);
@@ -604,19 +604,19 @@ public class ICUrooms extends javax.swing.JFrame {
         jLabel33.setBounds(50, 10, 140, 30);
 
         jPanel1.add(jPanel8);
-        jPanel8.setBounds(70, 20, 520, 350);
+        jPanel8.setBounds(70, 20, 690, 380);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 601, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 381, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

@@ -101,7 +101,7 @@ public class RoomAdminListview extends javax.swing.JFrame {
         HomeButton1.setBounds(10, 60, 30, 24);
 
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(10, 20, 50, 350);
+        jPanel2.setBounds(10, 20, 50, 390);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
@@ -136,21 +136,19 @@ public class RoomAdminListview extends javax.swing.JFrame {
         jScrollPane1.setBounds(30, 70, 580, 230);
 
         jPanel1.add(jPanel3);
-        jPanel3.setBounds(70, 20, 690, 350);
+        jPanel3.setBounds(70, 20, 700, 390);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 776, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 412, Short.MAX_VALUE)
         );
 
         pack();

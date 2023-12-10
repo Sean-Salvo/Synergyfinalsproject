@@ -5,6 +5,7 @@
  */
 package synergyfinalsproject;
 
+
 import javax.swing.JFrame;
 
 /**
@@ -18,6 +19,8 @@ public class HomeAdmin extends javax.swing.JFrame {
      */
     public HomeAdmin() {
         initComponents();
+        
+        
     }
 
     /**
@@ -43,63 +46,34 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jScrollBar1 = new javax.swing.JScrollBar();
+        jScrollPane17 = new javax.swing.JScrollPane();
+        jList3 = new javax.swing.JList<>();
         jLabel11 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTextArea4 = new javax.swing.JTextArea();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea5 = new javax.swing.JTextArea();
-        jLabel15 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
-        jSeparator5 = new javax.swing.JSeparator();
-        jSeparator6 = new javax.swing.JSeparator();
-        jSeparator7 = new javax.swing.JSeparator();
-        jLabel13 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea3 = new javax.swing.JTextArea();
-        jScrollPane9 = new javax.swing.JScrollPane();
-        jTextArea9 = new javax.swing.JTextArea();
-        jScrollPane10 = new javax.swing.JScrollPane();
-        jTextArea10 = new javax.swing.JTextArea();
-        jScrollPane11 = new javax.swing.JScrollPane();
-        jTextArea11 = new javax.swing.JTextArea();
-        jScrollPane12 = new javax.swing.JScrollPane();
-        jTextArea12 = new javax.swing.JTextArea();
-        jScrollPane13 = new javax.swing.JScrollPane();
-        jTextArea13 = new javax.swing.JTextArea();
-        jScrollPane14 = new javax.swing.JScrollPane();
-        jTextArea14 = new javax.swing.JTextArea();
-        jScrollPane15 = new javax.swing.JScrollPane();
-        jTextArea15 = new javax.swing.JTextArea();
-        jScrollPane16 = new javax.swing.JScrollPane();
-        jTextArea16 = new javax.swing.JTextArea();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
         jPanel8 = new javax.swing.JPanel();
@@ -176,7 +150,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         InfoButton.setBounds(10, 240, 30, 23);
 
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(10, 20, 50, 350);
+        jPanel2.setBounds(10, 20, 50, 380);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
@@ -195,105 +169,21 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel6.add(jLabel6);
         jLabel6.setBounds(230, 160, 50, 20);
 
-        jButton7.setText("Room 01");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton7);
-        jButton7.setBounds(0, 20, 100, 23);
-
-        jButton8.setText("Room 02");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton8);
-        jButton8.setBounds(0, 40, 100, 23);
-
-        jButton9.setText("Room 03");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton9);
-        jButton9.setBounds(0, 60, 100, 23);
-
-        jButton3.setText("Room 04");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton3);
-        jButton3.setBounds(0, 80, 100, 23);
-
-        jButton12.setText("Room 05");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton12);
-        jButton12.setBounds(0, 100, 100, 23);
-
         jLabel9.setBackground(new java.awt.Color(0, 102, 255));
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel9.setText("Floor 1");
         jPanel6.add(jLabel9);
         jLabel9.setBounds(30, 0, 40, 20);
 
-        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 2, true));
-        jPanel7.setLayout(null);
-
-        jButton4.setText("Room 01");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
+        jList3.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Room 1", "Room 2", "Room 3", "Room 4", "Room 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
         });
-        jPanel7.add(jButton4);
-        jButton4.setBounds(0, 20, 100, 23);
+        jScrollPane17.setViewportView(jList3);
 
-        jButton6.setText("Room 02");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel7.add(jButton6);
-        jButton6.setBounds(0, 40, 100, 23);
-
-        jButton5.setText("Room 03");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel7.add(jButton5);
-        jButton5.setBounds(0, 60, 100, 23);
-
-        jButton2.setText("Room 04");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel7.add(jButton2);
-        jButton2.setBounds(0, 80, 100, 23);
-
-        jLabel8.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel8.setText("Floor 2");
-        jPanel7.add(jLabel8);
-        jLabel8.setBounds(30, 0, 40, 20);
-
-        jScrollBar1.setBackground(new java.awt.Color(255, 255, 255));
-        jScrollBar1.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel6.add(jScrollPane17);
+        jScrollPane17.setBounds(10, 20, 100, 230);
 
         jLabel11.setBackground(new java.awt.Color(0, 102, 255));
         jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -304,35 +194,24 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(7, 7, 7)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
                 .addGap(4, 4, 4))
         );
 
         jPanel3.add(jPanel5);
-        jPanel5.setBounds(10, 50, 140, 290);
+        jPanel5.setBounds(10, 50, 140, 310);
 
         jLabel5.setBackground(new java.awt.Color(0, 102, 255));
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
@@ -345,81 +224,15 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel4.setLayout(null);
 
-        jPanel9.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
-        jPanel9.setLayout(null);
-
-        jLabel7.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel7.setText("Room Information");
-        jPanel9.add(jLabel7);
-        jLabel7.setBounds(10, 10, 170, 28);
-
-        jLabel10.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel10.setText("Room Number: ");
-        jPanel9.add(jLabel10);
-        jLabel10.setBounds(10, 40, 100, 28);
-
-        jLabel12.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel12.setText("Patient Name: ");
-        jPanel9.add(jLabel12);
-        jLabel12.setBounds(10, 70, 100, 28);
-
-        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea2.setColumns(20);
-        jTextArea2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea2.setRows(5);
-        jScrollPane2.setViewportView(jTextArea2);
-
-        jPanel9.add(jScrollPane2);
-        jScrollPane2.setBounds(110, 100, 110, 20);
-
-        jScrollPane4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea4.setColumns(20);
-        jTextArea4.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea4.setRows(5);
-        jScrollPane4.setViewportView(jTextArea4);
-
-        jPanel9.add(jScrollPane4);
-        jScrollPane4.setBounds(110, 40, 110, 20);
-
-        jScrollPane5.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane5.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea5.setColumns(20);
-        jTextArea5.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea5.setRows(5);
-        jScrollPane5.setViewportView(jTextArea5);
-
-        jPanel9.add(jScrollPane5);
-        jScrollPane5.setBounds(110, 70, 110, 20);
-
-        jLabel15.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel15.setText("Notes: ");
-        jPanel9.add(jLabel15);
-        jLabel15.setBounds(10, 100, 50, 28);
-
-        jPanel4.add(jPanel9);
-        jPanel9.setBounds(10, 10, 270, 130);
-
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
         jPanel10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
         jPanel10.setLayout(null);
 
         jLabel14.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel14.setText("Patient Management");
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel14.setText("Health Conditions - ");
         jPanel10.add(jLabel14);
-        jLabel14.setBounds(10, 10, 170, 28);
-        jPanel10.add(jSeparator1);
-        jSeparator1.setBounds(0, 110, 270, 10);
+        jLabel14.setBounds(20, 250, 120, 10);
         jPanel10.add(jSeparator2);
         jSeparator2.setBounds(0, 50, 270, 0);
         jPanel10.add(jSeparator3);
@@ -430,146 +243,109 @@ public class HomeAdmin extends javax.swing.JFrame {
         jLabel4.setText("Name:");
         jPanel10.add(jLabel4);
         jLabel4.setBounds(460, 180, 50, 10);
-        jPanel10.add(jSeparator5);
-        jSeparator5.setBounds(0, 50, 270, 3);
-        jPanel10.add(jSeparator6);
-        jSeparator6.setBounds(0, 70, 270, 3);
-        jPanel10.add(jSeparator7);
-        jSeparator7.setBounds(0, 90, 270, 10);
 
-        jLabel13.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel13.setText("Room Number");
-        jPanel10.add(jLabel13);
-        jLabel13.setBounds(170, 50, 90, 20);
+        jLabel15.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel15.setText("Patient Information");
+        jPanel10.add(jLabel15);
+        jLabel15.setBounds(40, 10, 190, 28);
 
         jLabel16.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel16.setText("Name");
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel16.setText("Room Number - ");
         jPanel10.add(jLabel16);
-        jLabel16.setBounds(10, 53, 50, 17);
+        jLabel16.setBounds(20, 40, 100, 20);
 
         jLabel17.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel17.setText("Age");
+        jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel17.setText("Patient Name -");
         jPanel10.add(jLabel17);
-        jLabel17.setBounds(120, 50, 40, 20);
+        jLabel17.setBounds(20, 70, 100, 20);
 
-        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jLabel18.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel18.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel18.setText("Patient ID - ");
+        jPanel10.add(jLabel18);
+        jLabel18.setBounds(20, 100, 100, 20);
 
-        jTextArea3.setColumns(20);
-        jTextArea3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea3.setRows(5);
-        jScrollPane3.setViewportView(jTextArea3);
+        jLabel19.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel19.setText("Admitted Date - ");
+        jPanel10.add(jLabel19);
+        jLabel19.setBounds(20, 130, 100, 20);
 
-        jPanel10.add(jScrollPane3);
-        jScrollPane3.setBounds(0, 110, 110, 20);
+        jLabel20.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel20.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel20.setText("Discharge Date -");
+        jPanel10.add(jLabel20);
+        jLabel20.setBounds(20, 160, 100, 20);
 
-        jScrollPane9.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane9.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jLabel21.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel21.setText("Assigned Doctor - ");
+        jPanel10.add(jLabel21);
+        jLabel21.setBounds(20, 190, 130, 10);
 
-        jTextArea9.setColumns(20);
-        jTextArea9.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea9.setRows(5);
-        jScrollPane9.setViewportView(jTextArea9);
+        jLabel22.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel22.setText("Notes - ");
+        jPanel10.add(jLabel22);
+        jLabel22.setBounds(20, 220, 110, 20);
 
-        jPanel10.add(jScrollPane9);
-        jScrollPane9.setBounds(120, 110, 30, 20);
+        jTextField1.setText("jTextField1");
+        jPanel10.add(jTextField1);
+        jTextField1.setBounds(130, 190, 120, 20);
 
-        jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane10.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jTextField2.setText("jTextField1");
+        jPanel10.add(jTextField2);
+        jTextField2.setBounds(130, 40, 120, 20);
 
-        jTextArea10.setColumns(20);
-        jTextArea10.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea10.setRows(5);
-        jScrollPane10.setViewportView(jTextArea10);
+        jTextField3.setText("jTextField1");
+        jPanel10.add(jTextField3);
+        jTextField3.setBounds(130, 70, 120, 20);
 
-        jPanel10.add(jScrollPane10);
-        jScrollPane10.setBounds(0, 90, 110, 20);
+        jTextField4.setText("jTextField1");
+        jPanel10.add(jTextField4);
+        jTextField4.setBounds(130, 100, 120, 20);
 
-        jScrollPane11.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane11.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jTextField5.setText("jTextField1");
+        jPanel10.add(jTextField5);
+        jTextField5.setBounds(130, 130, 120, 20);
 
-        jTextArea11.setColumns(20);
-        jTextArea11.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea11.setRows(5);
-        jScrollPane11.setViewportView(jTextArea11);
+        jTextField6.setText("jTextField1");
+        jPanel10.add(jTextField6);
+        jTextField6.setBounds(130, 160, 120, 20);
 
-        jPanel10.add(jScrollPane11);
-        jScrollPane11.setBounds(0, 70, 110, 20);
+        jTextField7.setText("jTextField1");
+        jPanel10.add(jTextField7);
+        jTextField7.setBounds(130, 190, 120, 20);
 
-        jScrollPane12.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane12.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jTextField8.setText("jTextField1");
+        jPanel10.add(jTextField8);
+        jTextField8.setBounds(130, 220, 120, 20);
 
-        jTextArea12.setColumns(20);
-        jTextArea12.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea12.setRows(5);
-        jScrollPane12.setViewportView(jTextArea12);
-
-        jPanel10.add(jScrollPane12);
-        jScrollPane12.setBounds(170, 110, 100, 20);
-
-        jScrollPane13.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane13.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea13.setColumns(20);
-        jTextArea13.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea13.setRows(5);
-        jScrollPane13.setViewportView(jTextArea13);
-
-        jPanel10.add(jScrollPane13);
-        jScrollPane13.setBounds(120, 90, 30, 20);
-
-        jScrollPane14.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane14.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea14.setColumns(20);
-        jTextArea14.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea14.setRows(5);
-        jScrollPane14.setViewportView(jTextArea14);
-
-        jPanel10.add(jScrollPane14);
-        jScrollPane14.setBounds(120, 70, 30, 20);
-
-        jScrollPane15.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane15.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea15.setColumns(20);
-        jTextArea15.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea15.setRows(5);
-        jScrollPane15.setViewportView(jTextArea15);
-
-        jPanel10.add(jScrollPane15);
-        jScrollPane15.setBounds(170, 70, 100, 20);
-
-        jScrollPane16.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane16.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-
-        jTextArea16.setColumns(20);
-        jTextArea16.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea16.setRows(5);
-        jScrollPane16.setViewportView(jTextArea16);
-
-        jPanel10.add(jScrollPane16);
-        jScrollPane16.setBounds(170, 90, 100, 20);
+        jTextField9.setText("jTextField1");
+        jPanel10.add(jTextField9);
+        jTextField9.setBounds(130, 250, 120, 20);
 
         jPanel4.add(jPanel10);
-        jPanel10.setBounds(10, 150, 270, 130);
+        jPanel10.setBounds(10, 10, 270, 290);
 
         jPanel3.add(jPanel4);
-        jPanel4.setBounds(160, 50, 290, 290);
+        jPanel4.setBounds(160, 50, 290, 310);
 
         jScrollPane6.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane6.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea6.setColumns(20);
-        jTextArea6.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextArea6.setForeground(new java.awt.Color(255, 204, 0));
         jTextArea6.setRows(5);
+        jTextArea6.setText("textField\nTextField");
         jScrollPane6.setViewportView(jTextArea6);
 
         jPanel3.add(jScrollPane6);
-        jScrollPane6.setBounds(120, 10, 234, 30);
+        jScrollPane6.setBounds(120, 10, 334, 30);
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -627,68 +403,32 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel18.setBounds(20, 190, 50, 140);
 
         jPanel3.add(jPanel8);
-        jPanel8.setBounds(460, 20, 220, 150);
+        jPanel8.setBounds(460, 50, 220, 120);
 
         jPanel19.setBackground(new java.awt.Color(255, 255, 255));
         jPanel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel19.setLayout(null);
         jPanel3.add(jPanel19);
-        jPanel19.setBounds(460, 180, 220, 160);
+        jPanel19.setBounds(460, 180, 220, 180);
 
         jPanel1.add(jPanel3);
-        jPanel3.setBounds(70, 20, 690, 350);
+        jPanel3.setBounds(70, 20, 690, 380);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 776, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 382, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 412, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
 
     private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed
         JFrame home = new HomeAdmin();
@@ -760,30 +500,22 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JList<String> jList3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -800,43 +532,22 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
-    private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane10;
-    private javax.swing.JScrollPane jScrollPane11;
-    private javax.swing.JScrollPane jScrollPane12;
-    private javax.swing.JScrollPane jScrollPane13;
-    private javax.swing.JScrollPane jScrollPane14;
-    private javax.swing.JScrollPane jScrollPane15;
-    private javax.swing.JScrollPane jScrollPane16;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane17;
     private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JScrollPane jScrollPane9;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JSeparator jSeparator7;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea10;
-    private javax.swing.JTextArea jTextArea11;
-    private javax.swing.JTextArea jTextArea12;
-    private javax.swing.JTextArea jTextArea13;
-    private javax.swing.JTextArea jTextArea14;
-    private javax.swing.JTextArea jTextArea15;
-    private javax.swing.JTextArea jTextArea16;
-    private javax.swing.JTextArea jTextArea2;
-    private javax.swing.JTextArea jTextArea3;
-    private javax.swing.JTextArea jTextArea4;
-    private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
-    private javax.swing.JTextArea jTextArea9;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }

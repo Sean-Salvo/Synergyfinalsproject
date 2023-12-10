@@ -60,12 +60,9 @@ public class LogIn extends javax.swing.JFrame {
         title.setText("Synergy");
 
         jLabel4.setFont(new java.awt.Font("Karma", 0, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Log in");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Google Logo.jpg"))); // NOI18N
         jButton1.setText(" Sign in with Google ");
         jButton1.setBorder(null);
@@ -76,10 +73,8 @@ public class LogIn extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Karma", 0, 16)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("or use email to log in");
 
-        tf_Email.setBackground(new java.awt.Color(255, 255, 255));
         tf_Email.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
         tf_Email.setForeground(new java.awt.Color(204, 204, 204));
         tf_Email.setText("Email");
@@ -89,13 +84,11 @@ public class LogIn extends javax.swing.JFrame {
             }
         });
 
-        tf_Password.setBackground(new java.awt.Color(255, 255, 255));
         tf_Password.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
         tf_Password.setForeground(new java.awt.Color(204, 204, 204));
         tf_Password.setText("Password");
 
         jLabel5.setFont(new java.awt.Font("Karma", 0, 16)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("forgot password?");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -105,7 +98,6 @@ public class LogIn extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(211, 211, 17));
         jButton2.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Log In");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,7 +106,6 @@ public class LogIn extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Karma", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Don't have an account? Click here to create account");
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -144,7 +135,7 @@ public class LogIn extends javax.swing.JFrame {
                         .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(tf_Email, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -172,18 +163,18 @@ public class LogIn extends javax.swing.JFrame {
                         .addComponent(jButton2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel6)))
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 773, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
