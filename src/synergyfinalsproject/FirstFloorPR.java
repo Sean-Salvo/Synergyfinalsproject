@@ -551,7 +551,7 @@ public class FirstFloorPR extends javax.swing.JFrame {
         jPanel8.add(BigYellow5);
         BigYellow5.setBounds(10, 70, 500, 270);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png")));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
