@@ -38,7 +38,6 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         Settings = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         HomeButton = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton11 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
@@ -122,13 +121,6 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         });
         jPanel2.add(HomeButton);
         HomeButton.setBounds(10, 60, 30, 25);
-
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aaa.png")));
-        jButton10.setBorder(null);
-        jButton10.setBorderPainted(false);
-        jPanel2.add(jButton10);
-        jButton10.setBounds(10, 70, 30, 25);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png")));
         jPanel2.add(jLabel2);
@@ -223,9 +215,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -314,7 +304,6 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
     private javax.swing.JButton InfoAboutsUs;
     private javax.swing.JButton MedicalRef;
     private javax.swing.JButton Settings;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
