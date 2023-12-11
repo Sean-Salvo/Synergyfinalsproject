@@ -4,6 +4,8 @@
  */
 package synergyfinalsproject;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Test
@@ -80,12 +82,12 @@ public class ICUrooms extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        prev = new javax.swing.JButton();
+        HomeButton = new javax.swing.JButton();
+        door = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
+        settings = new javax.swing.JButton();
+        info = new javax.swing.JButton();
         jPanel8 = new javax.swing.JPanel();
         BigYellow5 = new javax.swing.JPanel();
         jSeparator10 = new javax.swing.JSeparator();
@@ -431,49 +433,59 @@ public class ICUrooms extends javax.swing.JFrame {
         jPanel7.add(jLabel2);
         jLabel2.setBounds(10, 10, 0, 30);
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbo.png"))); // NOI18N
-        jButton3.setBorder(null);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        prev.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbo.png"))); // NOI18N
+        prev.setBorder(null);
+        prev.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                prevActionPerformed(evt);
             }
         });
-        jPanel7.add(jButton3);
-        jButton3.setBounds(10, 300, 30, 30);
+        jPanel7.add(prev);
+        prev.setBounds(10, 300, 30, 30);
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png"))); // NOI18N
-        jButton10.setBorder(null);
-        jPanel7.add(jButton10);
-        jButton10.setBounds(10, 60, 30, 30);
+        HomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png"))); // NOI18N
+        HomeButton.setBorder(null);
+        HomeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HomeButtonActionPerformed(evt);
+            }
+        });
+        jPanel7.add(HomeButton);
+        HomeButton.setBounds(10, 60, 30, 30);
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
-        jButton9.setBorder(null);
-        jPanel7.add(jButton9);
-        jButton9.setBounds(10, 120, 30, 30);
+        door.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png"))); // NOI18N
+        door.setBorder(null);
+        door.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                doorActionPerformed(evt);
+            }
+        });
+        jPanel7.add(door);
+        door.setBounds(10, 120, 30, 30);
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png"))); // NOI18N
         jPanel7.add(jLabel19);
         jLabel19.setBounds(10, 10, 33, 32);
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar.png"))); // NOI18N
-        jButton11.setBorder(null);
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar.png"))); // NOI18N
+        settings.setBorder(null);
+        settings.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                settingsActionPerformed(evt);
             }
         });
-        jPanel7.add(jButton11);
-        jButton11.setBounds(10, 180, 30, 30);
+        jPanel7.add(settings);
+        settings.setBounds(10, 180, 30, 30);
 
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbb.png"))); // NOI18N
-        jButton16.setBorder(null);
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        info.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Abbb.png"))); // NOI18N
+        info.setBorder(null);
+        info.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                infoActionPerformed(evt);
             }
         });
-        jPanel7.add(jButton16);
-        jButton16.setBounds(10, 240, 30, 30);
+        jPanel7.add(info);
+        info.setBounds(10, 240, 30, 30);
 
         jPanel1.add(jPanel7);
         jPanel7.setBounds(10, 20, 50, 380);
@@ -686,17 +698,34 @@ public class ICUrooms extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void prevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevActionPerformed
+        JFrame home = new HomeAdmin();
+        home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        home.setVisible(true);
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_prevActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    private void settingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsActionPerformed
+        JFrame settingsFrame = new SettingsNgAdmin();
+        settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settingsFrame.setVisible(true);
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_settingsActionPerformed
+
+    private void infoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoActionPerformed
+        JFrame info = new Synergy_InfoAboutUS();
+        info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        info.setVisible(true);
+        if (this.isVisible()) {
+            this.dispose();
+        }
+
+    }//GEN-LAST:event_infoActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -709,6 +738,25 @@ public class ICUrooms extends javax.swing.JFrame {
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed
+        JFrame home = new HomeAdmin();
+        home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        home.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_HomeButtonActionPerformed
+
+    private void doorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doorActionPerformed
+        JFrame settings = new RoomAdminListview();
+        settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settings.setVisible(true);
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_doorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -749,6 +797,7 @@ public class ICUrooms extends javax.swing.JFrame {
     private javax.swing.JPanel BigYellow4;
     private javax.swing.JPanel BigYellow5;
     private javax.swing.JPanel BigYellow6;
+    private javax.swing.JButton HomeButton;
     private javax.swing.JTextField TFadress;
     private javax.swing.JTextField TFbirth1;
     private javax.swing.JTextField TFdepart;
@@ -756,23 +805,20 @@ public class ICUrooms extends javax.swing.JFrame {
     private javax.swing.JTextField TFname1;
     private javax.swing.JTextField TFname2;
     private javax.swing.JTextField TFrole;
+    private javax.swing.JButton door;
+    private javax.swing.JButton info;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -826,5 +872,7 @@ public class ICUrooms extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JButton prev;
+    private javax.swing.JButton settings;
     // End of variables declaration//GEN-END:variables
 }
