@@ -51,6 +51,8 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jSeparator10 = new javax.swing.JSeparator();
@@ -95,16 +97,16 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel4.setLayout(null);
         jPanel4.add(jSeparator1);
-        jSeparator1.setBounds(0, 150, 330, 17);
+        jSeparator1.setBounds(0, 150, 500, 17);
         jPanel4.add(jSeparator3);
-        jSeparator3.setBounds(0, 220, 330, 17);
+        jSeparator3.setBounds(0, 220, 500, 17);
 
         jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator4.setToolTipText("");
         jPanel4.add(jSeparator4);
-        jSeparator4.setBounds(170, 0, 20, 290);
+        jSeparator4.setBounds(230, 0, 20, 300);
         jPanel4.add(jSeparator5);
-        jSeparator5.setBounds(0, 90, 330, 17);
+        jSeparator5.setBounds(0, 90, 500, 3);
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 102, 102));
@@ -116,19 +118,19 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(102, 102, 102));
         jLabel6.setText("EMAIL");
         jPanel4.add(jLabel6);
-        jLabel6.setBounds(180, 100, 70, 15);
+        jLabel6.setBounds(250, 100, 70, 15);
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
         jLabel7.setText("DATE OF BIRTH");
         jPanel4.add(jLabel7);
-        jLabel7.setBounds(180, 160, 120, 15);
+        jLabel7.setBounds(250, 160, 120, 15);
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 102, 102));
         jLabel8.setText("DEPARTMENT");
         jPanel4.add(jLabel8);
-        jLabel8.setBounds(180, 230, 100, 20);
+        jLabel8.setBounds(250, 230, 100, 20);
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 102, 102));
@@ -146,7 +148,7 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(102, 102, 102));
         jLabel12.setText("NAME");
         jPanel4.add(jLabel12);
-        jLabel12.setBounds(180, 10, 70, 15);
+        jLabel12.setBounds(250, 20, 70, 15);
 
         jTextField1.setText("jTextField1");
         jPanel4.add(jTextField1);
@@ -154,15 +156,15 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
 
         jTextField3.setText("jTextField1");
         jPanel4.add(jTextField3);
-        jTextField3.setBounds(180, 120, 130, 22);
+        jTextField3.setBounds(250, 120, 190, 22);
 
         jTextField4.setText("jTextField1");
         jPanel4.add(jTextField4);
-        jTextField4.setBounds(180, 190, 130, 22);
+        jTextField4.setBounds(250, 190, 190, 22);
 
         jTextField5.setText("jTextField1");
         jPanel4.add(jTextField5);
-        jTextField5.setBounds(180, 260, 130, 22);
+        jTextField5.setBounds(250, 260, 190, 22);
 
         jTextField6.setText("jTextField1");
         jPanel4.add(jTextField6);
@@ -174,7 +176,17 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
 
         jTextField8.setText("jTextField1");
         jPanel4.add(jTextField8);
-        jTextField8.setBounds(180, 60, 130, 22);
+        jTextField8.setBounds(250, 60, 190, 22);
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Atrash.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jPanel4.add(jButton1);
+        jButton1.setBounds(130, 60, 40, 20);
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Asave.png"))); // NOI18N
+        jButton2.setBorder(null);
+        jPanel4.add(jButton2);
+        jButton2.setBounds(130, 30, 40, 20);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 204));
@@ -290,9 +302,9 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 501, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE))
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
@@ -520,6 +532,8 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
     private javax.swing.JButton InfoAboutsUs;
     private javax.swing.JButton MedicalRec;
     private javax.swing.JButton Settings;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
