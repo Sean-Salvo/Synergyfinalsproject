@@ -67,6 +67,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
+        bell = new javax.swing.JButton();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -236,7 +237,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jScrollPane6.setViewportView(jTextArea6);
 
         jPanel3.add(jScrollPane6);
-        jScrollPane6.setBounds(120, 10, 334, 30);
+        jScrollPane6.setBounds(120, 10, 290, 30);
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -301,6 +302,16 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel19.setLayout(null);
         jPanel3.add(jPanel19);
         jPanel19.setBounds(460, 180, 220, 180);
+
+        bell.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aabel.png"))); // NOI18N
+        bell.setBorder(null);
+        bell.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bellActionPerformed(evt);
+            }
+        });
+        jPanel3.add(bell);
+        bell.setBounds(420, 10, 40, 30);
 
         jPanel1.add(jPanel3);
         jPanel3.setBounds(70, 20, 690, 380);
@@ -388,6 +399,12 @@ public class HomeAdmin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jList3MouseClicked
 
+    private void bellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bellActionPerformed
+        JFrame notif = new Notif();
+        notif.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        notif.setVisible(true);
+    }//GEN-LAST:event_bellActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -429,6 +446,7 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JButton HomeButton;
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
+    private javax.swing.JButton bell;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
