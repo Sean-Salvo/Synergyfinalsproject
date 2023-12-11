@@ -93,6 +93,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
+        jCalendar1 = new com.toedter.calendar.JCalendar();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -477,6 +478,11 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel19.setBackground(new java.awt.Color(255, 255, 255));
         jPanel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel19.setLayout(null);
+
+        jCalendar1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
+        jPanel19.add(jCalendar1);
+        jCalendar1.setBounds(0, 0, 220, 130);
+
         jPanel3.add(jPanel19);
         jPanel19.setBounds(460, 180, 220, 180);
 
@@ -604,6 +610,7 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JButton HomeButton;
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
+    private com.toedter.calendar.JCalendar jCalendar1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
