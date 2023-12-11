@@ -48,12 +48,13 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jScrollPane17 = new javax.swing.JScrollPane();
         jList3 = new javax.swing.JList<>();
+        jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
         jPanel8 = new javax.swing.JPanel();
@@ -154,12 +155,6 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel6.add(jLabel6);
         jLabel6.setBounds(230, 160, 50, 20);
 
-        jLabel9.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel9.setText("Floor 1");
-        jPanel6.add(jLabel9);
-        jLabel9.setBounds(30, 0, 40, 20);
-
         jList3.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Room 1", "Room 2", "Room 3", "Room 4", "Room 5" };
             public int getSize() { return strings.length; }
@@ -174,6 +169,12 @@ public class HomeAdmin extends javax.swing.JFrame {
 
         jPanel6.add(jScrollPane17);
         jScrollPane17.setBounds(10, 20, 100, 230);
+
+        jLabel10.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel10.setText("Floor 1");
+        jPanel6.add(jLabel10);
+        jLabel10.setBounds(30, 0, 40, 20);
 
         jLabel11.setBackground(new java.awt.Color(0, 102, 255));
         jLabel11.setFont(new java.awt.Font("Karma Light", 1, 18)); // NOI18N
@@ -213,6 +214,14 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel4.setLayout(null);
+
+        jLabel9.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel9.setText("Please Select a Room.");
+        jPanel4.add(jLabel9);
+        jLabel9.setBounds(80, 140, 150, 20);
+
         jPanel3.add(jPanel4);
         jPanel4.setBounds(160, 50, 290, 310);
 
@@ -420,6 +429,7 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JButton HomeButton;
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
