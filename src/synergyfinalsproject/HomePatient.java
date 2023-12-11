@@ -38,7 +38,7 @@ public class HomePatient extends javax.swing.JFrame {
         InfoButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
+        TakeMe = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -134,10 +134,10 @@ public class HomePatient extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aLocation.png"))); // NOI18N
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        TakeMe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aLocation.png"))); // NOI18N
+        TakeMe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                TakeMeActionPerformed(evt);
             }
         });
 
@@ -145,11 +145,11 @@ public class HomePatient extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(TakeMe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 154, Short.MAX_VALUE)
+            .addComponent(TakeMe, javax.swing.GroupLayout.PREFERRED_SIZE, 154, Short.MAX_VALUE)
         );
 
         jPanel3.add(jPanel5);
@@ -191,7 +191,7 @@ public class HomePatient extends javax.swing.JFrame {
         jScrollPane6.setViewportView(jTextArea6);
 
         jPanel3.add(jScrollPane6);
-        jScrollPane6.setBounds(120, 10, 334, 30);
+        jScrollPane6.setBounds(120, 10, 250, 30);
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -388,9 +388,9 @@ public class HomePatient extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void TakeMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TakeMeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_TakeMeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -433,8 +433,8 @@ public class HomePatient extends javax.swing.JFrame {
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton MedicalRec;
     private javax.swing.JButton Settings;
+    private javax.swing.JButton TakeMe;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
