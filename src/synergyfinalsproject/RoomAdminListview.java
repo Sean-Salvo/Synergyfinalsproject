@@ -38,7 +38,7 @@ public class RoomAdminListview extends javax.swing.JFrame {
         HomeButton1 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        HomeButton = new javax.swing.JButton();
+        prevButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
 
@@ -119,15 +119,15 @@ public class RoomAdminListview extends javax.swing.JFrame {
         jPanel3.add(jLabel5);
         jLabel5.setBounds(70, 30, 140, 28);
 
-        HomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png"))); // NOI18N
-        HomeButton.setBorder(null);
-        HomeButton.addActionListener(new java.awt.event.ActionListener() {
+        prevButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png"))); // NOI18N
+        prevButton.setBorder(null);
+        prevButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                HomeButtonActionPerformed(evt);
+                prevButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(HomeButton);
-        HomeButton.setBounds(30, 30, 30, 32);
+        jPanel3.add(prevButton);
+        prevButton.setBounds(30, 30, 30, 32);
 
         jList1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jList1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -177,7 +177,7 @@ public class RoomAdminListview extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BackButtonActionPerformed
 
-    private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed
+    private void prevButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevButtonActionPerformed
         JFrame home = new HomeAdmin();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
@@ -186,7 +186,7 @@ public class RoomAdminListview extends javax.swing.JFrame {
     }
 
 
-    }//GEN-LAST:event_HomeButtonActionPerformed
+    }//GEN-LAST:event_prevButtonActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
         JFrame settingsFrame = new SettingsNgAdmin();
@@ -301,7 +301,6 @@ public class RoomAdminListview extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackButton;
     private javax.swing.JButton Door;
-    private javax.swing.JButton HomeButton;
     private javax.swing.JButton HomeButton1;
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
@@ -312,5 +311,6 @@ public class RoomAdminListview extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton prevButton;
     // End of variables declaration//GEN-END:variables
 }
