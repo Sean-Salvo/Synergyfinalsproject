@@ -5,7 +5,6 @@
  */
 package synergyfinalsproject;
 
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -23,8 +22,7 @@ public class HomeAdmin extends javax.swing.JFrame {
      */
     public HomeAdmin() {
         initComponents();
-        
-        
+
     }
 
     /**
@@ -324,63 +322,66 @@ public class HomeAdmin extends javax.swing.JFrame {
         JFrame home = new HomeAdmin();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
-        
-          if (this.isVisible()) {
-        this.dispose();
-    }
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
         JFrame settingsFrame = new SettingsNgAdmin();
         settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settingsFrame.setVisible(true);
-        
-          if (this.isVisible()) {
-        this.dispose();
-    }
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_SettingsActionPerformed
 
     private void InfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoButtonActionPerformed
         JFrame info = new Synergy_InfoAboutUS();
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
-          if (this.isVisible()) {
-        this.dispose();
-    }
-        
+        if (this.isVisible()) {
+            this.dispose();
+        }
+
     }//GEN-LAST:event_InfoButtonActionPerformed
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
-       
-        JFrame back = new HomeAdmin();
-                if (back != null) {
-        back.dispose();
-    }
 
-    // Close the current frame
-    this.dispose();
+        JFrame login = new LogIn();
+
+        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        login.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
+
+
     }//GEN-LAST:event_BackButtonActionPerformed
 
     private void DoorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoorActionPerformed
         JFrame settings = new RoomAdminListview();
         settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settings.setVisible(true);
-            if (this.isVisible()) {
-        this.dispose();
-    }
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_DoorActionPerformed
 
     private void jList3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList3MouseClicked
-           
-        if(jList3.getSelectedIndex() == 0) {
+
+        if (jList3.getSelectedIndex() == 0) {
             JFrame RoomInfo = new PatientInfoShow();
-            
+
             RoomInfo.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             RoomInfo.setVisible(true);
-                    if (this.isVisible()) {
-        this.dispose();
-    }
-           
+            if (this.isVisible()) {
+                this.dispose();
+            }
+
         }
     }//GEN-LAST:event_jList3MouseClicked
 

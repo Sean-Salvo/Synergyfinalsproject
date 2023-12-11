@@ -167,13 +167,14 @@ public class RoomAdminListview extends javax.swing.JFrame {
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
 
-        JFrame back = new HomeAdmin();
-        if (back != null) {
-            back.setVisible(true);
-        }
+        JFrame login = new LogIn();
 
-        // Close the current frame
-        this.dispose();
+        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        login.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_BackButtonActionPerformed
 
     private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed

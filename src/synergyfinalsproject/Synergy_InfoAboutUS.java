@@ -222,11 +222,14 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
-        JFrame back = new HomeAdmin();
-        if (back != null) {
-            back.dispose();
+        JFrame login = new LogIn();
+
+        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        login.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
         }
-        this.dispose();
     }//GEN-LAST:event_BackActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

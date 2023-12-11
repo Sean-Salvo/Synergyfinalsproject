@@ -438,13 +438,14 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
-        JFrame back = new HomeAdmin();
-        if (back != null) {
-        back.setVisible(true);
-    }
+        JFrame login = new LogIn();
 
-    // Close the current frame
-    this.dispose();
+        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        login.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_BackActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
