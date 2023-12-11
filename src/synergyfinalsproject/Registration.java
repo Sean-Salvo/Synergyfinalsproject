@@ -102,7 +102,6 @@ public class Registration extends javax.swing.JFrame {
         L_firstName.setForeground(new java.awt.Color(255, 255, 255));
         L_firstName.setText("First Name:");
 
-        TF_firstName.setBackground(new java.awt.Color(255, 255, 255));
         TF_firstName.setForeground(new java.awt.Color(255, 255, 255));
 
         L_lastName.setBackground(new java.awt.Color(0, 0, 0));
@@ -110,42 +109,30 @@ public class Registration extends javax.swing.JFrame {
         L_lastName.setForeground(new java.awt.Color(255, 255, 255));
         L_lastName.setText("Last Name:");
 
-        TF_lastName.setBackground(new java.awt.Color(255, 255, 255));
-
         L_email.setBackground(new java.awt.Color(0, 0, 0));
         L_email.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         L_email.setForeground(new java.awt.Color(255, 255, 255));
         L_email.setText("Email:");
-
-        TF_email.setBackground(new java.awt.Color(255, 255, 255));
 
         L_password.setBackground(new java.awt.Color(0, 0, 0));
         L_password.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         L_password.setForeground(new java.awt.Color(255, 255, 255));
         L_password.setText("Password:");
 
-        TF_password.setBackground(new java.awt.Color(255, 255, 255));
-
         L_cPassword.setBackground(new java.awt.Color(0, 0, 0));
         L_cPassword.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         L_cPassword.setForeground(new java.awt.Color(255, 255, 255));
         L_cPassword.setText("Confirmed Password:");
-
-        TF_cPassword.setBackground(new java.awt.Color(255, 255, 255));
 
         L_phoneNum.setBackground(new java.awt.Color(0, 0, 0));
         L_phoneNum.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         L_phoneNum.setForeground(new java.awt.Color(255, 255, 255));
         L_phoneNum.setText("Phone Number:");
 
-        TF_phoneNum.setBackground(new java.awt.Color(255, 255, 255));
-
         L_address.setBackground(new java.awt.Color(0, 0, 0));
         L_address.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         L_address.setForeground(new java.awt.Color(255, 255, 255));
         L_address.setText("Address:");
-
-        TF_address.setBackground(new java.awt.Color(255, 255, 255));
 
         L_gender.setBackground(new java.awt.Color(0, 0, 0));
         L_gender.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
@@ -163,8 +150,6 @@ public class Registration extends javax.swing.JFrame {
         L_birth.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         L_birth.setForeground(new java.awt.Color(255, 255, 255));
         L_birth.setText("Date of Birth:");
-
-        TF_birth.setBackground(new java.awt.Color(255, 255, 255));
 
         L_role.setBackground(new java.awt.Color(0, 0, 0));
         L_role.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
@@ -318,14 +303,14 @@ public class Registration extends javax.swing.JFrame {
                         .addGap(48, 48, 48)
                         .addComponent(title))
                     .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         whitePanelLayout.setVerticalGroup(
             whitePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, whitePanelLayout.createSequentialGroup()
-                .addContainerGap(99, Short.MAX_VALUE)
+                .addContainerGap(81, Short.MAX_VALUE)
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(title)
@@ -336,11 +321,17 @@ public class Registration extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(whitePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(whitePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(whitePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(whitePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
