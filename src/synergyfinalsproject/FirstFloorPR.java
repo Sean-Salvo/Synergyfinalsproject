@@ -456,6 +456,11 @@ public class FirstFloorPR extends javax.swing.JFrame {
 
         door.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png"))); // NOI18N
         door.setBorder(null);
+        door.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                doorActionPerformed(evt);
+            }
+        });
         jPanel7.add(door);
         door.setBounds(10, 120, 30, 30);
 
@@ -747,6 +752,15 @@ public class FirstFloorPR extends javax.swing.JFrame {
             this.dispose();
         }
     }//GEN-LAST:event_HomeButtonActionPerformed
+
+    private void doorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doorActionPerformed
+          JFrame settings = new RoomAdminListview();
+        settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settings.setVisible(true);
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_doorActionPerformed
 
     /**
      * @param args the command line arguments

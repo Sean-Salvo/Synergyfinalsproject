@@ -81,7 +81,7 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         Back = new javax.swing.JButton();
         HomeButton = new javax.swing.JButton();
-        MedicalRec = new javax.swing.JButton();
+        door = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
         Settings = new javax.swing.JButton();
         InfoAboutsUs = new javax.swing.JButton();
@@ -367,10 +367,15 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jPanel7.add(HomeButton);
         HomeButton.setBounds(10, 60, 30, 30);
 
-        MedicalRec.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
-        MedicalRec.setBorder(null);
-        jPanel7.add(MedicalRec);
-        MedicalRec.setBounds(10, 120, 30, 30);
+        door.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png"))); // NOI18N
+        door.setBorder(null);
+        door.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                doorActionPerformed(evt);
+            }
+        });
+        jPanel7.add(door);
+        door.setBounds(10, 120, 30, 30);
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png"))); // NOI18N
         jPanel7.add(jLabel19);
@@ -492,6 +497,15 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField14ActionPerformed
 
+    private void doorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doorActionPerformed
+          JFrame settings = new RoomAdminListview();
+        settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settings.setVisible(true);
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_doorActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -531,8 +545,8 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
     private javax.swing.JButton Back;
     private javax.swing.JButton HomeButton;
     private javax.swing.JButton InfoAboutsUs;
-    private javax.swing.JButton MedicalRec;
     private javax.swing.JButton Settings;
+    private javax.swing.JButton door;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton9;
