@@ -3,6 +3,7 @@ package synergyfinalsproject;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -42,7 +43,7 @@ public class Google_SignIn extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        Next = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
@@ -53,16 +54,12 @@ public class Google_SignIn extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Use your google account");
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
         jLabel2.setFont(new java.awt.Font("Karma", 1, 27)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Sign in to Synergy");
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
         jTextField1.setText("Email or Phone");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -74,7 +71,6 @@ public class Google_SignIn extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Not your computer? Use guest mode to sign in privately");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -86,10 +82,15 @@ public class Google_SignIn extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(51, 153, 255));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Next");
+        Next.setBackground(new java.awt.Color(51, 153, 255));
+        Next.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Next.setForeground(new java.awt.Color(255, 255, 255));
+        Next.setText("Next");
+        Next.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NextActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 153, 255));
@@ -126,7 +127,7 @@ public class Google_SignIn extends javax.swing.JFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                             .addComponent(jLabel6)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1))
+                            .addComponent(Next))
                         .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING)))
                 .addContainerGap(66, Short.MAX_VALUE))
         );
@@ -149,7 +150,7 @@ public class Google_SignIn extends javax.swing.JFrame {
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(Next)
                     .addComponent(jLabel6))
                 .addContainerGap(56, Short.MAX_VALUE))
         );
@@ -188,6 +189,16 @@ public class Google_SignIn extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jLabel6MouseClicked
 
+    private void NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextActionPerformed
+        JFrame next = new HomePatient();
+        next.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        next.setVisible(true);
+        
+        if (this.isVisible()) {
+                this.dispose();
+            }
+    }//GEN-LAST:event_NextActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -224,7 +235,7 @@ public class Google_SignIn extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton Next;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

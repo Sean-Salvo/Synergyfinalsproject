@@ -33,6 +33,7 @@ public class Notif extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        ex = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,6 +57,16 @@ public class Notif extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(10, 40, 234, 180);
 
+        ex.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/ax.png"))); // NOI18N
+        ex.setBorder(null);
+        ex.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ex);
+        ex.setBounds(220, 10, 30, 20);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -71,6 +82,17 @@ public class Notif extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void exActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exActionPerformed
+        JFrame ex = new HomeAdmin();
+        
+        ex.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        ex.setVisible(true);
+        if (this.isVisible()) {
+                this.dispose();
+            }
+        
+    }//GEN-LAST:event_exActionPerformed
 
     /**
      * @param args the command line arguments
@@ -108,6 +130,7 @@ public class Notif extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ex;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

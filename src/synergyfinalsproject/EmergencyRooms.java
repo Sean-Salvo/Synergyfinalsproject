@@ -730,7 +730,7 @@ public class EmergencyRooms extends javax.swing.JFrame {
     }//GEN-LAST:event_infoActionPerformed
 
     private void prevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevActionPerformed
-        JFrame home = new HomeAdmin();
+        JFrame home = new RoomAdminListview();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
           if (this.isVisible()) {

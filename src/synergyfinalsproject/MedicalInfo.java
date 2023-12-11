@@ -315,7 +315,7 @@ public class MedicalInfo extends javax.swing.JFrame {
     }//GEN-LAST:event_BackButtonActionPerformed
 
     private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed
-        JFrame home = new HomeAdmin();
+        JFrame home = new HomePatient();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
 
@@ -325,7 +325,7 @@ public class MedicalInfo extends javax.swing.JFrame {
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
-        JFrame settings = new RoomAdminListview();
+        JFrame settings = new MedicalInfo();
         settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settings.setVisible(true);
         if (this.isVisible()) {
@@ -334,7 +334,7 @@ public class MedicalInfo extends javax.swing.JFrame {
     }//GEN-LAST:event_MedicalRecActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
-        JFrame settingsFrame = new SettingsNgAdmin();
+        JFrame settingsFrame = new SettingsNgPatient();
         settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settingsFrame.setVisible(true);
 
@@ -344,7 +344,7 @@ public class MedicalInfo extends javax.swing.JFrame {
     }//GEN-LAST:event_SettingsActionPerformed
 
     private void InfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoButtonActionPerformed
-        JFrame info = new Synergy_InfoAboutUS();
+        JFrame info = new InfoAboutUsPatient();
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
         if (this.isVisible()) {

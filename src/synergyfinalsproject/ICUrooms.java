@@ -699,7 +699,7 @@ public class ICUrooms extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
-        JFrame home = new HomeAdmin();
+        JFrame home = new LogIn();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
         if (this.isVisible()) {
@@ -728,7 +728,7 @@ public class ICUrooms extends javax.swing.JFrame {
     }//GEN-LAST:event_infoActionPerformed
 
     private void prevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevActionPerformed
-        JFrame prev = new HomeAdmin();
+        JFrame prev = new RoomAdminListview();
         prev.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         prev.setVisible(true);
         

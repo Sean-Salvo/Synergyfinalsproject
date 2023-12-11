@@ -494,13 +494,13 @@ public class PatientInfoShow extends javax.swing.JFrame {
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
 
-        JFrame back = new HomeAdmin();
-        if (back != null) {
-            back.dispose();
+        JFrame back = new LogIn();
+        back.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        back.setVisible(true);
+        
+        if (this.isVisible()) {
+            this.dispose();
         }
-
-        // Close the current frame
-        this.dispose();
     }//GEN-LAST:event_BackButtonActionPerformed
 
     private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed
