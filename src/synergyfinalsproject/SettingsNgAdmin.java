@@ -439,18 +439,22 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         JFrame settingsFrame = new SettingsNgAdmin();
         settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settingsFrame.setVisible(true);
+        settingsFrame.dispose();
     }//GEN-LAST:event_SettingsActionPerformed
 
     private void InfoAboutsUsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoAboutsUsActionPerformed
         JFrame info = new Synergy_InfoAboutUS();
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
+        
+        info.dispose();
     }//GEN-LAST:event_InfoAboutsUsActionPerformed
 
     private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed
         JFrame home = new HomeAdmin();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
+        home.dispose();
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed

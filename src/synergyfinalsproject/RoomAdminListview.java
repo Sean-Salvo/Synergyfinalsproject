@@ -169,6 +169,8 @@ public class RoomAdminListview extends javax.swing.JFrame {
         JFrame home = new HomeAdmin();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
+        
+        
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed

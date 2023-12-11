@@ -39,7 +39,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         BackButton = new javax.swing.JButton();
         HomeButton = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        Door = new javax.swing.JButton();
         Settings = new javax.swing.JButton();
         InfoButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
@@ -124,10 +124,15 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel2.add(HomeButton);
         HomeButton.setBounds(10, 60, 30, 24);
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
-        jButton11.setBorder(null);
-        jPanel2.add(jButton11);
-        jButton11.setBounds(10, 120, 30, 23);
+        Door.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png"))); // NOI18N
+        Door.setBorder(null);
+        Door.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DoorActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Door);
+        Door.setBounds(10, 120, 30, 23);
 
         Settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar_1.png"))); // NOI18N
         Settings.setBorder(null);
@@ -434,6 +439,8 @@ public class HomeAdmin extends javax.swing.JFrame {
         JFrame home = new HomeAdmin();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
+        
+        home.dispose();
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
@@ -446,18 +453,26 @@ public class HomeAdmin extends javax.swing.JFrame {
         JFrame info = new Synergy_InfoAboutUS();
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
+        
     }//GEN-LAST:event_InfoButtonActionPerformed
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
        
         JFrame back = new HomeAdmin();
                 if (back != null) {
-        back.setVisible(true);
+        back.dispose();
     }
 
     // Close the current frame
     this.dispose();
     }//GEN-LAST:event_BackButtonActionPerformed
+
+    private void DoorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoorActionPerformed
+        JFrame settings = new RoomAdminListview();
+        settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settings.setVisible(true);
+          
+    }//GEN-LAST:event_DoorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -496,10 +511,10 @@ public class HomeAdmin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackButton;
+    private javax.swing.JButton Door;
     private javax.swing.JButton HomeButton;
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
-    private javax.swing.JButton jButton11;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
