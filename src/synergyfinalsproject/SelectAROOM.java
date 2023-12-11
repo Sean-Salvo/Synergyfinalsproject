@@ -4,7 +4,10 @@
  */
 package synergyfinalsproject;
 
+import java.awt.Dimension;
 import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -36,7 +39,7 @@ public class SelectAROOM extends javax.swing.JFrame {
         Settings = new javax.swing.JButton();
         InfoButton = new javax.swing.JButton();
         HomeButton1 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        MainPanel = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         HomeButton = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
@@ -45,6 +48,7 @@ public class SelectAROOM extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jScrollBar1 = new javax.swing.JScrollBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -112,16 +116,13 @@ public class SelectAROOM extends javax.swing.JFrame {
         jPanel1.add(jPanel2);
         jPanel2.setBounds(10, 20, 50, 380);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
-        jPanel3.setLayout(null);
+        MainPanel.setBackground(new java.awt.Color(255, 255, 255));
+        MainPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
 
         jLabel5.setBackground(new java.awt.Color(0, 102, 255));
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 204));
         jLabel5.setText("Select a Room");
-        jPanel3.add(jLabel5);
-        jLabel5.setBounds(50, 10, 140, 50);
 
         HomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png"))); // NOI18N
         HomeButton.setBorder(null);
@@ -130,18 +131,14 @@ public class SelectAROOM extends javax.swing.JFrame {
                 HomeButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(HomeButton);
-        HomeButton.setBounds(10, 20, 30, 32);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aEmergency.png"))); // NOI18N
         jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1);
-        jButton1.setBounds(490, 70, 160, 110);
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
         jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -150,8 +147,6 @@ public class SelectAROOM extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton2);
-        jButton2.setBounds(490, 200, 160, 110);
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aGen.png"))); // NOI18N
         jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -160,8 +155,6 @@ public class SelectAROOM extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton3);
-        jButton3.setBounds(260, 70, 170, 110);
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
         jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -170,8 +163,6 @@ public class SelectAROOM extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton4);
-        jButton4.setBounds(50, 70, 170, 110);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
         jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -180,8 +171,6 @@ public class SelectAROOM extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton5);
-        jButton5.setBounds(50, 200, 160, 110);
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
         jButton6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -190,11 +179,63 @@ public class SelectAROOM extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton6);
-        jButton6.setBounds(270, 200, 160, 110);
 
-        jPanel1.add(jPanel3);
-        jPanel3.setBounds(70, 20, 690, 380);
+        javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
+        MainPanel.setLayout(MainPanelLayout);
+        MainPanelLayout.setHorizontalGroup(
+            MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MainPanelLayout.createSequentialGroup()
+                .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MainPanelLayout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addComponent(HomeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MainPanelLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(50, 50, 50)
+                        .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(50, 50, 50)
+                        .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        MainPanelLayout.setVerticalGroup(
+            MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MainPanelLayout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MainPanelLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(HomeButton))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(MainPanelLayout.createSequentialGroup()
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MainPanelLayout.createSequentialGroup()
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(MainPanelLayout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jScrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(MainPanel);
+        MainPanel.setBounds(70, 20, 690, 380);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -260,6 +301,32 @@ public class SelectAROOM extends javax.swing.JFrame {
             this.dispose();
         }
     }//GEN-LAST:event_InfoButtonActionPerformed
+
+    
+    
+
+public class ScrollableFrameExample {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("Scrollable Frame Example");
+
+           
+            // Create a JScrollPane and add the JTextArea to it
+            JScrollPane scrollPane = new JScrollPane();
+
+            // Set the preferred size of the scroll pane (optional)
+            scrollPane.setPreferredSize(new Dimension(300, 200));
+
+            // Add the JScrollPane to the frame
+            frame.getContentPane().add(scrollPane);
+
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.pack();
+            frame.setLocationRelativeTo(null); // Center the frame
+            frame.setVisible(true);
+        });
+    }
+}
 
     private void HomeButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButton1ActionPerformed
         // TODO add your handling code here:
@@ -329,6 +396,7 @@ public class SelectAROOM extends javax.swing.JFrame {
     private javax.swing.JButton HomeButton;
     private javax.swing.JButton HomeButton1;
     private javax.swing.JButton InfoButton;
+    private javax.swing.JPanel MainPanel;
     private javax.swing.JButton MedicalRec;
     private javax.swing.JButton Settings;
     private javax.swing.JButton jButton1;
@@ -341,6 +409,6 @@ public class SelectAROOM extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollBar jScrollBar1;
     // End of variables declaration//GEN-END:variables
 }
