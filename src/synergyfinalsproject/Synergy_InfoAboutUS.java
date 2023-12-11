@@ -85,7 +85,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         jButton4.setBounds(10, 60, 30, 0);
 
         MedicalRef.setForeground(new java.awt.Color(255, 255, 255));
-        MedicalRef.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
+        MedicalRef.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png"))); // NOI18N
         MedicalRef.setBorder(null);
         MedicalRef.setBorderPainted(false);
         MedicalRef.addActionListener(new java.awt.event.ActionListener() {
@@ -251,7 +251,9 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
         
-        home.dispose();
+          if (this.isVisible()) {
+        this.dispose();
+    }
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
