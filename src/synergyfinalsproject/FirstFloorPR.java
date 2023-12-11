@@ -700,7 +700,13 @@ public class FirstFloorPR extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void prevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevActionPerformed
-        // TODO add your handling code here:
+        JFrame prev = new HomeAdmin();
+        prev.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        prev.setVisible(true);
+        
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_prevActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
