@@ -241,7 +241,9 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         JFrame settingsFrame = new SettingsNgAdmin();
         settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settingsFrame.setVisible(true);
-        settingsFrame.dispose();
+          if (this.isVisible()) {
+        this.dispose();
+    }
     }//GEN-LAST:event_SettingsActionPerformed
 
     private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed

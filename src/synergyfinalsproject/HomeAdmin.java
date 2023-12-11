@@ -440,19 +440,28 @@ public class HomeAdmin extends javax.swing.JFrame {
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
         
-        home.dispose();
+          if (this.isVisible()) {
+        this.dispose();
+    }
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
         JFrame settingsFrame = new SettingsNgAdmin();
         settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settingsFrame.setVisible(true);
+        
+          if (this.isVisible()) {
+        this.dispose();
+    }
     }//GEN-LAST:event_SettingsActionPerformed
 
     private void InfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoButtonActionPerformed
         JFrame info = new Synergy_InfoAboutUS();
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
+          if (this.isVisible()) {
+        this.dispose();
+    }
         
     }//GEN-LAST:event_InfoButtonActionPerformed
 
@@ -471,7 +480,9 @@ public class HomeAdmin extends javax.swing.JFrame {
         JFrame settings = new RoomAdminListview();
         settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settings.setVisible(true);
-          
+            if (this.isVisible()) {
+        this.dispose();
+    }
     }//GEN-LAST:event_DoorActionPerformed
 
     /**

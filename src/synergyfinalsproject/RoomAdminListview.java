@@ -32,7 +32,7 @@ public class RoomAdminListview extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         BackButton = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        Door = new javax.swing.JButton();
         Settings = new javax.swing.JButton();
         InfoButton = new javax.swing.JButton();
         HomeButton1 = new javax.swing.JButton();
@@ -65,10 +65,15 @@ public class RoomAdminListview extends javax.swing.JFrame {
         jPanel2.add(BackButton);
         BackButton.setBounds(10, 300, 30, 23);
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
-        jButton11.setBorder(null);
-        jPanel2.add(jButton11);
-        jButton11.setBounds(10, 120, 30, 23);
+        Door.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png"))); // NOI18N
+        Door.setBorder(null);
+        Door.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DoorActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Door);
+        Door.setBounds(10, 120, 30, 23);
 
         Settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar_1.png"))); // NOI18N
         Settings.setBorder(null);
@@ -169,25 +174,50 @@ public class RoomAdminListview extends javax.swing.JFrame {
         JFrame home = new HomeAdmin();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
-        
-        
+          if (this.isVisible()) {
+        this.dispose();
+    }
+
+
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
         JFrame settingsFrame = new SettingsNgAdmin();
         settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settingsFrame.setVisible(true);
+          if (this.isVisible()) {
+        this.dispose();
+    }
     }//GEN-LAST:event_SettingsActionPerformed
 
     private void InfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoButtonActionPerformed
         JFrame info = new Synergy_InfoAboutUS();
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
+          if (this.isVisible()) {
+        this.dispose();
+    }
     }//GEN-LAST:event_InfoButtonActionPerformed
 
     private void HomeButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButton1ActionPerformed
-        // TODO add your handling code here:
+        JFrame home = new HomeAdmin();
+        home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        home.setVisible(true);
+        
+          if (this.isVisible()) {
+        this.dispose();
+    }
+        
     }//GEN-LAST:event_HomeButton1ActionPerformed
+
+    private void DoorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoorActionPerformed
+        JFrame door = new RoomAdminListview();
+        door.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        door.setVisible(true);
+          if (this.isVisible()) {
+        this.dispose();
+    }
+    }//GEN-LAST:event_DoorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,11 +256,11 @@ public class RoomAdminListview extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackButton;
+    private javax.swing.JButton Door;
     private javax.swing.JButton HomeButton;
     private javax.swing.JButton HomeButton1;
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
-    private javax.swing.JButton jButton11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JList<String> jList1;
