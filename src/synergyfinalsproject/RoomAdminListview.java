@@ -113,7 +113,7 @@ public class RoomAdminListview extends javax.swing.JFrame {
         jPanel3.setLayout(null);
 
         jLabel5.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 204));
         jLabel5.setText("ROOMS");
         jPanel3.add(jLabel5);
@@ -127,10 +127,10 @@ public class RoomAdminListview extends javax.swing.JFrame {
             }
         });
         jPanel3.add(prevButton);
-        prevButton.setBounds(30, 30, 30, 32);
+        prevButton.setBounds(30, 20, 30, 30);
 
         jList1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jList1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jList1.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Patient Rooms", "I.C.U Rooms", "Emergency Rooms", "Medical Surgical Patient Rooms", "Genral Wrds", "Specific Wards" };
             public int getSize() { return strings.length; }

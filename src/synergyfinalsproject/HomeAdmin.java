@@ -66,7 +66,6 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
-        jCalendar1 = new com.toedter.calendar.JCalendar();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -177,7 +176,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jScrollPane17.setBounds(10, 20, 100, 230);
 
         jLabel11.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Karma Light", 1, 18)); // NOI18N
         jLabel11.setText("Floor Plan");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -205,7 +204,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel5.setBounds(10, 50, 140, 310);
 
         jLabel5.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 204));
         jLabel5.setText("Welcome, ");
         jPanel3.add(jLabel5);
@@ -291,11 +290,6 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel19.setBackground(new java.awt.Color(255, 255, 255));
         jPanel19.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel19.setLayout(null);
-
-        jCalendar1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
-        jPanel19.add(jCalendar1);
-        jCalendar1.setBounds(0, 0, 220, 130);
-
         jPanel3.add(jPanel19);
         jPanel19.setBounds(460, 180, 220, 180);
 
@@ -426,7 +420,6 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JButton HomeButton;
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
-    private com.toedter.calendar.JCalendar jCalendar1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;

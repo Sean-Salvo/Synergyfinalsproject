@@ -116,7 +116,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         jLabel2.setBounds(10, 10, 0, 30);
 
         jButton11.setForeground(new java.awt.Color(255, 255, 255));
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png")));
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Homeee.png"))); // NOI18N
         jButton11.setBorder(null);
         jButton11.setBorderPainted(false);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -169,18 +169,18 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         jButton5.setBounds(10, 20, 30, 0);
 
         jLabel5.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 204));
         jLabel5.setText("ABOUT US");
         jPanel3.add(jLabel5);
         jLabel5.setBounds(50, 60, 150, 28);
 
         jLabel6.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Karma Medium", 0, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 51, 204));
         jLabel6.setText("Info");
         jPanel3.add(jLabel6);
-        jLabel6.setBounds(50, 20, 150, 28);
+        jLabel6.setBounds(60, 20, 150, 28);
 
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png")));
@@ -197,7 +197,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         jLabel4.setBounds(50, 100, 450, 0);
 
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 13)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         jTextArea1.setRows(5);
         jTextArea1.setText("Synergy is a cutting-edge visual HMS (Hospital Management System) application designed to\nrevolutionize the way patient information is provided. With its user-friendly interface and\nadvanced features, Synergy aims to streamline healthcare processes and enhance patient care.\n\nFeatures\n1. Patient Information Management: Synergy allows healthcare providers to efficiently manage \npatient records, including personal details, medical history, allergies, and medication information.\nThis comprehensive system ensures accurate and up-to-date patient data.\n\n2. Visual Interface: Synergy's visually appealing interface makes it easy for healthcare professionals \nto navigate through the application and access patient information quickly. The intuitive design \nenhances user experience and reduces the learning curve for new users.\n\n3. Streamlined Workflow: By automating various administrative tasks, Synergy optimizes workflow \nefficiency within healthcare facilities. It enables seamless coordination between different \ndepartments, ensuring smooth communication and timely access to patient data.\n\n4. Secure Data Storage: Synergy prioritizes data security and confidentiality. Patient information is \nsecurely stored in compliance with industry standards, protecting sensitive data from unauthorized\naccess or breaches.\n\n5. Integration Capabilities: Synergy seamlessly integrates with existing hospital systems, such as \nelectronic health records (EHR) and laboratory information management systems (LIMS). This \nintegration eliminates data silos and enables comprehensive patient care.\n\n6. Analytics and Reporting: Synergy provides powerful analytics and reporting tools, allowing \nhealthcare administrators to gain valuable insights into patient demographics, treatment \noutcomes, and resource utilization. This data-driven approach enables informed decision-making \nand continuous improvement.\n\nWith its focus on visual representation, Synergy offers a modern and intuitive solution for \nhealthcare providers to efficiently manage patient information. By leveraging technology, Synergy\naims to enhance patient care, improve workflow efficiency, and ultimately contribute to the overall \nadvancement of the healthcare industry.\n");
         jScrollPane1.setViewportView(jTextArea1);

@@ -30,6 +30,7 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
     private void initComponents() {
 
         jSplitPane1 = new javax.swing.JSplitPane();
+        jLabel19 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
@@ -68,7 +69,6 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
         jTextField11 = new javax.swing.JTextField();
         jTextField12 = new javax.swing.JTextField();
@@ -82,9 +82,10 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         Back = new javax.swing.JButton();
         HomeButton = new javax.swing.JButton();
         door = new javax.swing.JButton();
-        jLabel19 = new javax.swing.JLabel();
         Settings = new javax.swing.JButton();
         InfoAboutsUs = new javax.swing.JButton();
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -108,43 +109,43 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jPanel4.add(jSeparator5);
         jSeparator5.setBounds(0, 90, 500, 3);
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 102, 102));
         jLabel4.setText("USERNAME");
         jPanel4.add(jLabel4);
         jLabel4.setBounds(10, 100, 90, 15);
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 102, 102));
         jLabel6.setText("EMAIL");
         jPanel4.add(jLabel6);
         jLabel6.setBounds(250, 100, 70, 15);
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 102, 102));
         jLabel7.setText("DATE OF BIRTH");
         jPanel4.add(jLabel7);
         jLabel7.setBounds(250, 160, 120, 15);
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 102, 102));
         jLabel8.setText("DEPARTMENT");
         jPanel4.add(jLabel8);
         jLabel8.setBounds(250, 230, 100, 20);
 
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 102, 102));
         jLabel9.setText("ROLE");
         jPanel4.add(jLabel9);
-        jLabel9.setBounds(10, 230, 70, 15);
+        jLabel9.setBounds(10, 240, 70, 15);
 
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 102, 102));
         jLabel10.setText("ADRESS");
         jPanel4.add(jLabel10);
         jLabel10.setBounds(10, 160, 70, 15);
 
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(102, 102, 102));
         jLabel12.setText("NAME");
         jPanel4.add(jLabel12);
@@ -188,7 +189,7 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jPanel4.add(jButton2);
         jButton2.setBounds(130, 30, 40, 20);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 204));
         jLabel1.setText("Settings");
 
@@ -206,38 +207,38 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jPanel5.add(jSeparator14);
         jSeparator14.setBounds(0, 180, 150, 10);
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 0, 0));
         jLabel11.setText("Emergency Contacts");
         jPanel5.add(jLabel11);
         jLabel11.setBounds(10, 230, 130, 10);
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         jLabel13.setText("Health Details");
         jPanel5.add(jLabel13);
-        jLabel13.setBounds(10, 10, 110, 15);
+        jLabel13.setBounds(10, 15, 140, 30);
 
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel14.setText("Gender - ");
         jPanel5.add(jLabel14);
         jLabel14.setBounds(10, 70, 60, 15);
 
-        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel15.setText("Blood Type - ");
         jPanel5.add(jLabel15);
         jLabel15.setBounds(10, 110, 80, 10);
 
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel16.setText("Height - ");
         jPanel5.add(jLabel16);
         jLabel16.setBounds(10, 140, 110, 10);
 
-        jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel17.setText("Weight - ");
         jPanel5.add(jLabel17);
         jLabel17.setBounds(10, 170, 110, 10);
 
-        jLabel20.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Karma Light", 0, 14)); // NOI18N
         jLabel20.setText("Language - ");
         jPanel5.add(jLabel20);
         jLabel20.setBounds(10, 200, 110, 10);
@@ -250,10 +251,6 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         });
         jPanel5.add(jTextField2);
         jTextField2.setBounds(10, 250, 120, 20);
-
-        jTextField9.setText("jTextField1");
-        jPanel5.add(jTextField9);
-        jTextField9.setBounds(70, 70, 80, 20);
 
         jTextField10.setText("jTextField1");
         jPanel5.add(jTextField10);
@@ -290,7 +287,7 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jPanel5.add(jTextField14);
         jTextField14.setBounds(80, 200, 70, 20);
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 204, 0));
         jLabel3.setText("Profile");
 
@@ -307,8 +304,8 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel1))
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel3))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -316,9 +313,9 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
@@ -376,10 +373,6 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         });
         jPanel7.add(door);
         door.setBounds(10, 120, 30, 30);
-
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png"))); // NOI18N
-        jPanel7.add(jLabel19);
-        jLabel19.setBounds(10, 10, 33, 32);
 
         Settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar.png"))); // NOI18N
         Settings.setBorder(null);
@@ -597,6 +590,5 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }
