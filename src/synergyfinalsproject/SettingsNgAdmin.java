@@ -84,6 +84,7 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         door = new javax.swing.JButton();
         Settings = new javax.swing.JButton();
         InfoAboutsUs = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
 
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png"))); // NOI18N
 
@@ -394,6 +395,10 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
         jPanel7.add(InfoAboutsUs);
         InfoAboutsUs.setBounds(10, 240, 30, 30);
 
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Logo.png"))); // NOI18N
+        jPanel7.add(jLabel21);
+        jLabel21.setBounds(10, 10, 30, 32);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -556,6 +561,7 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
