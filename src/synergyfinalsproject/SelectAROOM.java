@@ -4,10 +4,8 @@
  */
 package synergyfinalsproject;
 
-import java.awt.Dimension;
 import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.SwingUtilities;
+
 
 /**
  *
@@ -140,7 +138,7 @@ public class SelectAROOM extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPosperat.png"))); // NOI18N
         jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,7 +162,7 @@ public class SelectAROOM extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aNurse.png"))); // NOI18N
         jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,7 +170,7 @@ public class SelectAROOM extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aMaternity.png"))); // NOI18N
         jButton6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -305,28 +303,6 @@ public class SelectAROOM extends javax.swing.JFrame {
     
     
 
-public class ScrollableFrameExample {
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("Scrollable Frame Example");
-
-           
-            // Create a JScrollPane and add the JTextArea to it
-            JScrollPane scrollPane = new JScrollPane();
-
-            // Set the preferred size of the scroll pane (optional)
-            scrollPane.setPreferredSize(new Dimension(300, 200));
-
-            // Add the JScrollPane to the frame
-            frame.getContentPane().add(scrollPane);
-
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.pack();
-            frame.setLocationRelativeTo(null); // Center the frame
-            frame.setVisible(true);
-        });
-    }
-}
 
     private void HomeButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButton1ActionPerformed
         // TODO add your handling code here:
