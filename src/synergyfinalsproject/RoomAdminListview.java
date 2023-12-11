@@ -130,10 +130,16 @@ public class RoomAdminListview extends javax.swing.JFrame {
         HomeButton.setBounds(30, 30, 30, 32);
 
         jList1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jList1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Patient Rooms", "I.C.U Rooms", "Emergency Rooms", "Medical Surgical Patient Rooms", "Genral Wrds", "Specific Wards" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        jList1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jList1MouseClicked(evt);
+            }
         });
         jScrollPane1.setViewportView(jList1);
 
@@ -218,6 +224,43 @@ public class RoomAdminListview extends javax.swing.JFrame {
         this.dispose();
     }
     }//GEN-LAST:event_DoorActionPerformed
+
+    private void jList1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList1MouseClicked
+       
+        if(jList1.getSelectedIndex() == 0) {
+           JFrame pr = new FirstFloorPR();
+           
+           pr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+           pr.setVisible(true);
+           
+              if (this.isVisible()) {
+        this.dispose();
+    }
+           
+       }
+        else if(jList1.getSelectedIndex() == 1) {
+            JFrame icu = new ICUrooms();
+            
+            icu.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            icu.setVisible(true);
+            
+               if (this.isVisible()) {
+        this.dispose();
+    }
+           
+        }
+        else if(jList1.getSelectedIndex() == 2) {
+            JFrame er = new EmergencyRooms();
+            
+            er.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            er.setVisible(true);
+            
+               if (this.isVisible()) {
+        this.dispose();
+    }
+           
+        }
+    }//GEN-LAST:event_jList1MouseClicked
 
     /**
      * @param args the command line arguments
