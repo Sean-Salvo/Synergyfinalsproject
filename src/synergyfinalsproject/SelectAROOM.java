@@ -233,7 +233,7 @@ public class SelectAROOM extends javax.swing.JFrame {
         );
 
         jPanel1.add(MainPanel);
-        MainPanel.setBounds(70, 20, 690, 380);
+        MainPanel.setBounds(70, 20, 690, 510);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

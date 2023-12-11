@@ -65,15 +65,22 @@ public class HomeAdmin extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea4 = new javax.swing.JTextArea();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea5 = new javax.swing.JTextArea();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTextArea7 = new javax.swing.JTextArea();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTextArea8 = new javax.swing.JTextArea();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTextArea9 = new javax.swing.JTextArea();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        jTextArea10 = new javax.swing.JTextArea();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
         jPanel8 = new javax.swing.JPanel();
@@ -185,6 +192,11 @@ public class HomeAdmin extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        jList3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jList3MouseClicked(evt);
+            }
+        });
         jScrollPane17.setViewportView(jList3);
 
         jPanel6.add(jScrollPane17);
@@ -237,7 +249,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel14.setText("Health Conditions - ");
         jPanel10.add(jLabel14);
-        jLabel14.setBounds(20, 250, 120, 10);
+        jLabel14.setBounds(20, 250, 120, 20);
         jPanel10.add(jSeparator2);
         jSeparator2.setBounds(0, 50, 270, 0);
         jPanel10.add(jSeparator3);
@@ -295,43 +307,95 @@ public class HomeAdmin extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel22.setText("Notes - ");
         jPanel10.add(jLabel22);
-        jLabel22.setBounds(20, 220, 110, 20);
+        jLabel22.setBounds(20, 220, 110, 17);
 
-        jTextField1.setText("jTextField1");
-        jPanel10.add(jTextField1);
-        jTextField1.setBounds(130, 190, 120, 20);
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextField2.setText("jTextField1");
-        jPanel10.add(jTextField2);
-        jTextField2.setBounds(130, 40, 120, 20);
+        jTextArea2.setColumns(20);
+        jTextArea2.setTabSize(0);
+        jTextArea2.setEnabled(false);
+        jScrollPane2.setViewportView(jTextArea2);
 
-        jTextField3.setText("jTextField1");
-        jPanel10.add(jTextField3);
-        jTextField3.setBounds(130, 70, 120, 20);
+        jPanel10.add(jScrollPane2);
+        jScrollPane2.setBounds(130, 70, 130, 20);
 
-        jTextField4.setText("jTextField1");
-        jPanel10.add(jTextField4);
-        jTextField4.setBounds(130, 100, 120, 20);
+        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextField5.setText("jTextField1");
-        jPanel10.add(jTextField5);
-        jTextField5.setBounds(130, 130, 120, 20);
+        jTextArea3.setColumns(20);
+        jTextArea3.setTabSize(0);
+        jTextArea3.setEnabled(false);
+        jScrollPane3.setViewportView(jTextArea3);
 
-        jTextField6.setText("jTextField1");
-        jPanel10.add(jTextField6);
-        jTextField6.setBounds(130, 160, 120, 20);
+        jPanel10.add(jScrollPane3);
+        jScrollPane3.setBounds(130, 250, 130, 20);
 
-        jTextField7.setText("jTextField1");
-        jPanel10.add(jTextField7);
-        jTextField7.setBounds(130, 190, 120, 20);
+        jScrollPane4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        jTextField8.setText("jTextField1");
-        jPanel10.add(jTextField8);
-        jTextField8.setBounds(130, 220, 120, 20);
+        jTextArea4.setColumns(20);
+        jTextArea4.setTabSize(0);
+        jTextArea4.setEnabled(false);
+        jScrollPane4.setViewportView(jTextArea4);
 
-        jTextField9.setText("jTextField1");
-        jPanel10.add(jTextField9);
-        jTextField9.setBounds(130, 250, 120, 20);
+        jPanel10.add(jScrollPane4);
+        jScrollPane4.setBounds(130, 40, 130, 20);
+
+        jScrollPane5.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane5.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea5.setColumns(20);
+        jTextArea5.setTabSize(0);
+        jTextArea5.setEnabled(false);
+        jScrollPane5.setViewportView(jTextArea5);
+
+        jPanel10.add(jScrollPane5);
+        jScrollPane5.setBounds(130, 100, 130, 20);
+
+        jScrollPane7.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane7.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea7.setColumns(20);
+        jTextArea7.setTabSize(0);
+        jTextArea7.setEnabled(false);
+        jScrollPane7.setViewportView(jTextArea7);
+
+        jPanel10.add(jScrollPane7);
+        jScrollPane7.setBounds(130, 130, 130, 20);
+
+        jScrollPane8.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane8.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea8.setColumns(20);
+        jTextArea8.setTabSize(0);
+        jTextArea8.setEnabled(false);
+        jScrollPane8.setViewportView(jTextArea8);
+
+        jPanel10.add(jScrollPane8);
+        jScrollPane8.setBounds(130, 160, 130, 20);
+
+        jScrollPane9.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane9.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea9.setColumns(20);
+        jTextArea9.setTabSize(0);
+        jTextArea9.setEnabled(false);
+        jScrollPane9.setViewportView(jTextArea9);
+
+        jPanel10.add(jScrollPane9);
+        jScrollPane9.setBounds(130, 190, 130, 20);
+
+        jScrollPane10.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane10.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea10.setColumns(20);
+        jTextArea10.setTabSize(0);
+        jTextArea10.setEnabled(false);
+        jScrollPane10.setViewportView(jTextArea10);
+
+        jPanel10.add(jScrollPane10);
+        jScrollPane10.setBounds(130, 220, 130, 20);
 
         jPanel4.add(jPanel10);
         jPanel10.setBounds(10, 10, 270, 290);
@@ -485,6 +549,20 @@ public class HomeAdmin extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_DoorActionPerformed
 
+    private void jList3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList3MouseClicked
+           
+        if(jList3.getSelectedIndex() == 0) {
+            
+        }
+        else if (jList3.getSelectedIndex() == 1) {
+            
+        }
+        else if (jList3.getSelectedIndex() == 3) {
+            
+        }
+          
+    }//GEN-LAST:event_jList3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -560,20 +638,27 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
     private javax.swing.JScrollPane jScrollPane17;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea10;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JTextArea jTextArea4;
+    private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextArea jTextArea7;
+    private javax.swing.JTextArea jTextArea8;
+    private javax.swing.JTextArea jTextArea9;
     // End of variables declaration//GEN-END:variables
 }
