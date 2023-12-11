@@ -62,6 +62,7 @@ public class LogIn extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Karma", 0, 36)); // NOI18N
         jLabel4.setText("Log in");
 
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Google Logo.jpg"))); // NOI18N
         jButton1.setText(" Sign in with Google ");
@@ -135,7 +136,7 @@ public class LogIn extends javax.swing.JFrame {
                         .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(tf_Email, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -163,7 +164,7 @@ public class LogIn extends javax.swing.JFrame {
                         .addComponent(jButton2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel6)))
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -209,8 +210,8 @@ public class LogIn extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        // Enter code here to use google account to log in.
-        System.out.println("Enter code here to use google account to log in.");
+        Google_SignIn gSignIn = new Google_SignIn();
+        gSignIn.setVisible(true);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
