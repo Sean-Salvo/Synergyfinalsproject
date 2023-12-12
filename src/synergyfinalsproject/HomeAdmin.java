@@ -5,8 +5,11 @@
  */
 package synergyfinalsproject;
 
-
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -19,8 +22,7 @@ public class HomeAdmin extends javax.swing.JFrame {
      */
     public HomeAdmin() {
         initComponents();
-        
-        
+
     }
 
     /**
@@ -39,41 +41,20 @@ public class HomeAdmin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         BackButton = new javax.swing.JButton();
         HomeButton = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        Door = new javax.swing.JButton();
         Settings = new javax.swing.JButton();
         InfoButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jScrollPane17 = new javax.swing.JScrollPane();
         jList3 = new javax.swing.JList<>();
+        jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jPanel10 = new javax.swing.JPanel();
-        jLabel14 = new javax.swing.JLabel();
-        jSeparator2 = new javax.swing.JSeparator();
-        jSeparator3 = new javax.swing.JSeparator();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
         jPanel8 = new javax.swing.JPanel();
@@ -86,6 +67,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
+        bell = new javax.swing.JButton();
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
@@ -124,10 +106,15 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel2.add(HomeButton);
         HomeButton.setBounds(10, 60, 30, 24);
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
-        jButton11.setBorder(null);
-        jPanel2.add(jButton11);
-        jButton11.setBounds(10, 120, 30, 23);
+        Door.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png"))); // NOI18N
+        Door.setBorder(null);
+        Door.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DoorActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Door);
+        Door.setBounds(10, 120, 30, 23);
 
         Settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar_1.png"))); // NOI18N
         Settings.setBorder(null);
@@ -169,24 +156,30 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel6.add(jLabel6);
         jLabel6.setBounds(230, 160, 50, 20);
 
-        jLabel9.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jLabel9.setText("Floor 1");
-        jPanel6.add(jLabel9);
-        jLabel9.setBounds(30, 0, 40, 20);
-
+        jList3.setFont(new java.awt.Font("Karma Light", 0, 12)); // NOI18N
         jList3.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Room 1", "Room 2", "Room 3", "Room 4", "Room 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        jList3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jList3MouseClicked(evt);
+            }
         });
         jScrollPane17.setViewportView(jList3);
 
         jPanel6.add(jScrollPane17);
         jScrollPane17.setBounds(10, 20, 100, 230);
 
+        jLabel10.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel10.setText("Floor 1");
+        jPanel6.add(jLabel10);
+        jLabel10.setBounds(30, 0, 40, 20);
+
         jLabel11.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Karma Light", 1, 18)); // NOI18N
         jLabel11.setText("Floor Plan");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -214,7 +207,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel5.setBounds(10, 50, 140, 310);
 
         jLabel5.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 204));
         jLabel5.setText("Welcome, ");
         jPanel3.add(jLabel5);
@@ -224,112 +217,12 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel4.setLayout(null);
 
-        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 51, 204), 3, true));
-        jPanel10.setLayout(null);
-
-        jLabel14.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel14.setText("Health Conditions - ");
-        jPanel10.add(jLabel14);
-        jLabel14.setBounds(20, 250, 120, 10);
-        jPanel10.add(jSeparator2);
-        jSeparator2.setBounds(0, 50, 270, 0);
-        jPanel10.add(jSeparator3);
-        jSeparator3.setBounds(0, 50, 270, 0);
-
-        jLabel4.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel4.setText("Name:");
-        jPanel10.add(jLabel4);
-        jLabel4.setBounds(460, 180, 50, 10);
-
-        jLabel15.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel15.setText("Patient Information");
-        jPanel10.add(jLabel15);
-        jLabel15.setBounds(40, 10, 190, 28);
-
-        jLabel16.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel16.setText("Room Number - ");
-        jPanel10.add(jLabel16);
-        jLabel16.setBounds(20, 40, 100, 20);
-
-        jLabel17.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel17.setText("Patient Name -");
-        jPanel10.add(jLabel17);
-        jLabel17.setBounds(20, 70, 100, 20);
-
-        jLabel18.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel18.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel18.setText("Patient ID - ");
-        jPanel10.add(jLabel18);
-        jLabel18.setBounds(20, 100, 100, 20);
-
-        jLabel19.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel19.setText("Admitted Date - ");
-        jPanel10.add(jLabel19);
-        jLabel19.setBounds(20, 130, 100, 20);
-
-        jLabel20.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel20.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel20.setText("Discharge Date -");
-        jPanel10.add(jLabel20);
-        jLabel20.setBounds(20, 160, 100, 20);
-
-        jLabel21.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel21.setText("Assigned Doctor - ");
-        jPanel10.add(jLabel21);
-        jLabel21.setBounds(20, 190, 130, 10);
-
-        jLabel22.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel22.setText("Notes - ");
-        jPanel10.add(jLabel22);
-        jLabel22.setBounds(20, 220, 110, 20);
-
-        jTextField1.setText("jTextField1");
-        jPanel10.add(jTextField1);
-        jTextField1.setBounds(130, 190, 120, 20);
-
-        jTextField2.setText("jTextField1");
-        jPanel10.add(jTextField2);
-        jTextField2.setBounds(130, 40, 120, 20);
-
-        jTextField3.setText("jTextField1");
-        jPanel10.add(jTextField3);
-        jTextField3.setBounds(130, 70, 120, 20);
-
-        jTextField4.setText("jTextField1");
-        jPanel10.add(jTextField4);
-        jTextField4.setBounds(130, 100, 120, 20);
-
-        jTextField5.setText("jTextField1");
-        jPanel10.add(jTextField5);
-        jTextField5.setBounds(130, 130, 120, 20);
-
-        jTextField6.setText("jTextField1");
-        jPanel10.add(jTextField6);
-        jTextField6.setBounds(130, 160, 120, 20);
-
-        jTextField7.setText("jTextField1");
-        jPanel10.add(jTextField7);
-        jTextField7.setBounds(130, 190, 120, 20);
-
-        jTextField8.setText("jTextField1");
-        jPanel10.add(jTextField8);
-        jTextField8.setBounds(130, 220, 120, 20);
-
-        jTextField9.setText("jTextField1");
-        jPanel10.add(jTextField9);
-        jTextField9.setBounds(130, 250, 120, 20);
-
-        jPanel4.add(jPanel10);
-        jPanel10.setBounds(10, 10, 270, 290);
+        jLabel9.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel9.setText("Please Select a Room.");
+        jPanel4.add(jLabel9);
+        jLabel9.setBounds(80, 140, 150, 20);
 
         jPanel3.add(jPanel4);
         jPanel4.setBounds(160, 50, 290, 310);
@@ -345,7 +238,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jScrollPane6.setViewportView(jTextArea6);
 
         jPanel3.add(jScrollPane6);
-        jScrollPane6.setBounds(120, 10, 334, 30);
+        jScrollPane6.setBounds(120, 10, 290, 30);
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -411,6 +304,16 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel3.add(jPanel19);
         jPanel19.setBounds(460, 180, 220, 180);
 
+        bell.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aabel.png"))); // NOI18N
+        bell.setBorder(null);
+        bell.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bellActionPerformed(evt);
+            }
+        });
+        jPanel3.add(bell);
+        bell.setBounds(420, 10, 40, 30);
+
         jPanel1.add(jPanel3);
         jPanel3.setBounds(70, 20, 690, 380);
 
@@ -434,30 +337,74 @@ public class HomeAdmin extends javax.swing.JFrame {
         JFrame home = new HomeAdmin();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
         JFrame settingsFrame = new SettingsNgAdmin();
         settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settingsFrame.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_SettingsActionPerformed
 
     private void InfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoButtonActionPerformed
         JFrame info = new Synergy_InfoAboutUS();
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
+        if (this.isVisible()) {
+            this.dispose();
+        }
+
     }//GEN-LAST:event_InfoButtonActionPerformed
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
-       
-        JFrame back = new HomeAdmin();
-                if (back != null) {
-        back.setVisible(true);
-    }
 
-    // Close the current frame
-    this.dispose();
+        JFrame login = new LogIn();
+
+        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        login.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
+
+
     }//GEN-LAST:event_BackButtonActionPerformed
+
+    private void DoorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoorActionPerformed
+        JFrame settings = new RoomAdminListview();
+        settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settings.setVisible(true);
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_DoorActionPerformed
+
+    private void jList3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList3MouseClicked
+
+        if (jList3.getSelectedIndex() == 0) {
+            JFrame RoomInfo = new PatientInfoShow();
+
+            RoomInfo.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            RoomInfo.setVisible(true);
+            if (this.isVisible()) {
+                this.dispose();
+            }
+
+        }
+    }//GEN-LAST:event_jList3MouseClicked
+
+    private void bellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bellActionPerformed
+        JFrame notif = new Notif();
+        notif.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        notif.setVisible(true);
+    }//GEN-LAST:event_bellActionPerformed
 
     /**
      * @param args the command line arguments
@@ -496,28 +443,19 @@ public class HomeAdmin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackButton;
+    private javax.swing.JButton Door;
     private javax.swing.JButton HomeButton;
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
-    private javax.swing.JButton jButton11;
+    private javax.swing.JButton bell;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
@@ -536,18 +474,7 @@ public class HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane17;
     private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }

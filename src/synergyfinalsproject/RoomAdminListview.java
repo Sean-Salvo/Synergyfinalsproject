@@ -32,13 +32,13 @@ public class RoomAdminListview extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         BackButton = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        Door = new javax.swing.JButton();
         Settings = new javax.swing.JButton();
         InfoButton = new javax.swing.JButton();
         HomeButton1 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        HomeButton = new javax.swing.JButton();
+        prevButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
 
@@ -65,10 +65,15 @@ public class RoomAdminListview extends javax.swing.JFrame {
         jPanel2.add(BackButton);
         BackButton.setBounds(10, 300, 30, 23);
 
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Screenshot 2023-12-10 161729.png"))); // NOI18N
-        jButton11.setBorder(null);
-        jPanel2.add(jButton11);
-        jButton11.setBounds(10, 120, 30, 23);
+        Door.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Doooorr.png"))); // NOI18N
+        Door.setBorder(null);
+        Door.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DoorActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Door);
+        Door.setBounds(10, 120, 30, 23);
 
         Settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Geaar_1.png"))); // NOI18N
         Settings.setBorder(null);
@@ -108,27 +113,33 @@ public class RoomAdminListview extends javax.swing.JFrame {
         jPanel3.setLayout(null);
 
         jLabel5.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 204));
         jLabel5.setText("ROOMS");
         jPanel3.add(jLabel5);
         jLabel5.setBounds(70, 30, 140, 28);
 
-        HomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png"))); // NOI18N
-        HomeButton.setBorder(null);
-        HomeButton.addActionListener(new java.awt.event.ActionListener() {
+        prevButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png"))); // NOI18N
+        prevButton.setBorder(null);
+        prevButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                HomeButtonActionPerformed(evt);
+                prevButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(HomeButton);
-        HomeButton.setBounds(30, 30, 30, 32);
+        jPanel3.add(prevButton);
+        prevButton.setBounds(30, 20, 30, 30);
 
         jList1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jList1.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Patient Rooms", "I.C.U Rooms", "Emergency Rooms", "Medical Surgical Patient Rooms", "Genral Wrds", "Specific Wards" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        jList1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jList1MouseClicked(evt);
+            }
         });
         jScrollPane1.setViewportView(jList1);
 
@@ -156,36 +167,101 @@ public class RoomAdminListview extends javax.swing.JFrame {
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
 
-        JFrame back = new HomeAdmin();
-        if (back != null) {
-            back.setVisible(true);
-        }
+        JFrame login = new LogIn();
 
-        // Close the current frame
-        this.dispose();
+        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        login.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_BackButtonActionPerformed
 
-    private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed
+    private void prevButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevButtonActionPerformed
         JFrame home = new HomeAdmin();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
-    }//GEN-LAST:event_HomeButtonActionPerformed
+          if (this.isVisible()) {
+        this.dispose();
+    }
+
+
+    }//GEN-LAST:event_prevButtonActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
         JFrame settingsFrame = new SettingsNgAdmin();
         settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settingsFrame.setVisible(true);
+          if (this.isVisible()) {
+        this.dispose();
+    }
     }//GEN-LAST:event_SettingsActionPerformed
 
     private void InfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoButtonActionPerformed
         JFrame info = new Synergy_InfoAboutUS();
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
+          if (this.isVisible()) {
+        this.dispose();
+    }
     }//GEN-LAST:event_InfoButtonActionPerformed
 
     private void HomeButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButton1ActionPerformed
-        // TODO add your handling code here:
+        JFrame home = new HomeAdmin();
+        home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        home.setVisible(true);
+        
+          if (this.isVisible()) {
+        this.dispose();
+    }
+        
     }//GEN-LAST:event_HomeButton1ActionPerformed
+
+    private void DoorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoorActionPerformed
+        JFrame door = new RoomAdminListview();
+        door.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        door.setVisible(true);
+          if (this.isVisible()) {
+        this.dispose();
+    }
+    }//GEN-LAST:event_DoorActionPerformed
+
+    private void jList1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList1MouseClicked
+       
+        if(jList1.getSelectedIndex() == 0) {
+           JFrame pr = new FirstFloorPR();
+           
+           pr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+           pr.setVisible(true);
+           
+              if (this.isVisible()) {
+        this.dispose();
+    }
+           
+       }
+        else if(jList1.getSelectedIndex() == 1) {
+            JFrame icu = new ICUrooms();
+            
+            icu.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            icu.setVisible(true);
+            
+               if (this.isVisible()) {
+        this.dispose();
+    }
+           
+        }
+        else if(jList1.getSelectedIndex() == 2) {
+            JFrame er = new EmergencyRooms();
+            
+            er.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            er.setVisible(true);
+            
+               if (this.isVisible()) {
+        this.dispose();
+    }
+           
+        }
+    }//GEN-LAST:event_jList1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -224,11 +300,10 @@ public class RoomAdminListview extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackButton;
-    private javax.swing.JButton HomeButton;
+    private javax.swing.JButton Door;
     private javax.swing.JButton HomeButton1;
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton Settings;
-    private javax.swing.JButton jButton11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JList<String> jList1;
@@ -236,5 +311,6 @@ public class RoomAdminListview extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton prevButton;
     // End of variables declaration//GEN-END:variables
 }
