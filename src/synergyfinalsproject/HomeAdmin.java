@@ -214,7 +214,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jLabel5.setBounds(10, 10, 140, 28);
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
+        jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0)));
         jPanel4.setLayout(null);
 
         jLabel9.setBackground(new java.awt.Color(0, 102, 255));
