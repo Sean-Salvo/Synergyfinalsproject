@@ -53,22 +53,15 @@ public class LogIn extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(772, 417));
-        jPanel1.setLayout(null);
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Synergy (Resized Logo).jpg"))); // NOI18N
-        jPanel1.add(logo);
-        logo.setBounds(36, 94, 199, 148);
 
         title.setFont(new java.awt.Font("Jomhuria", 0, 70)); // NOI18N
         title.setForeground(new java.awt.Color(21, 41, 157));
         title.setText("Synergy");
-        jPanel1.add(title);
-        title.setBounds(83, 248, 142, 71);
 
         jLabel4.setFont(new java.awt.Font("Karma", 0, 36)); // NOI18N
         jLabel4.setText("Log in");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(387, 33, 101, 32);
 
         jButton1.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Google Logo.jpg"))); // NOI18N
@@ -79,13 +72,9 @@ public class LogIn extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(387, 83, 339, 40);
 
         jLabel3.setFont(new java.awt.Font("Karma", 0, 16)); // NOI18N
         jLabel3.setText("or use email to log in");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(387, 129, 155, 19);
 
         tf_Email.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
         tf_Email.setForeground(new java.awt.Color(204, 204, 204));
@@ -95,14 +84,10 @@ public class LogIn extends javax.swing.JFrame {
                 tf_EmailActionPerformed(evt);
             }
         });
-        jPanel1.add(tf_Email);
-        tf_Email.setBounds(387, 166, 339, 41);
 
         tf_Password.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
         tf_Password.setForeground(new java.awt.Color(204, 204, 204));
         tf_Password.setText("Password");
-        jPanel1.add(tf_Password);
-        tf_Password.setBounds(387, 225, 339, 41);
 
         jLabel5.setFont(new java.awt.Font("Karma", 0, 16)); // NOI18N
         jLabel5.setText("forgot password?");
@@ -111,8 +96,6 @@ public class LogIn extends javax.swing.JFrame {
                 jLabel5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(387, 278, 126, 19);
 
         login.setBackground(new java.awt.Color(211, 211, 17));
         login.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
@@ -122,8 +105,6 @@ public class LogIn extends javax.swing.JFrame {
                 loginActionPerformed(evt);
             }
         });
-        jPanel1.add(login);
-        login.setBounds(387, 303, 339, 47);
 
         jLabel6.setFont(new java.awt.Font("Karma", 0, 14)); // NOI18N
         jLabel6.setText("Don't have an account? Click here to create account");
@@ -132,8 +113,59 @@ public class LogIn extends javax.swing.JFrame {
                 jLabel6MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(387, 362, 339, 23);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(title))
+                    .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(152, 152, 152)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(login, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(tf_Password, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(tf_Email, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(94, 94, 94)
+                        .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(title))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(tf_Email, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(tf_Password, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(login)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel6)))
+                .addContainerGap(27, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -153,14 +185,6 @@ public class LogIn extends javax.swing.JFrame {
 
         // Enter code here if user doesn't have a account yet ( connect: HMS_Registration)
         System.out.println("Enter code here if user doesn't have a account yet ( connect: HMS_Registration)");
-        
-        JFrame regis = new Registration();
-        regis.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        regis.setVisible(true);
-        
-        if (this.isVisible()) {
-            this.dispose();
-        }
 
     }//GEN-LAST:event_jLabel6MouseClicked
 

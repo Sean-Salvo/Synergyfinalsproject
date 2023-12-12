@@ -389,7 +389,7 @@ public class HomePatient extends javax.swing.JFrame {
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
 
-        JFrame back = new LogIn();
+        JFrame back = new HomeAdmin();
         if (back != null) {
             back.dispose();
         }
