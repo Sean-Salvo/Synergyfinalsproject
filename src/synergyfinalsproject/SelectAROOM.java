@@ -44,7 +44,7 @@ public class SelectAROOM extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        PatientRoom = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
 
@@ -121,11 +121,11 @@ public class SelectAROOM extends javax.swing.JFrame {
         MainPanel.setLayout(null);
 
         jLabel5.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 204));
         jLabel5.setText("Select a Room");
         MainPanel.add(jLabel5);
-        jLabel5.setBounds(50, 10, 140, 50);
+        jLabel5.setBounds(50, 20, 190, 40);
 
         HomeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Backkk.png"))); // NOI18N
         HomeButton.setBorder(null);
@@ -167,15 +167,15 @@ public class SelectAROOM extends javax.swing.JFrame {
         MainPanel.add(jButton3);
         jButton3.setBounds(270, 70, 170, 110);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
-        jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        PatientRoom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aPatient.png"))); // NOI18N
+        PatientRoom.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
+        PatientRoom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                PatientRoomActionPerformed(evt);
             }
         });
-        MainPanel.add(jButton4);
-        jButton4.setBounds(50, 70, 170, 110);
+        MainPanel.add(PatientRoom);
+        PatientRoom.setBounds(50, 70, 170, 110);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aNurse.png"))); // NOI18N
         jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
@@ -218,17 +218,17 @@ public class SelectAROOM extends javax.swing.JFrame {
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
 
-        JFrame back = new HomeAdmin();
-        if (back != null) {
-            back.dispose();
-        }
+        JFrame back = new LogIn();
+        back.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        back.setVisible(true);
 
-        // Close the current frame
-        this.dispose();
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_BackButtonActionPerformed
 
     private void HomeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButtonActionPerformed
-        JFrame home = new HomeAdmin();
+        JFrame home = new HomePatient();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
 
@@ -238,7 +238,7 @@ public class SelectAROOM extends javax.swing.JFrame {
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
-        JFrame settings = new RoomAdminListview();
+        JFrame settings = new MedicalInfo();
         settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settings.setVisible(true);
         if (this.isVisible()) {
@@ -247,7 +247,7 @@ public class SelectAROOM extends javax.swing.JFrame {
     }//GEN-LAST:event_MedicalRecActionPerformed
 
     private void SettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SettingsActionPerformed
-        JFrame settingsFrame = new SettingsNgAdmin();
+        JFrame settingsFrame = new SettingsNgPatient();
         settingsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settingsFrame.setVisible(true);
 
@@ -257,7 +257,7 @@ public class SelectAROOM extends javax.swing.JFrame {
     }//GEN-LAST:event_SettingsActionPerformed
 
     private void InfoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoButtonActionPerformed
-        JFrame info = new Synergy_InfoAboutUS();
+        JFrame info = new InfoAboutUsPatient();
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
         if (this.isVisible()) {
@@ -270,7 +270,14 @@ public class SelectAROOM extends javax.swing.JFrame {
 
 
     private void HomeButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButton1ActionPerformed
-        // TODO add your handling code here:
+        JFrame home = new HomePatient();
+        
+        home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        home.setVisible(true);
+        
+        if (this.isVisible()) {
+            this.dispose();
+        }
     }//GEN-LAST:event_HomeButton1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -285,9 +292,15 @@ public class SelectAROOM extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void PatientRoomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientRoomActionPerformed
+        JFrame Proom = new Map();
+        Proom.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        Proom.setVisible(true);
+        
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_PatientRoomActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -339,11 +352,11 @@ public class SelectAROOM extends javax.swing.JFrame {
     private javax.swing.JButton InfoButton;
     private javax.swing.JPanel MainPanel;
     private javax.swing.JButton MedicalRec;
+    private javax.swing.JButton PatientRoom;
     private javax.swing.JButton Settings;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel2;

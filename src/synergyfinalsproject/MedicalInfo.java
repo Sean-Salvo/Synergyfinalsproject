@@ -12,11 +12,9 @@ import javax.swing.JFrame;
  */
 public class MedicalInfo extends javax.swing.JFrame {
 
-    /**
-     * Creates new form MedicalInfo
-     */
     public MedicalInfo() {
         initComponents();
+
     }
 
     /**
@@ -38,25 +36,24 @@ public class MedicalInfo extends javax.swing.JFrame {
         InfoButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
         jPanel8 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
-        jPanel14 = new javax.swing.JPanel();
-        jPanel15 = new javax.swing.JPanel();
-        jPanel16 = new javax.swing.JPanel();
-        jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        medred = new javax.swing.JButton();
         jPanel19 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
         jPanel22 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -132,6 +129,13 @@ public class MedicalInfo extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel4.setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Karma Light", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel1.setText("Click the illness history.");
+        jPanel4.add(jLabel1);
+        jLabel1.setBounds(80, 140, 118, 18);
+
         jPanel3.add(jPanel4);
         jPanel4.setBounds(10, 50, 300, 310);
 
@@ -139,10 +143,10 @@ public class MedicalInfo extends javax.swing.JFrame {
         jScrollPane6.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextArea6.setColumns(20);
-        jTextArea6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextArea6.setFont(new java.awt.Font("Karma", 0, 19)); // NOI18N
         jTextArea6.setForeground(new java.awt.Color(255, 204, 0));
         jTextArea6.setRows(5);
-        jTextArea6.setText("textField\nTextField");
+        jTextArea6.setText("John Doe\nJohn Doe");
         jScrollPane6.setViewportView(jTextArea6);
 
         jPanel3.add(jScrollPane6);
@@ -171,32 +175,6 @@ public class MedicalInfo extends javax.swing.JFrame {
         jPanel8.add(jPanel12);
         jPanel12.setBounds(460, 10, 110, 150);
 
-        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
-        jPanel14.setLayout(null);
-
-        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
-        jPanel15.setLayout(null);
-        jPanel14.add(jPanel15);
-        jPanel15.setBounds(460, 10, 110, 150);
-
-        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel16.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
-        jPanel16.setLayout(null);
-
-        jPanel17.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
-        jPanel17.setLayout(null);
-        jPanel16.add(jPanel17);
-        jPanel17.setBounds(460, 10, 110, 150);
-
-        jPanel14.add(jPanel16);
-        jPanel16.setBounds(460, 10, 110, 150);
-
-        jPanel8.add(jPanel14);
-        jPanel14.setBounds(460, 10, 110, 150);
-
         jPanel18.setBackground(new java.awt.Color(255, 255, 255));
         jPanel18.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel18.setLayout(null);
@@ -213,10 +191,15 @@ public class MedicalInfo extends javax.swing.JFrame {
         jPanel8.add(jTextField1);
         jTextField1.setBounds(10, 40, 170, 22);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/MedicalRec.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jPanel8.add(jButton1);
-        jButton1.setBounds(20, 80, 140, 20);
+        medred.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/MedicalRec.png"))); // NOI18N
+        medred.setBorder(null);
+        medred.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                medredActionPerformed(evt);
+            }
+        });
+        jPanel8.add(medred);
+        medred.setBounds(20, 80, 140, 20);
 
         jPanel3.add(jPanel8);
         jPanel8.setBounds(320, 50, 190, 110);
@@ -238,6 +221,9 @@ public class MedicalInfo extends javax.swing.JFrame {
         jPanel21.add(jPanel22);
         jPanel22.setBounds(350, 200, 160, 160);
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/abbcccddd.png"))); // NOI18N
+        jLabel3.setText("aaaaa");
+
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
         jPanel19Layout.setHorizontalGroup(
@@ -247,11 +233,13 @@ public class MedicalInfo extends javax.swing.JFrame {
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
-                .addGap(197, 197, 197)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(106, 106, 106)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -263,26 +251,45 @@ public class MedicalInfo extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
 
+        jPanel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel14MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 154, Short.MAX_VALUE)
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 159, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 154, Short.MAX_VALUE)
+            .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 304, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGap(0, 145, Short.MAX_VALUE)
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel3.add(jPanel6);
         jPanel6.setBounds(520, 50, 160, 310);
 
         jLabel6.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 51, 204));
         jLabel6.setText("Welcome, ");
         jPanel3.add(jLabel6);
-        jLabel6.setBounds(10, 10, 140, 28);
+        jLabel6.setBounds(10, 8, 140, 40);
 
         jPanel1.add(jPanel3);
         jPanel3.setBounds(70, 20, 690, 380);
@@ -352,10 +359,24 @@ public class MedicalInfo extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_InfoButtonActionPerformed
 
+    private void medredActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_medredActionPerformed
+        JFrame medred = new MedInfoShow();
+        medred.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        medred.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_medredActionPerformed
+
+    private void jPanel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel14MouseClicked
+
+    }//GEN-LAST:event_jPanel14MouseClicked
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String[]args) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -383,6 +404,7 @@ public class MedicalInfo extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MedicalInfo().setVisible(true);
+
             }
         });
     }
@@ -393,8 +415,9 @@ public class MedicalInfo extends javax.swing.JFrame {
     private javax.swing.JButton InfoButton;
     private javax.swing.JButton MedicalRec;
     private javax.swing.JButton Settings;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
@@ -402,9 +425,6 @@ public class MedicalInfo extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
@@ -418,5 +438,6 @@ public class MedicalInfo extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTextArea jTextArea6;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton medred;
     // End of variables declaration//GEN-END:variables
 }

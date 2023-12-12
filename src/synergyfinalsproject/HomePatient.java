@@ -39,9 +39,12 @@ public class HomePatient extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         TakeMe = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jLabel8 = new javax.swing.JLabel();
         jScrollPane6 = new javax.swing.JScrollPane();
         jTextArea6 = new javax.swing.JTextArea();
         jPanel8 = new javax.swing.JPanel();
@@ -53,6 +56,9 @@ public class HomePatient extends javax.swing.JFrame {
         jPanel16 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
         jPanel19 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
@@ -60,6 +66,8 @@ public class HomePatient extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jPanel6 = new javax.swing.JPanel();
+        bell = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -155,27 +163,38 @@ public class HomePatient extends javax.swing.JFrame {
         jPanel3.add(jPanel5);
         jPanel5.setBounds(10, 200, 300, 160);
 
-        jLabel5.setBackground(new java.awt.Color(0, 102, 255));
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel5.setText("Welcome, ");
-        jPanel3.add(jLabel5);
-        jLabel5.setBounds(10, 10, 140, 28);
-
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
         jPanel4.setLayout(null);
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/HospiPic.png"))); // NOI18N
-        jButton1.setText("jButton1");
-        jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 3, true));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton1);
-        jButton1.setBounds(0, 0, 300, 140);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aMediumLogo.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel4.add(jLabel1);
+        jLabel1.setBounds(180, 30, 120, 90);
+
+        jLabel5.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel5.setFont(new java.awt.Font("Karma Light", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel5.setText("Have a nice Friday!");
+        jPanel4.add(jLabel5);
+        jLabel5.setBounds(10, 100, 170, 26);
+
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setTabSize(0);
+        jScrollPane2.setViewportView(jTextArea2);
+
+        jPanel4.add(jScrollPane2);
+        jScrollPane2.setBounds(100, 70, 80, 30);
+
+        jLabel8.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel8.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel8.setText("Good Day,");
+        jPanel4.add(jLabel8);
+        jLabel8.setBounds(10, 70, 90, 30);
 
         jPanel3.add(jPanel4);
         jPanel4.setBounds(10, 50, 300, 140);
@@ -248,6 +267,20 @@ public class HomePatient extends javax.swing.JFrame {
         jPanel8.add(jPanel18);
         jPanel18.setBounds(20, 190, 50, 140);
 
+        jLabel7.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel7.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel7.setText("Top Stories");
+        jPanel8.add(jLabel7);
+        jLabel7.setBounds(10, 10, 120, 30);
+
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jScrollPane3.setViewportView(jTextArea3);
+
+        jPanel8.add(jScrollPane3);
+        jScrollPane3.setBounds(10, 40, 170, 90);
+
         jPanel3.add(jPanel8);
         jPanel8.setBounds(320, 50, 190, 140);
 
@@ -318,6 +351,23 @@ public class HomePatient extends javax.swing.JFrame {
         jPanel3.add(jPanel6);
         jPanel6.setBounds(520, 50, 160, 310);
 
+        bell.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/aabel.png"))); // NOI18N
+        bell.setBorder(null);
+        bell.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bellActionPerformed(evt);
+            }
+        });
+        jPanel3.add(bell);
+        bell.setBounds(390, 10, 40, 30);
+
+        jLabel6.setBackground(new java.awt.Color(0, 102, 255));
+        jLabel6.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 51, 204));
+        jLabel6.setText("Welcome, ");
+        jPanel3.add(jLabel6);
+        jLabel6.setBounds(10, 8, 140, 40);
+
         jPanel1.add(jPanel3);
         jPanel3.setBounds(70, 20, 690, 380);
 
@@ -387,10 +437,6 @@ public class HomePatient extends javax.swing.JFrame {
 
     }//GEN-LAST:event_InfoButtonActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void TakeMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TakeMeActionPerformed
         JFrame maps = new SelectAROOM();
         
@@ -401,6 +447,12 @@ public class HomePatient extends javax.swing.JFrame {
             this.dispose();
         }
     }//GEN-LAST:event_TakeMeActionPerformed
+
+    private void bellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bellActionPerformed
+        JFrame notif = new Notif();
+        notif.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        notif.setVisible(true);
+    }//GEN-LAST:event_bellActionPerformed
 
     /**
      * @param args the command line arguments
@@ -444,9 +496,13 @@ public class HomePatient extends javax.swing.JFrame {
     private javax.swing.JButton MedicalRec;
     private javax.swing.JButton Settings;
     private javax.swing.JButton TakeMe;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton bell;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
@@ -467,8 +523,12 @@ public class HomePatient extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
     private javax.swing.JTextArea jTextArea6;
     // End of variables declaration//GEN-END:variables
 }

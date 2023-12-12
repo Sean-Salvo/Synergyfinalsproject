@@ -156,6 +156,7 @@ public class HomeAdmin extends javax.swing.JFrame {
         jPanel6.add(jLabel6);
         jLabel6.setBounds(230, 160, 50, 20);
 
+        jList3.setFont(new java.awt.Font("Karma Light", 0, 12)); // NOI18N
         jList3.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Room 1", "Room 2", "Room 3", "Room 4", "Room 5" };
             public int getSize() { return strings.length; }
