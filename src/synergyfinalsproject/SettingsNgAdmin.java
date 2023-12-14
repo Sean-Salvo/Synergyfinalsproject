@@ -441,7 +441,7 @@ public class SettingsNgAdmin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
-        JFrame login = new LogIn();
+        JFrame login = new Synergy_LogIn();
 
         login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         login.setVisible(true);

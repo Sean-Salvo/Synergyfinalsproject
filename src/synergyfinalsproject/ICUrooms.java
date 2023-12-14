@@ -699,7 +699,7 @@ public class ICUrooms extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
-        JFrame home = new LogIn();
+        JFrame home = new Synergy_LogIn();
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
         if (this.isVisible()) {

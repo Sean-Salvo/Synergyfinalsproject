@@ -235,7 +235,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
-        JFrame login = new LogIn();
+        JFrame login = new Synergy_LogIn();
 
         login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         login.setVisible(true);

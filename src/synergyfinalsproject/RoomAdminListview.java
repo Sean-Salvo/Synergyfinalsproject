@@ -167,7 +167,7 @@ public class RoomAdminListview extends javax.swing.JFrame {
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
 
-        JFrame login = new LogIn();
+        JFrame login = new Synergy_LogIn();
 
         login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         login.setVisible(true);

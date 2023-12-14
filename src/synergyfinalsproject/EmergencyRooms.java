@@ -697,7 +697,7 @@ public class EmergencyRooms extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
-        JFrame login = new LogIn();
+        JFrame login = new Synergy_LogIn();
 
         login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         login.setVisible(true);

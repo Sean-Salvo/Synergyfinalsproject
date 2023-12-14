@@ -494,7 +494,7 @@ public class PatientInfoShow extends javax.swing.JFrame {
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
 
-        JFrame back = new LogIn();
+        JFrame back = new Synergy_LogIn();
         back.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         back.setVisible(true);
         

@@ -437,22 +437,22 @@ public class HomePatient extends javax.swing.JFrame {
 
     }//GEN-LAST:event_InfoButtonActionPerformed
 
-    private void TakeMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TakeMeActionPerformed
-        JFrame maps = new SelectAROOM();
-        
-        maps.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        maps.setVisible(true);
-        
-        if (this.isVisible()) {
-            this.dispose();
-        }
-    }//GEN-LAST:event_TakeMeActionPerformed
-
     private void bellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bellActionPerformed
         JFrame notif = new Notif();
         notif.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         notif.setVisible(true);
     }//GEN-LAST:event_bellActionPerformed
+
+    private void TakeMeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TakeMeActionPerformed
+        JFrame maps = new SelectAROOM();
+
+        maps.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        maps.setVisible(true);
+
+        if (this.isVisible()) {
+            this.dispose();
+        }
+    }//GEN-LAST:event_TakeMeActionPerformed
 
     /**
      * @param args the command line arguments
