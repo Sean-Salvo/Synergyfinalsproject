@@ -17,6 +17,7 @@ public class MedInfoShow extends javax.swing.JFrame {
      */
     public MedInfoShow() {
         initComponents();
+        System.out.println("tae");
     }
 
     /**
