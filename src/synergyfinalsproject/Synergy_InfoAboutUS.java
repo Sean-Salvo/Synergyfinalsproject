@@ -30,14 +30,13 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        HomeButon = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jLabel8 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         L_firstName = new javax.swing.JLabel();
         L_firstName1 = new javax.swing.JLabel();
         L_firstName2 = new javax.swing.JLabel();
         L_firstName3 = new javax.swing.JLabel();
-        L_firstName4 = new javax.swing.JLabel();
         L_firstName5 = new javax.swing.JLabel();
         L_firstName6 = new javax.swing.JLabel();
         L_firstName7 = new javax.swing.JLabel();
@@ -60,18 +59,21 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         L_firstName24 = new javax.swing.JLabel();
         L_firstName25 = new javax.swing.JLabel();
         L_firstName26 = new javax.swing.JLabel();
+        L_firstName27 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        L_firstName4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
-        jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(90, 70, 650, 310);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Side Menu (2).png"))); // NOI18N
-        jPanel1.add(jLabel8);
-        jLabel8.setBounds(20, -10, 52, 430);
+        HomeButon.setBackground(new java.awt.Color(221, 238, 249));
+        HomeButon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newBack (1).png"))); // NOI18N
+        HomeButon.setBorder(null);
+        jPanel1.add(HomeButon);
+        HomeButon.setBounds(110, 30, 30, 30);
 
         jPanel2.setBackground(new java.awt.Color(221, 238, 249));
         jPanel2.setLayout(null);
@@ -100,13 +102,6 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         L_firstName3.setText("revolutionize the way patient information is provided. With its user-friendly interface and ");
         jPanel2.add(L_firstName3);
         L_firstName3.setBounds(50, 90, 620, 20);
-
-        L_firstName4.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName4.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
-        L_firstName4.setForeground(new java.awt.Color(6, 61, 134));
-        L_firstName4.setText("ABOUT US");
-        jPanel2.add(L_firstName4);
-        L_firstName4.setBounds(50, 50, 120, 30);
 
         L_firstName5.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName5.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
@@ -240,8 +235,28 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         jPanel2.add(L_firstName26);
         L_firstName26.setBounds(50, 560, 620, 20);
 
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(740, -280, 620, 710);
+        L_firstName27.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName27.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        L_firstName27.setForeground(new java.awt.Color(6, 61, 134));
+        L_firstName27.setText("ABOUT US");
+        jPanel2.add(L_firstName27);
+        L_firstName27.setBounds(50, 50, 120, 30);
+
+        jScrollPane1.setViewportView(jPanel2);
+
+        jPanel1.add(jScrollPane1);
+        jScrollPane1.setBounds(90, 70, 650, 310);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Side Menu (2).png"))); // NOI18N
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(20, -10, 52, 430);
+
+        L_firstName4.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName4.setFont(new java.awt.Font("Karma", 1, 23)); // NOI18N
+        L_firstName4.setForeground(new java.awt.Color(6, 61, 134));
+        L_firstName4.setText("Info");
+        jPanel1.add(L_firstName4);
+        L_firstName4.setBounds(140, 20, 50, 60);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/backgroundblue (1).png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -300,6 +315,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton HomeButon;
     private javax.swing.JLabel L_firstName;
     private javax.swing.JLabel L_firstName1;
     private javax.swing.JLabel L_firstName10;
@@ -320,6 +336,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
     private javax.swing.JLabel L_firstName24;
     private javax.swing.JLabel L_firstName25;
     private javax.swing.JLabel L_firstName26;
+    private javax.swing.JLabel L_firstName27;
     private javax.swing.JLabel L_firstName3;
     private javax.swing.JLabel L_firstName4;
     private javax.swing.JLabel L_firstName5;
