@@ -409,7 +409,7 @@ public class HomePatient extends javax.swing.JFrame {
     }//GEN-LAST:event_HomeButtonActionPerformed
 
     private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
-        JFrame settings = new MedicalInfo();
+        JFrame settings = new Synergy_MedicalInfo();
         settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settings.setVisible(true);
         if (this.isVisible()) {

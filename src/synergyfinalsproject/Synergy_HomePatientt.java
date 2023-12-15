@@ -58,6 +58,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         TF_EmergencyName2 = new javax.swing.JTextField();
         L_firstName21 = new javax.swing.JLabel();
         TF_EmergencyContact1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         L_firstName5 = new javax.swing.JLabel();
@@ -270,6 +271,12 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(120, 150, 470, 230);
 
+        jButton1.setBackground(new java.awt.Color(221, 238, 249));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newHome (1).png"))); // NOI18N
+        jButton1.setBorder(null);
+        jPanel1.add(jButton1);
+        jButton1.setBounds(30, 140, 30, 30);
+
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/PatientInfo (1).png"))); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(110, 140, 510, 250);
@@ -435,6 +442,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     private javax.swing.JTextField TF_initial;
     private javax.swing.JTextField TF_phoneNum1;
     private javax.swing.JLabel WholeBackground;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

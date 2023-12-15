@@ -249,7 +249,7 @@ public class InfoAboutUsPatient extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void MedicalRefActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRefActionPerformed
-        JFrame settings = new MedicalInfo();
+        JFrame settings = new Synergy_MedicalInfo();
         settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settings.setVisible(true);
         if (this.isVisible()) {

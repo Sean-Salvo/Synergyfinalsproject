@@ -92,7 +92,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         title.setForeground(new java.awt.Color(21, 41, 157));
         title.setText("Synergy");
         whitePanel.add(title);
-        title.setBounds(80, 251, 253, 60);
+        title.setBounds(80, 251, 142, 60);
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
@@ -104,14 +104,16 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_firstName.setForeground(new java.awt.Color(49, 91, 2));
         L_firstName.setText("Create Account");
         newBluePanel.add(L_firstName);
-        L_firstName.setBounds(120, 60, 250, 37);
+        L_firstName.setBounds(120, 60, 250, 47);
 
         L_firstName1.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName1.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         L_firstName1.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName1.setText("Middle Name");
         newBluePanel.add(L_firstName1);
-        L_firstName1.setBounds(250, 120, 150, 24);
+        L_firstName1.setBounds(250, 120, 150, 30);
+
+        TF_FirstName.setText("Owen");
         newBluePanel.add(TF_FirstName);
         TF_FirstName.setBounds(50, 150, 190, 22);
 
@@ -128,7 +130,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_firstName3.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName3.setText("First Name:");
         newBluePanel.add(L_firstName3);
-        L_firstName3.setBounds(50, 120, 102, 24);
+        L_firstName3.setBounds(50, 120, 96, 30);
 
         L_lastName.setBackground(new java.awt.Color(0, 0, 0));
         L_lastName.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
@@ -152,14 +154,14 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_gender.setForeground(new java.awt.Color(6, 61, 134));
         L_gender.setText("Gender:");
         newBluePanel.add(L_gender);
-        L_gender.setBounds(250, 180, 72, 24);
+        L_gender.setBounds(250, 180, 65, 30);
 
         L_lastName1.setBackground(new java.awt.Color(0, 0, 0));
         L_lastName1.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         L_lastName1.setForeground(new java.awt.Color(6, 61, 134));
         L_lastName1.setText("Contact Number");
         newBluePanel.add(L_lastName1);
-        L_lastName1.setBounds(250, 300, 140, 24);
+        L_lastName1.setBounds(250, 300, 140, 30);
 
         Gender1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Status", "Married", "Single" }));
         Gender1.addActionListener(new java.awt.event.ActionListener() {
@@ -195,7 +197,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_lastName2.setForeground(new java.awt.Color(6, 61, 134));
         L_lastName2.setText("Birthdate");
         newBluePanel.add(L_lastName2);
-        L_lastName2.setBounds(50, 240, 91, 24);
+        L_lastName2.setBounds(50, 240, 91, 30);
 
         TF_surname2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -219,7 +221,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_lastName3.setForeground(new java.awt.Color(6, 61, 134));
         L_lastName3.setText("Surname:");
         newBluePanel.add(L_lastName3);
-        L_lastName3.setBounds(50, 180, 91, 24);
+        L_lastName3.setBounds(50, 180, 91, 30);
         newBluePanel.add(TF_cPassword);
         TF_cPassword.setBounds(250, 450, 200, 22);
 
@@ -228,7 +230,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_lastName4.setForeground(new java.awt.Color(6, 61, 134));
         L_lastName4.setText("Address");
         newBluePanel.add(L_lastName4);
-        L_lastName4.setBounds(50, 360, 91, 24);
+        L_lastName4.setBounds(50, 360, 91, 30);
 
         TF_phoneNum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,7 +245,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_lastName5.setForeground(new java.awt.Color(6, 61, 134));
         L_lastName5.setText("Email");
         newBluePanel.add(L_lastName5);
-        L_lastName5.setBounds(50, 300, 91, 24);
+        L_lastName5.setBounds(50, 300, 91, 30);
         newBluePanel.add(TF_Email1);
         TF_Email1.setBounds(50, 330, 190, 22);
 
@@ -277,7 +279,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_password2.setForeground(new java.awt.Color(6, 61, 134));
         L_password2.setText("Password:");
         newBluePanel.add(L_password2);
-        L_password2.setBounds(50, 420, 93, 30);
+        L_password2.setBounds(50, 420, 82, 30);
 
         L_password3.setBackground(new java.awt.Color(0, 0, 0));
         L_password3.setFont(new java.awt.Font("Karma", 1, 16)); // NOI18N
@@ -302,7 +304,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
         newBluePanel.add(login2);
-        login2.setBounds(200, 550, 90, 26);
+        login2.setBounds(200, 550, 90, 30);
 
         jScrollPane2.setViewportView(newBluePanel);
 
@@ -317,7 +319,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
         whitePanel.add(B_register);
-        B_register.setBounds(55, 881, 78, 23);
+        B_register.setBounds(55, 881, 75, 27);
 
         TermsConditions.setFont(new java.awt.Font("Karma", 1, 14)); // NOI18N
         TermsConditions.setForeground(new java.awt.Color(255, 255, 255));
@@ -328,7 +330,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
         whitePanel.add(TermsConditions);
-        TermsConditions.setBounds(55, 848, 269, 23);
+        TermsConditions.setBounds(55, 848, 253, 27);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogo.png"))); // NOI18N
         whitePanel.add(jLabel1);
@@ -447,11 +449,15 @@ public class Synergy_Registration extends javax.swing.JFrame {
     }//GEN-LAST:event_TermsConditionsActionPerformed
 
     private void TF_firstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_firstNameActionPerformed
-        // TODO add your handling code here:
+        String firstName = TF_firstName.getText();
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(firstName, firstName, firstName, firstName, firstName, firstName, firstName, firstName, firstName);
     }//GEN-LAST:event_TF_firstNameActionPerformed
 
     private void TF_MiddleNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_MiddleNameActionPerformed
-        // TODO add your handling code here:
+        String middleName = TF_MiddleName.getText();
+         AccountsDataBase acc = new AccountsDataBase();
+         acc.addData(middleName, middleName, middleName, middleName, middleName, middleName, middleName, middleName, middleName);
     }//GEN-LAST:event_TF_MiddleNameActionPerformed
 
     private void TF_dayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_dayActionPerformed

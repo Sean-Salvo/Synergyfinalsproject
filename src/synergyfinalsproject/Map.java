@@ -404,7 +404,7 @@ public class Map extends javax.swing.JFrame {
     }//GEN-LAST:event_BackButtonActionPerformed
 
     private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
-        JFrame settings = new MedicalInfo();
+        JFrame settings = new Synergy_MedicalInfo();
         settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settings.setVisible(true);
         if (this.isVisible()) {
