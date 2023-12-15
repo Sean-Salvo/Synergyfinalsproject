@@ -1,6 +1,5 @@
 package synergyfinalsproject;
 
-
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
@@ -19,10 +18,10 @@ public class Synergy_Registration extends javax.swing.JFrame {
      */
     public Synergy_Registration() {
         initComponents();
-        
+
         Image image = new ImageIcon(this.getClass().getResource("Synergy (Resized Logo).jpg")).getImage();
         this.setIconImage(image);
-        
+
     }
 
     /**
@@ -45,10 +44,10 @@ public class Synergy_Registration extends javax.swing.JFrame {
         TF_MiddleName = new javax.swing.JTextField();
         L_firstName3 = new javax.swing.JLabel();
         L_lastName = new javax.swing.JLabel();
-        TF_day = new javax.swing.JTextField();
+        TF_Year = new javax.swing.JTextField();
         L_gender = new javax.swing.JLabel();
         L_lastName1 = new javax.swing.JLabel();
-        Gender1 = new javax.swing.JComboBox<>();
+        MaritalStatus = new javax.swing.JComboBox<>();
         TF_month1 = new javax.swing.JTextField();
         TF_day1 = new javax.swing.JTextField();
         L_lastName2 = new javax.swing.JLabel();
@@ -114,6 +113,11 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_firstName1.setBounds(250, 120, 150, 30);
 
         TF_FirstName.setText("Owen");
+        TF_FirstName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TF_FirstNameActionPerformed(evt);
+            }
+        });
         newBluePanel.add(TF_FirstName);
         TF_FirstName.setBounds(50, 150, 190, 22);
 
@@ -139,15 +143,15 @@ public class Synergy_Registration extends javax.swing.JFrame {
         newBluePanel.add(L_lastName);
         L_lastName.setBounds(250, 240, 91, 30);
 
-        TF_day.setForeground(new java.awt.Color(102, 102, 102));
-        TF_day.setText("Year");
-        TF_day.addActionListener(new java.awt.event.ActionListener() {
+        TF_Year.setForeground(new java.awt.Color(102, 102, 102));
+        TF_Year.setText("Year");
+        TF_Year.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_dayActionPerformed(evt);
+                TF_YearActionPerformed(evt);
             }
         });
-        newBluePanel.add(TF_day);
-        TF_day.setBounds(180, 270, 60, 22);
+        newBluePanel.add(TF_Year);
+        TF_Year.setBounds(180, 270, 60, 22);
 
         L_gender.setBackground(new java.awt.Color(0, 0, 0));
         L_gender.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
@@ -163,14 +167,14 @@ public class Synergy_Registration extends javax.swing.JFrame {
         newBluePanel.add(L_lastName1);
         L_lastName1.setBounds(250, 300, 140, 30);
 
-        Gender1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Status", "Married", "Single" }));
-        Gender1.addActionListener(new java.awt.event.ActionListener() {
+        MaritalStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Status", "Married", "Single" }));
+        MaritalStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Gender1ActionPerformed(evt);
+                MaritalStatusActionPerformed(evt);
             }
         });
-        newBluePanel.add(Gender1);
-        Gender1.setBounds(250, 270, 190, 22);
+        newBluePanel.add(MaritalStatus);
+        MaritalStatus.setBounds(250, 270, 190, 22);
 
         TF_month1.setForeground(new java.awt.Color(102, 102, 102));
         TF_month1.setText("Month");
@@ -246,6 +250,12 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_lastName5.setText("Email");
         newBluePanel.add(L_lastName5);
         L_lastName5.setBounds(50, 300, 91, 30);
+
+        TF_Email1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TF_Email1ActionPerformed(evt);
+            }
+        });
         newBluePanel.add(TF_Email1);
         TF_Email1.setBounds(50, 330, 190, 22);
 
@@ -356,13 +366,12 @@ public class Synergy_Registration extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void B_registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_registerActionPerformed
-       
+
         // Object to setVisibility and append displayError specific Messages
         Error_Display errorMSG = new Error_Display();
         //Total amount of errors to be checked by the program: [7]
-        
+
         //-------------------------------------------------------------------------------------------
-        
         if (TF_firstName.getText().isEmpty()) {
             errorMSG.setVisible(true);
             errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
@@ -456,32 +465,47 @@ public class Synergy_Registration extends javax.swing.JFrame {
 
     private void TF_MiddleNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_MiddleNameActionPerformed
         String middleName = TF_MiddleName.getText();
-         AccountsDataBase acc = new AccountsDataBase();
-         acc.addData(middleName, middleName, middleName, middleName, middleName, middleName, middleName, middleName, middleName);
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(middleName, middleName, middleName, middleName, middleName, middleName, middleName, middleName, middleName);
     }//GEN-LAST:event_TF_MiddleNameActionPerformed
 
-    private void TF_dayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_dayActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_dayActionPerformed
+    private void TF_YearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_YearActionPerformed
+        String year = TF_Year.getText();
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(year, year, year, year, year, year, year, year, year);
+        
+    }//GEN-LAST:event_TF_YearActionPerformed
 
-    private void Gender1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Gender1ActionPerformed
+    private void MaritalStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaritalStatusActionPerformed
+        String selectedStatus = (String) MaritalStatus.getSelectedItem(); // Assuming the items are of type String
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus);
+
+    }//GEN-LAST:event_MaritalStatusActionPerformed
 
     private void TF_month1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_month1ActionPerformed
-        // TODO add your handling code here:
+        String month = TF_month1.getText();
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(month, month, month, month, month, month, month, month, month);
+        
     }//GEN-LAST:event_TF_month1ActionPerformed
 
     private void TF_day1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_day1ActionPerformed
-        // TODO add your handling code here:
+         String day = TF_Year.getText();
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(day, day, day, day, day, day, day, day, day);
     }//GEN-LAST:event_TF_day1ActionPerformed
 
     private void TF_surname2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_surname2ActionPerformed
-        // TODO add your handling code here:
+        String surname = TF_surname2.getText();
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(surname, surname, surname, surname, surname, surname, surname, surname, surname);
     }//GEN-LAST:event_TF_surname2ActionPerformed
 
     private void Gender2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender2ActionPerformed
-        // TODO add your handling code here:
+        String gender = (String) Gender2.getSelectedItem();
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(gender, gender, gender, gender, gender, gender, gender, gender, gender);
     }//GEN-LAST:event_Gender2ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
@@ -493,8 +517,22 @@ public class Synergy_Registration extends javax.swing.JFrame {
     }//GEN-LAST:event_login2ActionPerformed
 
     private void TF_phoneNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_phoneNumActionPerformed
-        // TODO add your handling code here:
+        String phone = TF_phoneNum.getText();
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(phone, phone, phone, phone, phone, phone, phone, phone, phone);
     }//GEN-LAST:event_TF_phoneNumActionPerformed
+
+    private void TF_FirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_FirstNameActionPerformed
+        String Fname = TF_FirstName.getText();
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(Fname, Fname, Fname, Fname, Fname, Fname, Fname, Fname, Fname);
+    }//GEN-LAST:event_TF_FirstNameActionPerformed
+
+    private void TF_Email1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_Email1ActionPerformed
+       String email = TF_Email1.getText();
+       AccountsDataBase acc = new AccountsDataBase();
+       acc.addData(email, email, email, email, email, email, email, email, email);
+    }//GEN-LAST:event_TF_Email1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -548,7 +586,6 @@ public class Synergy_Registration extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton B_register;
-    private javax.swing.JComboBox<String> Gender1;
     private javax.swing.JComboBox<String> Gender2;
     private javax.swing.JLabel L_firstName;
     private javax.swing.JLabel L_firstName1;
@@ -565,12 +602,13 @@ public class Synergy_Registration extends javax.swing.JFrame {
     private javax.swing.JLabel L_password2;
     private javax.swing.JLabel L_password3;
     private javax.swing.JLabel L_password4;
+    private javax.swing.JComboBox<String> MaritalStatus;
     private javax.swing.JTextField TF_Email1;
     private javax.swing.JTextField TF_FirstName;
     private javax.swing.JTextField TF_MiddleName;
+    private javax.swing.JTextField TF_Year;
     private javax.swing.JTextField TF_address;
     private javax.swing.JTextField TF_cPassword;
-    private javax.swing.JTextField TF_day;
     private javax.swing.JTextField TF_day1;
     private javax.swing.JTextField TF_firstName;
     private javax.swing.JTextField TF_month1;
