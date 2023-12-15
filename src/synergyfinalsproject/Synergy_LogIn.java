@@ -137,7 +137,7 @@ public class Synergy_LogIn extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-        JFrame login = new HomeAdmin();
+        JFrame login = new Synergy_HomePatientt();
         login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         login.setVisible(true);
         

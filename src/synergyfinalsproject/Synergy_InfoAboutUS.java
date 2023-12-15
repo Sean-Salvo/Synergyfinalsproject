@@ -30,6 +30,11 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        PatientSettings = new javax.swing.JButton();
+        HomeButon1 = new javax.swing.JButton();
+        LogOut = new javax.swing.JButton();
+        PatientAbout = new javax.swing.JButton();
+        MedicalRec = new javax.swing.JButton();
         HomeButon = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
@@ -68,6 +73,36 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
+
+        PatientSettings.setBackground(new java.awt.Color(221, 238, 249));
+        PatientSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newGear (2).png"))); // NOI18N
+        PatientSettings.setBorder(null);
+        jPanel1.add(PatientSettings);
+        PatientSettings.setBounds(30, 190, 30, 30);
+
+        HomeButon1.setBackground(new java.awt.Color(221, 238, 249));
+        HomeButon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newHome (1).png"))); // NOI18N
+        HomeButon1.setBorder(null);
+        jPanel1.add(HomeButon1);
+        HomeButon1.setBounds(30, 90, 30, 30);
+
+        LogOut.setBackground(new java.awt.Color(221, 238, 249));
+        LogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogOuy (1).png"))); // NOI18N
+        LogOut.setBorder(null);
+        jPanel1.add(LogOut);
+        LogOut.setBounds(30, 290, 30, 30);
+
+        PatientAbout.setBackground(new java.awt.Color(221, 238, 249));
+        PatientAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newInfo (1).png"))); // NOI18N
+        PatientAbout.setBorder(null);
+        jPanel1.add(PatientAbout);
+        PatientAbout.setBounds(30, 240, 30, 30);
+
+        MedicalRec.setBackground(new java.awt.Color(221, 238, 249));
+        MedicalRec.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newMedRec (1).png"))); // NOI18N
+        MedicalRec.setBorder(null);
+        jPanel1.add(MedicalRec);
+        MedicalRec.setBounds(30, 140, 30, 30);
 
         HomeButon.setBackground(new java.awt.Color(221, 238, 249));
         HomeButon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newBack (1).png"))); // NOI18N
@@ -268,7 +303,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -316,6 +351,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton HomeButon;
+    private javax.swing.JButton HomeButon1;
     private javax.swing.JLabel L_firstName;
     private javax.swing.JLabel L_firstName1;
     private javax.swing.JLabel L_firstName10;
@@ -344,6 +380,10 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
     private javax.swing.JLabel L_firstName7;
     private javax.swing.JLabel L_firstName8;
     private javax.swing.JLabel L_firstName9;
+    private javax.swing.JButton LogOut;
+    private javax.swing.JButton MedicalRec;
+    private javax.swing.JButton PatientAbout;
+    private javax.swing.JButton PatientSettings;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
