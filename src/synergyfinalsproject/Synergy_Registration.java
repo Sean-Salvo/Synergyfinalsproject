@@ -67,7 +67,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_password2 = new javax.swing.JLabel();
         L_password3 = new javax.swing.JLabel();
         L_password4 = new javax.swing.JLabel();
-        login2 = new javax.swing.JButton();
+        register = new javax.swing.JButton();
         B_register = new javax.swing.JButton();
         TermsConditions = new javax.swing.JCheckBox();
         jLabel1 = new javax.swing.JLabel();
@@ -304,22 +304,22 @@ public class Synergy_Registration extends javax.swing.JFrame {
         newBluePanel.add(L_password4);
         L_password4.setBounds(70, 490, 100, 20);
 
-        login2.setBackground(new java.awt.Color(49, 91, 2));
-        login2.setFont(new java.awt.Font("Karma", 0, 14)); // NOI18N
-        login2.setForeground(new java.awt.Color(255, 255, 255));
-        login2.setText("Register");
-        login2.addActionListener(new java.awt.event.ActionListener() {
+        register.setBackground(new java.awt.Color(49, 91, 2));
+        register.setFont(new java.awt.Font("Karma", 0, 14)); // NOI18N
+        register.setForeground(new java.awt.Color(255, 255, 255));
+        register.setText("Register");
+        register.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                login2ActionPerformed(evt);
+                registerActionPerformed(evt);
             }
         });
-        newBluePanel.add(login2);
-        login2.setBounds(200, 550, 90, 30);
+        newBluePanel.add(register);
+        register.setBounds(200, 550, 90, 30);
 
         jScrollPane2.setViewportView(newBluePanel);
 
         whitePanel.add(jScrollPane2);
-        jScrollPane2.setBounds(310, 0, 470, 610);
+        jScrollPane2.setBounds(300, -90, 470, 610);
 
         B_register.setFont(new java.awt.Font("Karma", 1, 12)); // NOI18N
         B_register.setText("Register");
@@ -458,80 +458,68 @@ public class Synergy_Registration extends javax.swing.JFrame {
     }//GEN-LAST:event_TermsConditionsActionPerformed
 
     private void TF_firstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_firstNameActionPerformed
-        String firstName = TF_firstName.getText();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(firstName, firstName, firstName, firstName, firstName, firstName, firstName, firstName, firstName);
+   
     }//GEN-LAST:event_TF_firstNameActionPerformed
 
     private void TF_MiddleNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_MiddleNameActionPerformed
-        String middleName = TF_MiddleName.getText();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(middleName, middleName, middleName, middleName, middleName, middleName, middleName, middleName, middleName);
+
     }//GEN-LAST:event_TF_MiddleNameActionPerformed
 
     private void TF_YearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_YearActionPerformed
-        String year = TF_Year.getText();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(year, year, year, year, year, year, year, year, year);
-        
+
+
     }//GEN-LAST:event_TF_YearActionPerformed
 
     private void MaritalStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaritalStatusActionPerformed
-        String selectedStatus = (String) MaritalStatus.getSelectedItem(); // Assuming the items are of type String
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus, selectedStatus);
 
     }//GEN-LAST:event_MaritalStatusActionPerformed
 
     private void TF_month1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_month1ActionPerformed
-        String month = TF_month1.getText();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(month, month, month, month, month, month, month, month, month);
-        
+
     }//GEN-LAST:event_TF_month1ActionPerformed
 
     private void TF_day1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_day1ActionPerformed
-         String day = TF_Year.getText();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(day, day, day, day, day, day, day, day, day);
+
     }//GEN-LAST:event_TF_day1ActionPerformed
 
     private void TF_surname2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_surname2ActionPerformed
-        String surname = TF_surname2.getText();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(surname, surname, surname, surname, surname, surname, surname, surname, surname);
+
     }//GEN-LAST:event_TF_surname2ActionPerformed
 
     private void Gender2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender2ActionPerformed
-        String gender = (String) Gender2.getSelectedItem();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(gender, gender, gender, gender, gender, gender, gender, gender, gender);
+
     }//GEN-LAST:event_Gender2ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
-    private void login2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_login2ActionPerformed
+    private void registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerActionPerformed
+        String name = TF_FirstName.getText();
+        String email = TF_Email1.getText();
+        String surname = TF_surname2.getText();
+        String year = TF_Year.getText();
+        String day = TF_day1.getText();
+        String month = TF_month1.getText();
+        String selectedStatus = (String) MaritalStatus.getSelectedItem();
+        String middleName = TF_MiddleName.getText();
+        AccountsDataBase acc = new AccountsDataBase();
+        acc.addData(surname, middleName, surname, year, surname, month, email, month, middleName);
+        
+
+
+    }//GEN-LAST:event_registerActionPerformed
 
     private void TF_phoneNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_phoneNumActionPerformed
-        String phone = TF_phoneNum.getText();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(phone, phone, phone, phone, phone, phone, phone, phone, phone);
+
     }//GEN-LAST:event_TF_phoneNumActionPerformed
 
     private void TF_FirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_FirstNameActionPerformed
-        String Fname = TF_FirstName.getText();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(Fname, Fname, Fname, Fname, Fname, Fname, Fname, Fname, Fname);
+
     }//GEN-LAST:event_TF_FirstNameActionPerformed
 
     private void TF_Email1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_Email1ActionPerformed
-       String email = TF_Email1.getText();
-       AccountsDataBase acc = new AccountsDataBase();
-       acc.addData(email, email, email, email, email, email, email, email, email);
+
     }//GEN-LAST:event_TF_Email1ActionPerformed
 
     /**
@@ -619,8 +607,8 @@ public class Synergy_Registration extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JButton login2;
     private javax.swing.JPanel newBluePanel;
+    private javax.swing.JButton register;
     private javax.swing.JLabel title;
     private javax.swing.JPanel whitePanel;
     // End of variables declaration//GEN-END:variables
