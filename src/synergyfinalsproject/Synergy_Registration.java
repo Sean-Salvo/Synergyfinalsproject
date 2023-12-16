@@ -2,6 +2,7 @@ package synergyfinalsproject;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -61,7 +62,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         TF_Email1 = new javax.swing.JTextField();
         L_password = new javax.swing.JLabel();
         TF_address = new javax.swing.JTextField();
-        L_password1 = new javax.swing.JLabel();
+        L_haveAccount = new javax.swing.JLabel();
         TF_password = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
         L_password2 = new javax.swing.JLabel();
@@ -107,7 +108,6 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_firstName1.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName1.setText("Middle Name");
 
-        TF_FirstName.setText("Owen");
         TF_FirstName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_FirstNameActionPerformed(evt);
@@ -221,9 +221,14 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_password.setForeground(new java.awt.Color(6, 61, 134));
         L_password.setText("Confirm Password");
 
-        L_password1.setBackground(new java.awt.Color(0, 0, 0));
-        L_password1.setFont(new java.awt.Font("Karma", 1, 16)); // NOI18N
-        L_password1.setText("Alreadt have an account?");
+        L_haveAccount.setBackground(new java.awt.Color(0, 0, 0));
+        L_haveAccount.setFont(new java.awt.Font("Karma", 1, 16)); // NOI18N
+        L_haveAccount.setText("Already have an account?");
+        L_haveAccount.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                L_haveAccountMouseClicked(evt);
+            }
+        });
 
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -332,7 +337,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
                     .addComponent(L_password4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(newBluePanelLayout.createSequentialGroup()
                 .addGap(70, 70, 70)
-                .addComponent(L_password1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(L_haveAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(newBluePanelLayout.createSequentialGroup()
                 .addGap(200, 200, 200)
                 .addComponent(register, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -388,7 +393,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
                     .addComponent(jCheckBox1)
                     .addComponent(L_password3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(L_password4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addComponent(L_password1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(L_haveAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(register))
         );
@@ -406,7 +411,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
         whitePanel.add(B_register);
-        B_register.setBounds(55, 881, 75, 27);
+        B_register.setBounds(55, 881, 79, 31);
 
         TermsConditions.setFont(new java.awt.Font("Karma", 1, 14)); // NOI18N
         TermsConditions.setForeground(new java.awt.Color(255, 255, 255));
@@ -417,7 +422,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
         whitePanel.add(TermsConditions);
-        TermsConditions.setBounds(55, 848, 253, 27);
+        TermsConditions.setBounds(55, 848, 255, 27);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogo.png"))); // NOI18N
         whitePanel.add(jLabel1);
@@ -444,90 +449,6 @@ public class Synergy_Registration extends javax.swing.JFrame {
 
     private void B_registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_registerActionPerformed
 
-        // Object to setVisibility and append displayError specific Messages
-        Error_Display errorMSG = new Error_Display();
-        //Total amount of errors to be checked by the program: [7]
-
-        //-------------------------------------------------------------------------------------------
-        if (TF_firstName.getText().isEmpty()) {
-            errorMSG.setVisible(true);
-            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
-        } else if (TF_FirstName.getText().isEmpty()) {
-            errorMSG.setVisible(true);
-            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
-        } else if (TF_phoneNum.getText().isEmpty()) {
-            errorMSG.setVisible(true);
-            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
-        } else if (TF_password.getText().isEmpty()) {
-            errorMSG.setVisible(true);
-            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
-        } else if (TF_cPassword.getText().isEmpty()) {
-            errorMSG.setVisible(true);
-            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
-        } else if (TF_phoneNum.getText().isEmpty()) {
-            errorMSG.setVisible(true);
-            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
-        } else if (TF_address.getText().isEmpty()) {
-            errorMSG.setVisible(true);
-            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
-        } else if (TF_cPassword.getText().isEmpty()) {
-            errorMSG.setVisible(true);
-            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
-
-        } else {
-
-            if (!TF_password.getText().equals(TF_cPassword.getText())) {
-                errorMSG.setVisible(true);
-                errorMSG.displayError.append("Mismatch Password Error: \nPassword and Confirmed Password do NOT match.");
-
-            } else {
-
-                if (!TF_password.getText().matches(".*[a-zA-Z].*") || !TF_password.getText().matches(".*\\d.*") || !TF_password.getText().matches(".*[^a-zA-Z\\d].*")) {
-                    errorMSG.setVisible(true);
-                    errorMSG.displayError.append("Missing Symbol and/or Number Error: \nPassword requires atleast ONE Symbol and ONE Number.");
-
-                } else {
-
-                    if (TF_password.getText().length() <= 5) { // [4]
-                        errorMSG.setVisible(true);
-                        errorMSG.displayError.append("Passowrd Length Error: \nPassword must atleast have 6 characters.");
-
-                    } else {
-
-                        if (TF_phoneNum.getText().matches(".*[a-zA-Z].*") || TF_phoneNum.getText().matches(".*[^\\d].*")) {
-                            errorMSG.setVisible(true);
-                            errorMSG.displayError.append("Phone Number Letter and/or Symbol Error: \nPhone Number TextField has a Letter and/or Number in it.");
-
-                        } else {
-
-                            if (TF_phoneNum.getText().length() != 11) {
-                                errorMSG.setVisible(true);
-                                errorMSG.displayError.append("Phone Number Length Error: \nPhone Number must have and should be equal to 11 digits.");
-
-                            } else {
-
-                                if (!TermsConditions.isSelected()) {
-                                    errorMSG.setVisible(true);
-                                    errorMSG.displayError.append("TOC unchecked Error: \nTerms And Condition Must be checked before you can create an account.");
-
-                                } else {
-
-                                    System.out.println("Program Successful"); // Temporary SysOut code for checking..
-                                    // enter code here to open another JFrame..
-
-                                }
-
-                            }
-
-                        }
-
-                    }
-
-                }
-
-            }
-
-        }
     }//GEN-LAST:event_B_registerActionPerformed
 
     private void TermsConditionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TermsConditionsActionPerformed
@@ -535,7 +456,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
     }//GEN-LAST:event_TermsConditionsActionPerformed
 
     private void TF_firstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_firstNameActionPerformed
-   
+
     }//GEN-LAST:event_TF_firstNameActionPerformed
 
     private void TF_MiddleNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_MiddleNameActionPerformed
@@ -572,18 +493,164 @@ public class Synergy_Registration extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     private void registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerActionPerformed
-        String name = TF_FirstName.getText();
-        String email = TF_Email1.getText();
-        String surname = TF_surname2.getText();
-        String year = TF_Year.getText();
-        String day = TF_day1.getText();
-        String month = TF_month1.getText();
-        String selectedStatus = (String) MaritalStatus.getSelectedItem();
-        String middleName = TF_MiddleName.getText();
-        AccountsDataBase acc = new AccountsDataBase();
-        acc.addData(surname, middleName, surname, year, surname, month, email, month, middleName);
-        
 
+        // Object to setVisibility and append displayError's specific Messages
+        Error_Display errorMSG = new Error_Display();
+        
+        /*
+        
+        Total amount of Errors to display [9]
+        
+        1. Empty TextField Error: if the user did not fill up one of the textfields.
+        2. Mismatch Password Error: if the user's password and confirmed password do not match.
+        3. Missing Symbol and/or Number Error: a user's password must have atleast 1 number and 1 symbol.
+        4. Passowrd Length Error: password's length must be atleast 6 characters long. (this includes the 1 number and 1 symbol rule)
+        5. Phone Number Letter and/or Symbol Error: if the user accidentaly included a letter or a symbol in the phone number jTextField.
+        6. Phone Number Length Error: user's phone number must be 11 digits to be exact.
+        7. Gender Selection Error: A gender must be selected in the jComboBox.
+        8. Status Selection Error: A martial status must be selected in the jComboBox.
+        9. T&C Unchecked Error: if the user left the terms and condition box unchecked.
+        
+        */
+
+        //-------------------------------------------------------------------------------------------
+        
+        if (TF_FirstName.getText().isEmpty()) { // [1]
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_MiddleName.getText().isEmpty()) {
+
+            errorMSG.setVisible(true); // ***
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_surname2.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_month1.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_day1.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_Year.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_Email1.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_phoneNum.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_address.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_password.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_cPassword.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else {
+
+            if (!TF_password.getText().equals(TF_cPassword.getText())) { // [2]
+                errorMSG.setVisible(true);
+                errorMSG.displayError.append("Mismatch Password Error: \nPassword and Confirmed Password do NOT match.");
+
+            } else {
+
+                if (!TF_password.getText().matches(".*[a-zA-Z].*") || !TF_password.getText().matches(".*\\d.*") || !TF_password.getText().matches(".*[^a-zA-Z\\d].*")) { // [3]
+                    errorMSG.setVisible(true);
+                    errorMSG.displayError.append("Missing Symbol and/or Number Error: \nPassword requires atleast ONE Symbol and ONE Number.");
+
+                } else {
+
+                    if (TF_password.getText().length() <= 5) { // [4]
+                        errorMSG.setVisible(true);
+                        errorMSG.displayError.append("Passowrd Length Error: \nPassword must atleast have 6 characters.");
+
+                    } else {
+
+                        if (TF_phoneNum.getText().matches(".*[a-zA-Z].*") || TF_phoneNum.getText().matches(".*[^\\d].*")) { // [5]
+                            errorMSG.setVisible(true);
+                            errorMSG.displayError.append("Phone Number Letter and/or Symbol Error: \nPhone Number TextField has a Letter and/or Number in it.");
+
+                        } else {
+
+                            if (TF_phoneNum.getText().length() != 11) { // [6]
+                                errorMSG.setVisible(true);
+                                errorMSG.displayError.append("Phone Number Length Error: \nPhone Number must have and should be equal to 11 digits.");
+
+                            } else {
+
+                                if (Gender2.getSelectedIndex() == 0) { // [7]
+
+                                    errorMSG.setVisible(true);
+                                    errorMSG.displayError.append("Gender Selection Error: \nUser must select a gender from the list.");
+
+                                } else {
+
+                                    if (MaritalStatus.getSelectedIndex() == 0) {
+
+                                        errorMSG.setVisible(true);
+                                        errorMSG.displayError.append("Status Selection Error: \nUser must select a martial status from the list.");
+
+                                    } else {
+
+                                        if (!jCheckBox1.isSelected()) {
+
+                                            errorMSG.setVisible(true);
+                                            errorMSG.displayError.append("T&C unchecked Error: \nTerms And Condition Must be checked before you can create an account.");
+
+                                        } else {
+
+                                            String name = TF_FirstName.getText();
+                                            String email = TF_Email1.getText();
+                                            String surname = TF_surname2.getText();
+                                            String year = TF_Year.getText();
+                                            String day = TF_day1.getText();
+                                            String month = TF_month1.getText();
+                                            String selectedStatus = (String) MaritalStatus.getSelectedItem();
+                                            String middleName = TF_MiddleName.getText();
+                                            AccountsDataBase acc = new AccountsDataBase();
+                                            acc.addData(surname, middleName, surname, year, surname, month, email, month, middleName);
+                                            
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
 
     }//GEN-LAST:event_registerActionPerformed
 
@@ -598,6 +665,14 @@ public class Synergy_Registration extends javax.swing.JFrame {
     private void TF_Email1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_Email1ActionPerformed
 
     }//GEN-LAST:event_TF_Email1ActionPerformed
+
+    private void L_haveAccountMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L_haveAccountMouseClicked
+        
+        JFrame login = new Synergy_LogIn();
+        login.setVisible(true);
+        dispose();
+        
+    }//GEN-LAST:event_L_haveAccountMouseClicked
 
     /**
      * @param args the command line arguments
@@ -656,6 +731,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
     private javax.swing.JLabel L_firstName1;
     private javax.swing.JLabel L_firstName3;
     private javax.swing.JLabel L_gender;
+    private javax.swing.JLabel L_haveAccount;
     private javax.swing.JLabel L_lastName;
     private javax.swing.JLabel L_lastName1;
     private javax.swing.JLabel L_lastName2;
@@ -663,7 +739,6 @@ public class Synergy_Registration extends javax.swing.JFrame {
     private javax.swing.JLabel L_lastName4;
     private javax.swing.JLabel L_lastName5;
     private javax.swing.JLabel L_password;
-    private javax.swing.JLabel L_password1;
     private javax.swing.JLabel L_password2;
     private javax.swing.JLabel L_password3;
     private javax.swing.JLabel L_password4;

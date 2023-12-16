@@ -137,18 +137,8 @@ public class Synergy_LogIn extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-        JFrame login = new Synergy_HomePatientt();
-        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        login.setVisible(true);
         
-        if (this.isVisible()) {
-            this.dispose();
-        }
-        
-        String email = tf_Email.getText();
-        String password = tf_Password.getText();
-
-        // code if statement here for database shit.
+        // back button
 
     }//GEN-LAST:event_loginActionPerformed
 
@@ -157,7 +147,14 @@ public class Synergy_LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_tf_EmailActionPerformed
 
     private void login2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login2ActionPerformed
-        // TODO add your handling code here:
+        
+        AccountsDataBase db = new AccountsDataBase();
+        
+        String username = tf_Email.getText(); // the jTextField is named Email but it is actualy username.
+        String password = tf_Password.getText();
+        
+        // enter if statement here..
+        
     }//GEN-LAST:event_login2ActionPerformed
 
     /**

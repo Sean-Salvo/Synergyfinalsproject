@@ -194,7 +194,7 @@
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="70" pref="70" max="-2" attributes="0"/>
-                          <Component id="L_password1" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="L_haveAccount" min="-2" pref="190" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="200" pref="200" max="-2" attributes="0"/>
@@ -264,7 +264,7 @@
                               <Component id="L_password3" min="-2" pref="20" max="-2" attributes="0"/>
                               <Component id="L_password4" min="-2" pref="20" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="L_password1" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="L_haveAccount" min="-2" pref="20" max="-2" attributes="0"/>
                           <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                           <Component id="register" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -301,9 +301,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_FirstName">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Owen"/>
-                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_FirstNameActionPerformed"/>
                   </Events>
@@ -526,7 +523,7 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_address">
                 </Component>
-                <Component class="javax.swing.JLabel" name="L_password1">
+                <Component class="javax.swing.JLabel" name="L_haveAccount">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="0" green="0" red="0" type="rgb"/>
@@ -534,8 +531,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Karma" size="16" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Alreadt have an account?"/>
+                    <Property name="text" type="java.lang.String" value="Already have an account?"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="L_haveAccountMouseClicked"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_password">
                 </Component>

@@ -1,3 +1,5 @@
+package synergyfinalsproject;
+
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
@@ -109,6 +111,12 @@ public class Error_Display extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void errorMessage(){
+        
+        System.out.println("\"Empty TextField Error: \\nOne or More TextField is Empty.\"");
+        
+    }
+    
     private void okayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okayActionPerformed
         
         dispose();
