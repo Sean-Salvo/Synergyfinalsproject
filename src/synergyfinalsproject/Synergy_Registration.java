@@ -4,6 +4,8 @@
  */
 package synergyfinalsproject;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 /**
@@ -13,10 +15,14 @@ import javax.swing.JFrame;
 public class Synergy_Registration extends javax.swing.JFrame {
 
     /**
-     * Creates new form Synergy_Registrationn
+     * Creates new form Synergy_Registration
      */
     public Synergy_Registration() {
         initComponents();
+        
+        Image image = new ImageIcon(this.getClass().getResource("Synergy (Resized Logo).jpg")).getImage();
+        this.setIconImage(image);
+        
     }
 
     /**
@@ -69,6 +75,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Synergy: Create Account");
 
         whitePanel.setBackground(new java.awt.Color(221, 238, 249));
         whitePanel.setPreferredSize(new java.awt.Dimension(772, 417));
@@ -413,7 +420,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
         whitePanel.add(B_register);
-        B_register.setBounds(55, 881, 75, 27);
+        B_register.setBounds(55, 881, 79, 31);
 
         TermsConditions.setFont(new java.awt.Font("Karma", 1, 14)); // NOI18N
         TermsConditions.setForeground(new java.awt.Color(255, 255, 255));
@@ -424,7 +431,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
         whitePanel.add(TermsConditions);
-        TermsConditions.setBounds(55, 848, 253, 27);
+        TermsConditions.setBounds(55, 848, 255, 27);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogo.png"))); // NOI18N
         whitePanel.add(jLabel1);
@@ -525,10 +532,8 @@ public class Synergy_Registration extends javax.swing.JFrame {
         8. Status Selection Error: A martial status must be selected in the jComboBox.
         9. T&C Unchecked Error: if the user left the terms and condition box unchecked.
 
-        */
-
+         */
         //-------------------------------------------------------------------------------------------
-
         if (TF_FirstName.getText().isEmpty()) { // [1]
 
             errorMSG.setVisible(true);
@@ -580,6 +585,11 @@ public class Synergy_Registration extends javax.swing.JFrame {
             errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
 
         } else if (TF_cPassword.getText().isEmpty()) {
+
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
+
+        } else if (TF_UserName.getText().isEmpty()) {
 
             errorMSG.setVisible(true);
             errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
@@ -636,17 +646,16 @@ public class Synergy_Registration extends javax.swing.JFrame {
                                             errorMSG.displayError.append("T&C unchecked Error: \nTerms And Condition Must be checked before you can create an account.");
 
                                         } else {
+                                            
+                                            dataBaseV2 db = new dataBaseV2();
+                                            
+                                            String regUsername = TF_UserName.getText();
+                                            String regPassword = TF_password.getText();
 
-                                            String name = TF_FirstName.getText();
-                                            String email = TF_Email1.getText();
-                                            String surname = TF_surname2.getText();
-                                            String year = TF_Year.getText();
-                                            String day = TF_day1.getText();
-                                            String month = TF_month1.getText();
-                                            String selectedStatus = (String) MaritalStatus.getSelectedItem();
-                                            String middleName = TF_MiddleName.getText();
-                                            AccountsDataBase acc = new AccountsDataBase();
-                                            acc.addData(surname, middleName, surname, year, surname, month, email, month, middleName);
+                                            db.addUserData(regUsername, regPassword);
+
+                                            JFrame login = new Synergy_LogIn();
+                                            login.setVisible(true);
 
                                         }
 

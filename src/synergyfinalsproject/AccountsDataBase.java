@@ -17,7 +17,9 @@ public class AccountsDataBase {
     private LinkedList<String> Email;
     private LinkedList<String> ContactNum;
     private LinkedList<String> Addresses;
-
+    private LinkedList<String> Username;
+    private LinkedList<String> Password;
+    
     public AccountsDataBase() {
         this.FirstName = new LinkedList<>();
         this.MiddleName = new LinkedList<>();
@@ -28,10 +30,12 @@ public class AccountsDataBase {
         this.Email = new LinkedList<>();
         this.ContactNum = new LinkedList<>();
         this.Addresses = new LinkedList<>();
+        this.Username = new LinkedList<>();
+        this.Password = new LinkedList<>();
 
     }
 
-    public void addData(String firstName, String middleName, String surName, String gender, String birthDate, String status, String email, String contactNum, String addresses) {
+    public void addData(String firstName, String middleName, String surName, String gender, String birthDate, String status, String email, String contactNum, String addresses, String username, String password) {
         FirstName.add(firstName);
         MiddleName.add(middleName);
         SurName.add(surName);
@@ -41,6 +45,8 @@ public class AccountsDataBase {
         Email.add(email);
         ContactNum.add(contactNum);
         Addresses.add(addresses);
+        Username.add(username);
+        Password.add(password);
 
     }
 
@@ -78,6 +84,14 @@ public class AccountsDataBase {
 
     public LinkedList<String> getAllAddresses() {
         return new LinkedList<>(Addresses);
+    }
+    
+    public LinkedList<String> getAllUsername() {
+        return new LinkedList<>(Username);
+    }
+    
+    public LinkedList<String> getAllPassword() {
+        return new LinkedList<>(Password);
     }
 
 }
