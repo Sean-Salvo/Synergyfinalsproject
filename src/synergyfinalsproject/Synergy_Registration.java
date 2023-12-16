@@ -1,28 +1,22 @@
-package synergyfinalsproject;
-
-import java.awt.Image;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
+package synergyfinalsproject;
+
+import javax.swing.JFrame;
+
 /**
  *
- * @author Ken Computer
+ * @author Test
  */
 public class Synergy_Registration extends javax.swing.JFrame {
 
     /**
-     * Creates new form HMS_Register
+     * Creates new form Synergy_Registrationn
      */
     public Synergy_Registration() {
         initComponents();
-
-        Image image = new ImageIcon(this.getClass().getResource("Synergy (Resized Logo).jpg")).getImage();
-        this.setIconImage(image);
-
     }
 
     /**
@@ -34,7 +28,6 @@ public class Synergy_Registration extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        TF_firstName = new javax.swing.JTextField();
         whitePanel = new javax.swing.JPanel();
         title = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -61,7 +54,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_lastName5 = new javax.swing.JLabel();
         TF_Email1 = new javax.swing.JTextField();
         L_password = new javax.swing.JLabel();
-        TF_address = new javax.swing.JTextField();
+        TF_UserName = new javax.swing.JTextField();
         L_haveAccount = new javax.swing.JLabel();
         TF_password = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
@@ -69,20 +62,13 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_password3 = new javax.swing.JLabel();
         L_password4 = new javax.swing.JLabel();
         register = new javax.swing.JButton();
+        L_lastName6 = new javax.swing.JLabel();
+        TF_address1 = new javax.swing.JTextField();
         B_register = new javax.swing.JButton();
         TermsConditions = new javax.swing.JCheckBox();
         jLabel1 = new javax.swing.JLabel();
 
-        TF_firstName.setForeground(new java.awt.Color(255, 255, 255));
-        TF_firstName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_firstNameActionPerformed(evt);
-            }
-        });
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Synergy: Create Account");
-        setResizable(false);
 
         whitePanel.setBackground(new java.awt.Color(221, 238, 249));
         whitePanel.setPreferredSize(new java.awt.Dimension(772, 417));
@@ -197,7 +183,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
         L_lastName4.setBackground(new java.awt.Color(0, 0, 0));
         L_lastName4.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
         L_lastName4.setForeground(new java.awt.Color(6, 61, 134));
-        L_lastName4.setText("Address");
+        L_lastName4.setText("Username");
 
         TF_phoneNum.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -260,6 +246,11 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
 
+        L_lastName6.setBackground(new java.awt.Color(0, 0, 0));
+        L_lastName6.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
+        L_lastName6.setForeground(new java.awt.Color(6, 61, 134));
+        L_lastName6.setText("Address");
+
         javax.swing.GroupLayout newBluePanelLayout = new javax.swing.GroupLayout(newBluePanel);
         newBluePanel.setLayout(newBluePanelLayout);
         newBluePanelLayout.setHorizontalGroup(
@@ -313,33 +304,38 @@ public class Synergy_Registration extends javax.swing.JFrame {
                 .addComponent(TF_phoneNum, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(newBluePanelLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
+                .addComponent(L_lastName6, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(newBluePanelLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(TF_address1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(newBluePanelLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
                 .addComponent(L_lastName4, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(newBluePanelLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(TF_address, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(TF_UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(newBluePanelLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(L_password2)
-                .addGap(118, 118, 118)
+                .addGap(128, 128, 128)
                 .addComponent(L_password, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(newBluePanelLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(TF_password, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
+                .addGap(18, 18, 18)
                 .addComponent(TF_cPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(newBluePanelLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(newBluePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(newBluePanelLayout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(L_password3, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(L_password4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(6, 6, 6)
+                .addComponent(L_password4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(L_password3, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(newBluePanelLayout.createSequentialGroup()
-                .addGap(70, 70, 70)
+                .addGap(76, 76, 76)
                 .addComponent(L_haveAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(newBluePanelLayout.createSequentialGroup()
-                .addGap(200, 200, 200)
+                .addGap(219, 219, 219)
                 .addComponent(register, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         newBluePanelLayout.setVerticalGroup(
@@ -378,23 +374,29 @@ public class Synergy_Registration extends javax.swing.JFrame {
                     .addComponent(TF_Email1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TF_phoneNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(8, 8, 8)
+                .addComponent(L_lastName6)
+                .addGap(0, 0, 0)
+                .addComponent(TF_address1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(L_lastName4)
                 .addGap(0, 0, 0)
-                .addComponent(TF_address, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(8, 8, 8)
+                .addComponent(TF_UserName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
                 .addGroup(newBluePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(L_password2)
-                    .addComponent(L_password))
+                    .addComponent(L_password2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_password, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(3, 3, 3)
                 .addGroup(newBluePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(TF_password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TF_cPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(33, 33, 33)
                 .addGroup(newBluePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jCheckBox1)
-                    .addComponent(L_password3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_password4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(L_password4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_password3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
                 .addComponent(L_haveAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
+                .addGap(6, 6, 6)
                 .addComponent(register))
         );
 
@@ -411,7 +413,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
         whitePanel.add(B_register);
-        B_register.setBounds(55, 881, 79, 31);
+        B_register.setBounds(55, 881, 75, 27);
 
         TermsConditions.setFont(new java.awt.Font("Karma", 1, 14)); // NOI18N
         TermsConditions.setForeground(new java.awt.Color(255, 255, 255));
@@ -422,7 +424,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
         });
         whitePanel.add(TermsConditions);
-        TermsConditions.setBounds(55, 848, 255, 27);
+        TermsConditions.setBounds(55, 848, 253, 27);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogo.png"))); // NOI18N
         whitePanel.add(jLabel1);
@@ -432,39 +434,35 @@ public class Synergy_Registration extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(whitePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 772, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(whitePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(whitePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 412, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(whitePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void B_registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_registerActionPerformed
+    private void TF_FirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_FirstNameActionPerformed
 
-    }//GEN-LAST:event_B_registerActionPerformed
-
-    private void TermsConditionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TermsConditionsActionPerformed
-
-    }//GEN-LAST:event_TermsConditionsActionPerformed
-
-    private void TF_firstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_firstNameActionPerformed
-
-    }//GEN-LAST:event_TF_firstNameActionPerformed
+    }//GEN-LAST:event_TF_FirstNameActionPerformed
 
     private void TF_MiddleNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_MiddleNameActionPerformed
 
     }//GEN-LAST:event_TF_MiddleNameActionPerformed
 
     private void TF_YearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_YearActionPerformed
-
 
     }//GEN-LAST:event_TF_YearActionPerformed
 
@@ -488,6 +486,22 @@ public class Synergy_Registration extends javax.swing.JFrame {
 
     }//GEN-LAST:event_Gender2ActionPerformed
 
+    private void TF_phoneNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_phoneNumActionPerformed
+
+    }//GEN-LAST:event_TF_phoneNumActionPerformed
+
+    private void TF_Email1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_Email1ActionPerformed
+
+    }//GEN-LAST:event_TF_Email1ActionPerformed
+
+    private void L_haveAccountMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L_haveAccountMouseClicked
+
+        JFrame login = new Synergy_LogIn();
+        login.setVisible(true);
+        dispose();
+
+    }//GEN-LAST:event_L_haveAccountMouseClicked
+
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
@@ -496,11 +510,11 @@ public class Synergy_Registration extends javax.swing.JFrame {
 
         // Object to setVisibility and append displayError's specific Messages
         Error_Display errorMSG = new Error_Display();
-        
+
         /*
-        
+
         Total amount of Errors to display [9]
-        
+
         1. Empty TextField Error: if the user did not fill up one of the textfields.
         2. Mismatch Password Error: if the user's password and confirmed password do not match.
         3. Missing Symbol and/or Number Error: a user's password must have atleast 1 number and 1 symbol.
@@ -510,11 +524,11 @@ public class Synergy_Registration extends javax.swing.JFrame {
         7. Gender Selection Error: A gender must be selected in the jComboBox.
         8. Status Selection Error: A martial status must be selected in the jComboBox.
         9. T&C Unchecked Error: if the user left the terms and condition box unchecked.
-        
+
         */
 
         //-------------------------------------------------------------------------------------------
-        
+
         if (TF_FirstName.getText().isEmpty()) { // [1]
 
             errorMSG.setVisible(true);
@@ -555,7 +569,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
             errorMSG.setVisible(true);
             errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
 
-        } else if (TF_address.getText().isEmpty()) {
+        } else if (TF_UserName.getText().isEmpty()) {
 
             errorMSG.setVisible(true);
             errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
@@ -633,7 +647,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
                                             String middleName = TF_MiddleName.getText();
                                             AccountsDataBase acc = new AccountsDataBase();
                                             acc.addData(surname, middleName, surname, year, surname, month, email, month, middleName);
-                                            
+
                                         }
 
                                     }
@@ -651,28 +665,15 @@ public class Synergy_Registration extends javax.swing.JFrame {
             }
 
         }
-
     }//GEN-LAST:event_registerActionPerformed
 
-    private void TF_phoneNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_phoneNumActionPerformed
+    private void B_registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_registerActionPerformed
 
-    }//GEN-LAST:event_TF_phoneNumActionPerformed
+    }//GEN-LAST:event_B_registerActionPerformed
 
-    private void TF_FirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_FirstNameActionPerformed
+    private void TermsConditionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TermsConditionsActionPerformed
 
-    }//GEN-LAST:event_TF_FirstNameActionPerformed
-
-    private void TF_Email1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_Email1ActionPerformed
-
-    }//GEN-LAST:event_TF_Email1ActionPerformed
-
-    private void L_haveAccountMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L_haveAccountMouseClicked
-        
-        JFrame login = new Synergy_LogIn();
-        login.setVisible(true);
-        dispose();
-        
-    }//GEN-LAST:event_L_haveAccountMouseClicked
+    }//GEN-LAST:event_TermsConditionsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -688,31 +689,17 @@ public class Synergy_Registration extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
-
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Synergy_Registration.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
-
+            java.util.logging.Logger.getLogger(Synergy_Registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Synergy_Registration.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
-
+            java.util.logging.Logger.getLogger(Synergy_Registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Synergy_Registration.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
-
+            java.util.logging.Logger.getLogger(Synergy_Registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Synergy_Registration.class
-                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Synergy_Registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
@@ -738,6 +725,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
     private javax.swing.JLabel L_lastName3;
     private javax.swing.JLabel L_lastName4;
     private javax.swing.JLabel L_lastName5;
+    private javax.swing.JLabel L_lastName6;
     private javax.swing.JLabel L_password;
     private javax.swing.JLabel L_password2;
     private javax.swing.JLabel L_password3;
@@ -746,11 +734,11 @@ public class Synergy_Registration extends javax.swing.JFrame {
     private javax.swing.JTextField TF_Email1;
     private javax.swing.JTextField TF_FirstName;
     private javax.swing.JTextField TF_MiddleName;
+    private javax.swing.JTextField TF_UserName;
     private javax.swing.JTextField TF_Year;
-    private javax.swing.JTextField TF_address;
+    private javax.swing.JTextField TF_address1;
     private javax.swing.JTextField TF_cPassword;
     private javax.swing.JTextField TF_day1;
-    private javax.swing.JTextField TF_firstName;
     private javax.swing.JTextField TF_month1;
     private javax.swing.JTextField TF_password;
     private javax.swing.JTextField TF_phoneNum;
