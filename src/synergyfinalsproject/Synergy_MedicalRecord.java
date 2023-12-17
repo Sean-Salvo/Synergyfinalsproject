@@ -4,16 +4,18 @@
  */
 package synergyfinalsproject;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Test
  */
-public class Synergy_MedicalInfoo extends javax.swing.JFrame {
+public class Synergy_MedicalRecord extends javax.swing.JFrame {
 
     /**
      * Creates new form Synergy_MedicalInfoo
      */
-    public Synergy_MedicalInfoo() {
+    public Synergy_MedicalRecord() {
         initComponents();
     }
 
@@ -81,30 +83,55 @@ public class Synergy_MedicalInfoo extends javax.swing.JFrame {
         PatientAbout.setBackground(new java.awt.Color(221, 238, 249));
         PatientAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newInfo (1).png"))); // NOI18N
         PatientAbout.setBorder(null);
+        PatientAbout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatientAboutActionPerformed(evt);
+            }
+        });
         jPanel1.add(PatientAbout);
         PatientAbout.setBounds(30, 240, 30, 30);
 
         PatientSettings.setBackground(new java.awt.Color(221, 238, 249));
         PatientSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newGear (2).png"))); // NOI18N
         PatientSettings.setBorder(null);
+        PatientSettings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatientSettingsActionPerformed(evt);
+            }
+        });
         jPanel1.add(PatientSettings);
         PatientSettings.setBounds(30, 190, 30, 30);
 
         LogOut.setBackground(new java.awt.Color(221, 238, 249));
         LogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogOuy (1).png"))); // NOI18N
         LogOut.setBorder(null);
+        LogOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogOutActionPerformed(evt);
+            }
+        });
         jPanel1.add(LogOut);
         LogOut.setBounds(30, 290, 30, 30);
 
         MedicalRec.setBackground(new java.awt.Color(221, 238, 249));
         MedicalRec.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newMedRec (1).png"))); // NOI18N
         MedicalRec.setBorder(null);
+        MedicalRec.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MedicalRecActionPerformed(evt);
+            }
+        });
         jPanel1.add(MedicalRec);
         MedicalRec.setBounds(30, 140, 30, 30);
 
         HomeButon.setBackground(new java.awt.Color(221, 238, 249));
         HomeButon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newHome (1).png"))); // NOI18N
         HomeButon.setBorder(null);
+        HomeButon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HomeButonActionPerformed(evt);
+            }
+        });
         jPanel1.add(HomeButon);
         HomeButon.setBounds(30, 90, 30, 30);
 
@@ -310,6 +337,45 @@ public class Synergy_MedicalInfoo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void HomeButonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButonActionPerformed
+          dispose();
+        JFrame home = new Synergy_HomePatientt();
+        home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        home.setVisible(true);
+
+    }//GEN-LAST:event_HomeButonActionPerformed
+
+    private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
+        dispose();
+        JFrame medRec = new Synergy_MedicalRecord();
+        medRec.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        medRec.setVisible(true);
+
+    }//GEN-LAST:event_MedicalRecActionPerformed
+
+    private void PatientSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientSettingsActionPerformed
+            dispose();
+        JFrame settings = new Synergy_SettingsPatientt();
+        settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settings.setVisible(true);
+    }//GEN-LAST:event_PatientSettingsActionPerformed
+
+    private void PatientAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientAboutActionPerformed
+         dispose();
+        JFrame info = new Synergy_InfoAboutUS();
+        info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        info.setVisible(true);
+
+    }//GEN-LAST:event_PatientAboutActionPerformed
+
+    private void LogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOutActionPerformed
+          dispose();
+        JFrame login = new Synergy_LogIn();
+        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        login.setVisible(true);
+
+    }//GEN-LAST:event_LogOutActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -327,20 +393,21 @@ public class Synergy_MedicalInfoo extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Synergy_MedicalInfoo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Synergy_MedicalRecord.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Synergy_MedicalInfoo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Synergy_MedicalRecord.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Synergy_MedicalInfoo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Synergy_MedicalRecord.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Synergy_MedicalInfoo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Synergy_MedicalRecord.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Synergy_MedicalInfoo().setVisible(true);
+                new Synergy_MedicalRecord().setVisible(true);
             }
         });
     }

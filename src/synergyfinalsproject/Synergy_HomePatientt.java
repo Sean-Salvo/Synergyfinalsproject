@@ -4,6 +4,8 @@
  */
 package synergyfinalsproject;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Test
@@ -27,6 +29,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        L_firstName5 = new javax.swing.JLabel();
         LogOut = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel2 = new javax.swing.JPanel();
@@ -65,9 +68,8 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         PatientSettings = new javax.swing.JButton();
-        L_firstName5 = new javax.swing.JLabel();
         L_firstName4 = new javax.swing.JLabel();
-        L_firstName3 = new javax.swing.JLabel();
+        Greetings = new javax.swing.JLabel();
         SideMenuu = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         WholeBackground = new javax.swing.JLabel();
@@ -77,9 +79,20 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
+        L_firstName5.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName5.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
+        L_firstName5.setForeground(new java.awt.Color(6, 61, 134));
+        jPanel1.add(L_firstName5);
+        L_firstName5.setBounds(120, 100, 120, 40);
+
         LogOut.setBackground(new java.awt.Color(221, 238, 249));
         LogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogOuy (1).png"))); // NOI18N
         LogOut.setBorder(null);
+        LogOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogOutActionPerformed(evt);
+            }
+        });
         jPanel1.add(LogOut);
         LogOut.setBounds(30, 290, 30, 30);
 
@@ -284,18 +297,33 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         PatientAbout.setBackground(new java.awt.Color(221, 238, 249));
         PatientAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newInfo (1).png"))); // NOI18N
         PatientAbout.setBorder(null);
+        PatientAbout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatientAboutActionPerformed(evt);
+            }
+        });
         jPanel1.add(PatientAbout);
         PatientAbout.setBounds(30, 240, 30, 30);
 
         MedicalRec.setBackground(new java.awt.Color(221, 238, 249));
         MedicalRec.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newMedRec (1).png"))); // NOI18N
         MedicalRec.setBorder(null);
+        MedicalRec.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MedicalRecActionPerformed(evt);
+            }
+        });
         jPanel1.add(MedicalRec);
         MedicalRec.setBounds(30, 140, 30, 30);
 
         HomeButon.setBackground(new java.awt.Color(221, 238, 249));
         HomeButon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newHome (1).png"))); // NOI18N
         HomeButon.setBorder(null);
+        HomeButon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HomeButonActionPerformed(evt);
+            }
+        });
         jPanel1.add(HomeButon);
         HomeButon.setBounds(30, 90, 30, 30);
 
@@ -311,28 +339,27 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         PatientSettings.setBackground(new java.awt.Color(221, 238, 249));
         PatientSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newGear (2).png"))); // NOI18N
         PatientSettings.setBorder(null);
+        PatientSettings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatientSettingsActionPerformed(evt);
+            }
+        });
         jPanel1.add(PatientSettings);
         PatientSettings.setBounds(30, 190, 30, 30);
-
-        L_firstName5.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName5.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName5.setForeground(new java.awt.Color(6, 61, 134));
-        jPanel1.add(L_firstName5);
-        L_firstName5.setBounds(120, 100, 120, 40);
 
         L_firstName4.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName4.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
         L_firstName4.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName4.setText("name");
         jPanel1.add(L_firstName4);
-        L_firstName4.setBounds(240, 70, 80, 32);
+        L_firstName4.setBounds(240, 70, 80, 40);
 
-        L_firstName3.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName3.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
-        L_firstName3.setForeground(new java.awt.Color(6, 61, 134));
-        L_firstName3.setText("Good Day,");
-        jPanel1.add(L_firstName3);
-        L_firstName3.setBounds(120, 70, 120, 32);
+        Greetings.setBackground(new java.awt.Color(0, 0, 0));
+        Greetings.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        Greetings.setForeground(new java.awt.Color(6, 61, 134));
+        Greetings.setText("Good Day,");
+        jPanel1.add(Greetings);
+        Greetings.setBounds(120, 70, 120, 40);
 
         SideMenuu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Side Menu (2).png"))); // NOI18N
         SideMenuu.setMaximumSize(new java.awt.Dimension(50, 313));
@@ -372,6 +399,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void TF_emailAdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_emailAdActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TF_emailAdActionPerformed
@@ -399,6 +427,47 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     private void TF_EmergencyContact1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_EmergencyContact1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TF_EmergencyContact1ActionPerformed
+
+    private void HomeButonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButonActionPerformed
+
+        dispose();
+        JFrame home = new Synergy_HomePatientt();
+        home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        home.setVisible(true);
+
+    }//GEN-LAST:event_HomeButonActionPerformed
+
+    private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
+         dispose();
+        JFrame medRec = new Synergy_MedicalRecord();
+        medRec.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        medRec.setVisible(true);
+
+    }//GEN-LAST:event_MedicalRecActionPerformed
+
+    private void PatientSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientSettingsActionPerformed
+         dispose();
+        JFrame settings = new Synergy_SettingsPatientt();
+        settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settings.setVisible(true);
+
+    }//GEN-LAST:event_PatientSettingsActionPerformed
+
+    private void PatientAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientAboutActionPerformed
+         dispose();
+        JFrame info = new Synergy_InfoAboutUS();
+        info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        info.setVisible(true);
+
+    }//GEN-LAST:event_PatientAboutActionPerformed
+
+    private void LogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOutActionPerformed
+       dispose();
+        JFrame login = new Synergy_LogIn();
+        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        login.setVisible(true);
+
+    }//GEN-LAST:event_LogOutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -436,6 +505,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Greetings;
     private javax.swing.JButton HomeButon;
     private javax.swing.JLabel L_firstName10;
     private javax.swing.JLabel L_firstName11;
@@ -449,7 +519,6 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     private javax.swing.JLabel L_firstName19;
     private javax.swing.JLabel L_firstName20;
     private javax.swing.JLabel L_firstName21;
-    private javax.swing.JLabel L_firstName3;
     private javax.swing.JLabel L_firstName4;
     private javax.swing.JLabel L_firstName5;
     private javax.swing.JLabel L_firstName6;

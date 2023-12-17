@@ -135,9 +135,11 @@ public class Synergy_LogIn extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-
-        // back button
-
+         dispose();
+        
+        JFrame back = new Synergy_Registration();
+        back.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        back.setVisible(true);
     }//GEN-LAST:event_loginActionPerformed
 
     private void tf_UsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_UsernameActionPerformed
@@ -168,6 +170,7 @@ public class Synergy_LogIn extends javax.swing.JFrame {
             errorMSG.displayError.append(("\nInvalid Username or Password Error: \nUsername or Password is not Found."));
 
         }
+        
         
     }//GEN-LAST:event_login2ActionPerformed
 
