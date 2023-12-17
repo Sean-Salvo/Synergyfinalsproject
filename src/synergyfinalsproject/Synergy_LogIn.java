@@ -136,7 +136,9 @@ public class Synergy_LogIn extends javax.swing.JFrame {
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
 
-        // back button
+        JFrame register = new Synergy_Registration();
+        register.setVisible(true);
+        dispose();
 
     }//GEN-LAST:event_loginActionPerformed
 
