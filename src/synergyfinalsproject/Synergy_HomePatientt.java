@@ -20,7 +20,8 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         Synergy_LogIn login = new Synergy_LogIn();
         
         L_username.setText(db.getUsernameDB().get(db.getUsernameDB().indexOf(logUsername)));
-        
+        System.out.println("bing chilling..");
+        // bing chilling
         
     }
 
