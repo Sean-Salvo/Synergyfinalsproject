@@ -156,7 +156,8 @@ public class Synergy_LogIn extends javax.swing.JFrame {
 
         if (db.getUsernameDB().contains(logUsername) && db.getPasswordDB().contains(logPassword)) {
 
-            JFrame homePatient = new Synergy_HomePatientt();
+            JFrame homePatient = new Synergy_HomePatientt(logUsername);
+            
             homePatient.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             homePatient.setVisible(true);
 
