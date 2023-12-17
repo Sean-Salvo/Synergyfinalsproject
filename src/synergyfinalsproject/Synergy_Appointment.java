@@ -11,7 +11,7 @@ package synergyfinalsproject;
 public class Synergy_Appointment extends javax.swing.JFrame {
 
     /**
-     * Creates new form Synergy_Appointment
+     * Creates new form Synergy_Appointmentt
      */
     public Synergy_Appointment() {
         initComponents();
@@ -27,38 +27,169 @@ public class Synergy_Appointment extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jList2 = new javax.swing.JList<>();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        L_firstName15 = new javax.swing.JLabel();
+        TF_AppoYear = new javax.swing.JTextField();
+        L_firstName17 = new javax.swing.JLabel();
+        TF_AppoMonth1 = new javax.swing.JTextField();
+        L_firstName18 = new javax.swing.JLabel();
+        TF_AppoDay = new javax.swing.JTextField();
+        Cancel = new javax.swing.JButton();
+        Save = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
-        cancel = new javax.swing.JButton();
-        appointmentYear1 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        save = new javax.swing.JButton();
-        appointmentReason = new javax.swing.JTextField();
-        appointmentDay1 = new javax.swing.JTextField();
-        L_firstName19 = new javax.swing.JLabel();
-        appointmentMonth1 = new javax.swing.JTextField();
-        L_firstName18 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         L_firstName16 = new javax.swing.JLabel();
-        L_firstName17 = new javax.swing.JLabel();
-        L_firstName15 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         L_firstName13 = new javax.swing.JLabel();
         L_firstName14 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         PatientAbout = new javax.swing.JButton();
         PatientSettings = new javax.swing.JButton();
         LogOut = new javax.swing.JButton();
-        MedicalRec = new javax.swing.JButton();
         HomeButon = new javax.swing.JButton();
         SideMenuu = new javax.swing.JLabel();
         WholeBackground = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
+
+        jList2.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane3.setViewportView(jList2);
+
+        jPanel1.add(jScrollPane3);
+        jScrollPane3.setBounds(580, 140, 150, 70);
+
+        jLabel9.setFont(new java.awt.Font("Karma", 0, 15)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(6, 61, 134));
+        jLabel9.setText("Appointment");
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(580, 110, 140, 30);
+
+        jLabel8.setFont(new java.awt.Font("Karma", 0, 15)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(6, 61, 134));
+        jLabel8.setText("Schedule of");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(580, 90, 140, 30);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/requestAppointment (1).png"))); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(570, 80, 170, 140);
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel6.setFont(new java.awt.Font("Karma", 0, 15)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(6, 61, 134));
+        jLabel6.setText("Set Appointment");
+
+        L_firstName15.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName15.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
+        L_firstName15.setForeground(new java.awt.Color(108, 108, 108));
+        L_firstName15.setText("Year");
+
+        TF_AppoYear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TF_AppoYearActionPerformed(evt);
+            }
+        });
+
+        L_firstName17.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName17.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
+        L_firstName17.setForeground(new java.awt.Color(108, 108, 108));
+        L_firstName17.setText("Month");
+
+        TF_AppoMonth1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TF_AppoMonth1ActionPerformed(evt);
+            }
+        });
+
+        L_firstName18.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName18.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
+        L_firstName18.setForeground(new java.awt.Color(108, 108, 108));
+        L_firstName18.setText("Day");
+
+        TF_AppoDay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TF_AppoDayActionPerformed(evt);
+            }
+        });
+
+        Cancel.setText("Cancel");
+        Cancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CancelActionPerformed(evt);
+            }
+        });
+
+        Save.setText("Save");
+        Save.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SaveActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(Cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName17)
+                    .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName15, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(TF_AppoYear, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                        .addComponent(TF_AppoDay, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(TF_AppoMonth1, javax.swing.GroupLayout.Alignment.LEADING))))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(TF_AppoMonth1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(TF_AppoDay, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(L_firstName15, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(TF_AppoYear, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Cancel)
+                    .addComponent(Save)))
+        );
+
+        jScrollPane2.setViewportView(jPanel2);
+
+        jPanel1.add(jScrollPane2);
+        jScrollPane2.setBounds(580, 240, 150, 120);
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -70,91 +201,21 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(120, 130, 440, 220);
 
-        cancel.setText("Cancel");
-        jPanel1.add(cancel);
-        cancel.setBounds(590, 330, 70, 23);
-
-        appointmentYear1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                appointmentYear1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(appointmentYear1);
-        appointmentYear1.setBounds(590, 220, 130, 20);
-
         jLabel5.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(6, 61, 134));
         jLabel5.setText("Appointment History");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(120, 40, 380, 40);
 
-        save.setText("Save");
-        jPanel1.add(save);
-        save.setBounds(660, 330, 60, 23);
-
-        appointmentReason.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                appointmentReasonActionPerformed(evt);
-            }
-        });
-        jPanel1.add(appointmentReason);
-        appointmentReason.setBounds(590, 270, 130, 50);
-
-        appointmentDay1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                appointmentDay1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(appointmentDay1);
-        appointmentDay1.setBounds(590, 170, 130, 20);
-
-        L_firstName19.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName19.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName19.setText("Reason for appointment");
-        jPanel1.add(L_firstName19);
-        L_firstName19.setBounds(590, 250, 120, 20);
-
-        appointmentMonth1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                appointmentMonth1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(appointmentMonth1);
-        appointmentMonth1.setBounds(590, 120, 130, 20);
-
-        L_firstName18.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName18.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName18.setText("Year");
-        jPanel1.add(L_firstName18);
-        L_firstName18.setBounds(590, 200, 120, 20);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/requestAppointment (1).png"))); // NOI18N
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(570, 200, 260, 200);
 
         L_firstName16.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName16.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
         L_firstName16.setText("Assigned Doctors");
         jPanel1.add(L_firstName16);
         L_firstName16.setBounds(410, 100, 120, 20);
-
-        L_firstName17.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName17.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName17.setText("Day");
-        jPanel1.add(L_firstName17);
-        L_firstName17.setBounds(590, 150, 120, 20);
-
-        L_firstName15.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName15.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName15.setText("Month");
-        jPanel1.add(L_firstName15);
-        L_firstName15.setBounds(590, 100, 120, 20);
-
-        jLabel4.setFont(new java.awt.Font("Karma", 0, 15)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(6, 61, 134));
-        jLabel4.setText("Set Appointment");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(590, 60, 380, 40);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/setAppointment (1).png"))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(580, 50, 190, 330);
 
         L_firstName13.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName13.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
@@ -166,35 +227,29 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         L_firstName14.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
         L_firstName14.setText("Date");
         jPanel1.add(L_firstName14);
-        L_firstName14.setBounds(130, 100, 40, 20);
+        L_firstName14.setBounds(120, 100, 40, 20);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/BigBackgound (1).png"))); // NOI18N
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(100, 50, 520, 350);
+        jLabel1.setBounds(90, 50, 520, 350);
 
         PatientAbout.setBackground(new java.awt.Color(221, 238, 249));
         PatientAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newInfo (1).png"))); // NOI18N
         PatientAbout.setBorder(null);
         jPanel1.add(PatientAbout);
-        PatientAbout.setBounds(30, 240, 30, 30);
+        PatientAbout.setBounds(30, 220, 30, 30);
 
         PatientSettings.setBackground(new java.awt.Color(221, 238, 249));
         PatientSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newGear (2).png"))); // NOI18N
         PatientSettings.setBorder(null);
         jPanel1.add(PatientSettings);
-        PatientSettings.setBounds(30, 190, 30, 30);
+        PatientSettings.setBounds(30, 150, 30, 30);
 
         LogOut.setBackground(new java.awt.Color(221, 238, 249));
         LogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogOuy (1).png"))); // NOI18N
         LogOut.setBorder(null);
         jPanel1.add(LogOut);
         LogOut.setBounds(30, 290, 30, 30);
-
-        MedicalRec.setBackground(new java.awt.Color(221, 238, 249));
-        MedicalRec.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newMedRec (1).png"))); // NOI18N
-        MedicalRec.setBorder(null);
-        jPanel1.add(MedicalRec);
-        MedicalRec.setBounds(30, 140, 30, 30);
 
         HomeButon.setBackground(new java.awt.Color(221, 238, 249));
         HomeButon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newHome (1).png"))); // NOI18N
@@ -213,15 +268,21 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         jPanel1.add(jSeparator8);
         jSeparator8.setBounds(440, 110, 260, 20);
 
+        jLabel7.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(6, 61, 134));
+        jLabel7.setText("Appointment History");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(120, 40, 380, 40);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 760, Short.MAX_VALUE)
+            .addGap(0, 772, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 760, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 772, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
@@ -237,21 +298,25 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void appointmentReasonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appointmentReasonActionPerformed
+    private void TF_AppoMonth1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_AppoMonth1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_appointmentReasonActionPerformed
+    }//GEN-LAST:event_TF_AppoMonth1ActionPerformed
 
-    private void appointmentMonth1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appointmentMonth1ActionPerformed
+    private void TF_AppoDayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_AppoDayActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_appointmentMonth1ActionPerformed
+    }//GEN-LAST:event_TF_AppoDayActionPerformed
 
-    private void appointmentDay1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appointmentDay1ActionPerformed
+    private void TF_AppoYearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_AppoYearActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_appointmentDay1ActionPerformed
+    }//GEN-LAST:event_TF_AppoYearActionPerformed
 
-    private void appointmentYear1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appointmentYear1ActionPerformed
+    private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_appointmentYear1ActionPerformed
+    }//GEN-LAST:event_SaveActionPerformed
+
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CancelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -279,6 +344,7 @@ public class Synergy_Appointment extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Synergy_Appointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -289,6 +355,7 @@ public class Synergy_Appointment extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Cancel;
     private javax.swing.JButton HomeButon;
     private javax.swing.JLabel L_firstName13;
     private javax.swing.JLabel L_firstName14;
@@ -296,26 +363,30 @@ public class Synergy_Appointment extends javax.swing.JFrame {
     private javax.swing.JLabel L_firstName16;
     private javax.swing.JLabel L_firstName17;
     private javax.swing.JLabel L_firstName18;
-    private javax.swing.JLabel L_firstName19;
     private javax.swing.JButton LogOut;
-    private javax.swing.JButton MedicalRec;
     private javax.swing.JButton PatientAbout;
     private javax.swing.JButton PatientSettings;
+    private javax.swing.JButton Save;
     private javax.swing.JLabel SideMenuu;
+    private javax.swing.JTextField TF_AppoDay;
+    private javax.swing.JTextField TF_AppoMonth1;
+    private javax.swing.JTextField TF_AppoYear;
     private javax.swing.JLabel WholeBackground;
-    private javax.swing.JTextField appointmentDay1;
-    private javax.swing.JTextField appointmentMonth1;
-    private javax.swing.JTextField appointmentReason;
-    private javax.swing.JTextField appointmentYear1;
-    private javax.swing.JButton cancel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
+    private javax.swing.JList<String> jList2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JButton save;
     // End of variables declaration//GEN-END:variables
 }

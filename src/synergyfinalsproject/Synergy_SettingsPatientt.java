@@ -95,205 +95,273 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setAutoscrolls(true);
-        jPanel3.setLayout(null);
 
         L_firstName6.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName6.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName6.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName6.setText("Marital Status:");
-        jPanel3.add(L_firstName6);
-        L_firstName6.setBounds(300, 90, 100, 20);
 
         L_firstName7.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName7.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
         L_firstName7.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName7.setText("Emergency Contact Information");
-        jPanel3.add(L_firstName7);
-        L_firstName7.setBounds(20, 290, 280, 30);
-        jPanel3.add(TF_initial);
-        TF_initial.setBounds(300, 60, 130, 30);
 
         L_firstName8.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName8.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName8.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName8.setText("Middle Initial:");
-        jPanel3.add(L_firstName8);
-        L_firstName8.setBounds(300, 40, 130, 20);
-        jPanel3.add(TF_Lname1);
-        TF_Lname1.setBounds(160, 60, 130, 30);
 
         L_firstName9.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName9.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName9.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName9.setText("Last Name: ");
-        jPanel3.add(L_firstName9);
-        L_firstName9.setBounds(160, 40, 130, 20);
 
         L_firstName10.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName10.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName10.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName10.setText("First Name: ");
-        jPanel3.add(L_firstName10);
-        L_firstName10.setBounds(20, 40, 100, 20);
 
         TF_Fname2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_Fname2ActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_Fname2);
-        TF_Fname2.setBounds(20, 60, 130, 30);
 
         L_firstName11.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName11.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName11.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName11.setText("Email:");
-        jPanel3.add(L_firstName11);
-        L_firstName11.setBounds(260, 180, 100, 20);
 
         TF_emailAd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_emailAdActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_emailAd);
-        TF_emailAd.setBounds(260, 200, 170, 20);
 
         L_firstName12.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName12.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName12.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName12.setText("Sex:");
-        jPanel3.add(L_firstName12);
-        L_firstName12.setBounds(160, 90, 100, 20);
 
         L_firstName13.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName13.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
         L_firstName13.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName13.setText("Personal Information");
-        jPanel3.add(L_firstName13);
-        L_firstName13.setBounds(22, 10, 180, 30);
 
         L_firstName14.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName14.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName14.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName14.setText("Contact Number:");
-        jPanel3.add(L_firstName14);
-        L_firstName14.setBounds(260, 320, 100, 20);
-        jPanel3.add(TF_birthdate2);
-        TF_birthdate2.setBounds(20, 110, 130, 20);
 
         L_firstName15.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName15.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName15.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName15.setText("Contact Number");
-        jPanel3.add(L_firstName15);
-        L_firstName15.setBounds(20, 230, 100, 20);
 
         TF_EmergencyContact.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_EmergencyContactActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_EmergencyContact);
-        TF_EmergencyContact.setBounds(260, 340, 180, 20);
 
         L_firstName16.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName16.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName16.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName16.setText("Address:");
-        jPanel3.add(L_firstName16);
-        L_firstName16.setBounds(20, 180, 100, 20);
 
         TF_address2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_address2ActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_address2);
-        TF_address2.setBounds(20, 200, 230, 20);
 
         L_firstName17.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName17.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
         L_firstName17.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName17.setText("Contact Information");
-        jPanel3.add(L_firstName17);
-        L_firstName17.setBounds(20, 150, 182, 30);
 
         L_firstName18.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName18.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName18.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName18.setText("Birthdate: ");
-        jPanel3.add(L_firstName18);
-        L_firstName18.setBounds(20, 90, 100, 20);
 
         TF_phoneNum1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_phoneNum1ActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_phoneNum1);
-        TF_phoneNum1.setBounds(20, 250, 230, 20);
 
         L_firstName19.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName19.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName19.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName19.setText("Relationship to the patient: ");
-        jPanel3.add(L_firstName19);
-        L_firstName19.setBounds(260, 370, 130, 20);
 
         TF_EmergencyAddress.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_EmergencyAddressActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_EmergencyAddress);
-        TF_EmergencyAddress.setBounds(20, 390, 230, 20);
 
         L_firstName20.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName20.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName20.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName20.setText("Name:");
-        jPanel3.add(L_firstName20);
-        L_firstName20.setBounds(20, 320, 100, 20);
 
         TF_EmergencyName2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_EmergencyName2ActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_EmergencyName2);
-        TF_EmergencyName2.setBounds(20, 340, 230, 20);
 
         L_firstName21.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName21.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName21.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName21.setText("Address: ");
-        jPanel3.add(L_firstName21);
-        L_firstName21.setBounds(20, 370, 100, 20);
 
         TF_EmergencyContact1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_EmergencyContact1ActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_EmergencyContact1);
-        TF_EmergencyContact1.setBounds(260, 340, 180, 20);
 
         TF_MaritalStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_MaritalStatusActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_MaritalStatus);
-        TF_MaritalStatus.setBounds(300, 110, 130, 22);
 
         TF_Gender1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_Gender1ActionPerformed(evt);
             }
         });
-        jPanel3.add(TF_Gender1);
-        TF_Gender1.setBounds(160, 110, 130, 22);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(L_firstName13, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(L_firstName9, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(L_firstName8, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(TF_Fname2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(TF_Lname1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(TF_initial, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(L_firstName12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40)
+                .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(TF_birthdate2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(TF_Gender1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(TF_MaritalStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName16, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(140, 140, 140)
+                .addComponent(L_firstName11, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(TF_address2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addComponent(TF_emailAd, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(TF_phoneNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName7, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName20, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(140, 140, 140)
+                .addComponent(L_firstName14, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(TF_EmergencyName2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TF_EmergencyContact1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_EmergencyContact, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName21, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(140, 140, 140)
+                .addComponent(L_firstName19, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(TF_EmergencyAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(L_firstName13, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TF_Fname2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_Lname1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_initial, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TF_birthdate2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_Gender1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_MaritalStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName16, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TF_address2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_emailAd, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addComponent(L_firstName15, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(TF_phoneNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName20, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName14, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TF_EmergencyName2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_EmergencyContact1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_EmergencyContact, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName21, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName19, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(TF_EmergencyAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         jScrollPane1.setViewportView(jPanel3);
 
@@ -442,14 +510,6 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
 
     }//GEN-LAST:event_HomeButonActionPerformed
 
-    private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
-       dispose();
-        JFrame medRec = new Synergy_MedicalRecord(userKey);
-        medRec.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        medRec.setVisible(true);
-
-    }//GEN-LAST:event_MedicalRecActionPerformed
-
     private void PatientSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientSettingsActionPerformed
          dispose();
         JFrame settings = new Synergy_SettingsPatientt(userKey);
@@ -473,6 +533,13 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
         login.setVisible(true);
   
     }//GEN-LAST:event_LogOutActionPerformed
+
+    private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
+        dispose();
+        JFrame medRec = new Synergy_MedicalRecord(userKey);
+        medRec.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        medRec.setVisible(true);
+    }//GEN-LAST:event_MedicalRecActionPerformed
 
     /**
      * @param args the command line arguments
