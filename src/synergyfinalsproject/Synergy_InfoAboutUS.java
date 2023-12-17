@@ -117,18 +117,18 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         L_firstName.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName.setText("This comprehensive system ensures accurate and up-to-date patient data.");
         jPanel2.add(L_firstName);
-        L_firstName.setBounds(50, 190, 620, 20);
+        L_firstName.setBounds(50, 190, 620, 40);
 
         L_firstName1.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName1.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
         L_firstName1.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName1.setText("Features");
         jPanel2.add(L_firstName1);
-        L_firstName1.setBounds(50, 140, 120, 30);
+        L_firstName1.setBounds(50, 130, 120, 40);
 
         L_firstName2.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName2.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
-        L_firstName2.setText("Synergy is a cutting-edge visual HMS (Hospital Management System) application designed to ");
+        L_firstName2.setText("Synergy is a visual HMS (Hospital Management System) application designed to ");
         jPanel2.add(L_firstName2);
         L_firstName2.setBounds(50, 70, 620, 30);
 
@@ -136,25 +136,25 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         L_firstName3.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName3.setText("revolutionize the way patient information is provided. With its user-friendly interface and ");
         jPanel2.add(L_firstName3);
-        L_firstName3.setBounds(50, 90, 620, 20);
+        L_firstName3.setBounds(50, 90, 620, 30);
 
         L_firstName5.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName5.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName5.setText("advanced features, Synergy aims to streamline healthcare processes and enhance patient care.");
         jPanel2.add(L_firstName5);
-        L_firstName5.setBounds(50, 110, 620, 10);
+        L_firstName5.setBounds(50, 110, 620, 30);
 
         L_firstName6.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName6.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName6.setText("enhances user experience and reduces the learning curve for new users.");
         jPanel2.add(L_firstName6);
-        L_firstName6.setBounds(50, 260, 620, 20);
+        L_firstName6.setBounds(50, 260, 620, 40);
 
         L_firstName7.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName7.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName7.setText("patient records, including personal details, medical history, allergies, and medication information.");
         jPanel2.add(L_firstName7);
-        L_firstName7.setBounds(50, 180, 620, 10);
+        L_firstName7.setBounds(50, 180, 620, 20);
 
         L_firstName8.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName8.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
@@ -172,7 +172,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         L_firstName10.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName10.setText("to navigate through the application and access patient information quickly. The intuitive design ");
         jPanel2.add(L_firstName10);
-        L_firstName10.setBounds(50, 250, 620, 10);
+        L_firstName10.setBounds(50, 250, 620, 20);
 
         L_firstName11.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName11.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
@@ -275,7 +275,7 @@ public class Synergy_InfoAboutUS extends javax.swing.JFrame {
         L_firstName27.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName27.setText("ABOUT US");
         jPanel2.add(L_firstName27);
-        L_firstName27.setBounds(50, 50, 120, 30);
+        L_firstName27.setBounds(50, 30, 120, 30);
 
         jScrollPane1.setViewportView(jPanel2);
 

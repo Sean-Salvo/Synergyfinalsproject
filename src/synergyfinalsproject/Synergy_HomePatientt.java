@@ -106,7 +106,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jPanel2.add(L_firstName7);
         L_firstName7.setBounds(20, 290, 280, 30);
         jPanel2.add(TF_initial);
-        TF_initial.setBounds(300, 60, 130, 20);
+        TF_initial.setBounds(300, 60, 130, 30);
 
         L_firstName8.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName8.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
@@ -115,7 +115,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jPanel2.add(L_firstName8);
         L_firstName8.setBounds(300, 40, 130, 20);
         jPanel2.add(TF_Lname1);
-        TF_Lname1.setBounds(160, 60, 130, 20);
+        TF_Lname1.setBounds(160, 60, 130, 30);
 
         L_firstName9.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName9.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
@@ -131,12 +131,12 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jPanel2.add(L_firstName10);
         L_firstName10.setBounds(20, 40, 100, 20);
         jPanel2.add(TF_Fname2);
-        TF_Fname2.setBounds(20, 60, 130, 20);
+        TF_Fname2.setBounds(20, 60, 130, 30);
 
         L_firstName11.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName11.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName11.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName11.setText("Email Address:");
+        L_firstName11.setText("Email:");
         jPanel2.add(L_firstName11);
         L_firstName11.setBounds(260, 180, 100, 20);
 
@@ -197,7 +197,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         L_firstName16.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName16.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName16.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName16.setText("Adress:");
+        L_firstName16.setText("Address:");
         jPanel2.add(L_firstName16);
         L_firstName16.setBounds(20, 180, 100, 20);
 
@@ -317,7 +317,6 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         L_firstName5.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName5.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName5.setForeground(new java.awt.Color(6, 61, 134));
-        L_firstName5.setText("Have a nice friday!");
         jPanel1.add(L_firstName5);
         L_firstName5.setBounds(120, 100, 120, 40);
 
@@ -326,14 +325,14 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         L_firstName4.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName4.setText("name");
         jPanel1.add(L_firstName4);
-        L_firstName4.setBounds(240, 60, 80, 40);
+        L_firstName4.setBounds(240, 70, 80, 32);
 
         L_firstName3.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName3.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
         L_firstName3.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName3.setText("Good Day,");
         jPanel1.add(L_firstName3);
-        L_firstName3.setBounds(120, 60, 120, 40);
+        L_firstName3.setBounds(120, 70, 120, 32);
 
         SideMenuu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Side Menu (2).png"))); // NOI18N
         SideMenuu.setMaximumSize(new java.awt.Dimension(50, 313));
