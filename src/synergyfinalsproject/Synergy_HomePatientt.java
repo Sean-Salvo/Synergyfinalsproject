@@ -13,8 +13,20 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     /**
      * Creates new form Synergy_HomePatientt
      */
-    public Synergy_HomePatientt() {
+    public Synergy_HomePatientt(String logUsername) {
         initComponents();
+        
+        dataBaseV2 db = new dataBaseV2();
+        Synergy_LogIn login = new Synergy_LogIn();
+        
+        L_username.setText(db.getUsernameDB().get(db.getUsernameDB().indexOf(logUsername)));
+        
+        
+    }
+
+    private Synergy_HomePatientt() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        // do not mind..
     }
 
     /**
@@ -66,7 +78,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         PatientSettings = new javax.swing.JButton();
         L_firstName5 = new javax.swing.JLabel();
-        L_firstName4 = new javax.swing.JLabel();
+        L_username = new javax.swing.JLabel();
         L_firstName3 = new javax.swing.JLabel();
         SideMenuu = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -86,7 +98,6 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane1.setBorder(null);
         jScrollPane1.setForeground(new java.awt.Color(255, 255, 255));
-        jScrollPane1.setOpaque(false);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setAutoscrolls(true);
@@ -320,19 +331,19 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jPanel1.add(L_firstName5);
         L_firstName5.setBounds(120, 100, 120, 40);
 
-        L_firstName4.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName4.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
-        L_firstName4.setForeground(new java.awt.Color(6, 61, 134));
-        L_firstName4.setText("name");
-        jPanel1.add(L_firstName4);
-        L_firstName4.setBounds(240, 70, 80, 32);
+        L_username.setBackground(new java.awt.Color(0, 0, 0));
+        L_username.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        L_username.setForeground(new java.awt.Color(6, 61, 134));
+        L_username.setText("name");
+        jPanel1.add(L_username);
+        L_username.setBounds(240, 70, 80, 40);
 
         L_firstName3.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName3.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
         L_firstName3.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName3.setText("Good Day,");
         jPanel1.add(L_firstName3);
-        L_firstName3.setBounds(120, 70, 120, 32);
+        L_firstName3.setBounds(120, 70, 120, 40);
 
         SideMenuu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/Side Menu (2).png"))); // NOI18N
         SideMenuu.setMaximumSize(new java.awt.Dimension(50, 313));
@@ -450,12 +461,12 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     private javax.swing.JLabel L_firstName20;
     private javax.swing.JLabel L_firstName21;
     private javax.swing.JLabel L_firstName3;
-    private javax.swing.JLabel L_firstName4;
     private javax.swing.JLabel L_firstName5;
     private javax.swing.JLabel L_firstName6;
     private javax.swing.JLabel L_firstName7;
     private javax.swing.JLabel L_firstName8;
     private javax.swing.JLabel L_firstName9;
+    private javax.swing.JLabel L_username;
     private javax.swing.JButton LogOut;
     private javax.swing.JComboBox<String> MaritalStatus;
     private javax.swing.JButton MedicalRec;
