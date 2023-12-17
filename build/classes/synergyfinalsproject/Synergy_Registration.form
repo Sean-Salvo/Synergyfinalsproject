@@ -112,9 +112,9 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
-                          <Component id="TF_FirstName" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="TF_firstname" min="-2" pref="190" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="TF_MiddleName" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="TF_middlename" min="-2" pref="190" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
@@ -124,9 +124,9 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
-                          <Component id="TF_surname2" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="TF_surname" min="-2" pref="190" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="Gender2" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="CB_gender" min="-2" pref="190" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
@@ -136,13 +136,13 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
-                          <Component id="TF_month1" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="TF_month" min="-2" pref="60" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="TF_day1" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="TF_day" min="-2" pref="50" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="TF_Year" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="TF_year" min="-2" pref="60" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="MaritalStatus" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="CB_status" min="-2" pref="190" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
@@ -152,9 +152,9 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
-                          <Component id="TF_Email1" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="TF_email" min="-2" pref="190" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Component id="TF_phoneNum" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="TF_number" min="-2" pref="190" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
@@ -162,7 +162,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
-                          <Component id="TF_address1" min="-2" pref="390" max="-2" attributes="0"/>
+                          <Component id="TF_address" min="-2" pref="390" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
@@ -170,7 +170,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
-                          <Component id="TF_UserName" min="-2" pref="390" max="-2" attributes="0"/>
+                          <Component id="TF_username" min="-2" pref="390" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
@@ -182,7 +182,7 @@
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
                           <Component id="TF_password" min="-2" pref="190" max="-2" attributes="0"/>
                           <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
-                          <Component id="TF_cPassword" min="-2" pref="200" max="-2" attributes="0"/>
+                          <Component id="TF_cpassword" min="-2" pref="200" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
@@ -213,8 +213,8 @@
                               <Component id="L_firstName1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="TF_FirstName" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="TF_MiddleName" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TF_firstname" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TF_middlename" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -222,8 +222,8 @@
                               <Component id="L_gender" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="TF_surname2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="Gender2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TF_surname" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="CB_gender" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -231,10 +231,10 @@
                               <Component id="L_lastName" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="TF_month1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="TF_day1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="TF_Year" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="MaritalStatus" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TF_month" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TF_day" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TF_year" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="CB_status" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -242,17 +242,17 @@
                               <Component id="L_lastName1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="TF_Email1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="TF_phoneNum" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TF_email" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TF_number" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
                           <Component id="L_lastName6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                          <Component id="TF_address1" min="-2" max="-2" attributes="0"/>
+                          <Component id="TF_address" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                           <Component id="L_lastName4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                          <Component id="TF_UserName" min="-2" max="-2" attributes="0"/>
+                          <Component id="TF_username" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="28" pref="28" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="L_password2" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
@@ -261,7 +261,7 @@
                           <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="TF_password" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="TF_cPassword" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TF_cpassword" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="33" pref="33" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -306,14 +306,14 @@
                     <Property name="text" type="java.lang.String" value="Middle Name"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_FirstName">
+                <Component class="javax.swing.JTextField" name="TF_firstname">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_FirstNameActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_firstnameActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_MiddleName">
+                <Component class="javax.swing.JTextField" name="TF_middlename">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_MiddleNameActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_middlenameActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName3">
@@ -344,7 +344,7 @@
                     <Property name="text" type="java.lang.String" value="Status"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_Year">
+                <Component class="javax.swing.JTextField" name="TF_year">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="66" green="66" red="66" type="rgb"/>
@@ -352,7 +352,7 @@
                     <Property name="text" type="java.lang.String" value="Year"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_YearActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_yearActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_gender">
@@ -383,7 +383,7 @@
                     <Property name="text" type="java.lang.String" value="Contact Number"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="MaritalStatus">
+                <Component class="javax.swing.JComboBox" name="CB_status">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="3">
@@ -394,13 +394,13 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MaritalStatusActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CB_statusActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_month1">
+                <Component class="javax.swing.JTextField" name="TF_month">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="66" green="66" red="66" type="rgb"/>
@@ -408,10 +408,10 @@
                     <Property name="text" type="java.lang.String" value="Month"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_month1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_monthActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_day1">
+                <Component class="javax.swing.JTextField" name="TF_day">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="66" green="66" red="66" type="rgb"/>
@@ -419,7 +419,7 @@
                     <Property name="text" type="java.lang.String" value="Day"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_day1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_dayActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_lastName2">
@@ -436,12 +436,12 @@
                     <Property name="text" type="java.lang.String" value="Birthdate"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_surname2">
+                <Component class="javax.swing.JTextField" name="TF_surname">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_surname2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_surnameActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="Gender2">
+                <Component class="javax.swing.JComboBox" name="CB_gender">
                   <Properties>
                     <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                       <StringArray count="4">
@@ -453,7 +453,7 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Gender2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CB_genderActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -473,7 +473,7 @@
                     <Property name="text" type="java.lang.String" value="Surname:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_cPassword">
+                <Component class="javax.swing.JTextField" name="TF_cpassword">
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_lastName4">
                   <Properties>
@@ -489,9 +489,9 @@
                     <Property name="text" type="java.lang.String" value="Username"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_phoneNum">
+                <Component class="javax.swing.JTextField" name="TF_number">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_phoneNumActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_numberActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_lastName5">
@@ -508,9 +508,9 @@
                     <Property name="text" type="java.lang.String" value="Email"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_Email1">
+                <Component class="javax.swing.JTextField" name="TF_email">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_Email1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_emailActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_password">
@@ -527,7 +527,7 @@
                     <Property name="text" type="java.lang.String" value="Confirm Password"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_UserName">
+                <Component class="javax.swing.JTextField" name="TF_username">
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_haveAccount">
                   <Properties>
@@ -620,7 +620,7 @@
                     <Property name="text" type="java.lang.String" value="Address"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_address1">
+                <Component class="javax.swing.JTextField" name="TF_address">
                 </Component>
               </SubComponents>
             </Container>
