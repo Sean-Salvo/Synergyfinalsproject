@@ -12,11 +12,21 @@ import javax.swing.JFrame;
  */
 public class Synergy_MedicalRecord extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Synergy_MedicalInfoo
-     */
-    public Synergy_MedicalRecord() {
+    private int userKey;
+    
+    public Synergy_MedicalRecord(int logUserKey) {
         initComponents();
+        
+        this.userKey = logUserKey;
+        
+        dataBaseV2 db = new dataBaseV2();
+        
+        System.out.println(db.getPasswordDB().get(userKey));
+        
+    }
+
+    private Synergy_MedicalRecord() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
@@ -339,7 +349,7 @@ public class Synergy_MedicalRecord extends javax.swing.JFrame {
 
     private void HomeButonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButonActionPerformed
           dispose();
-        JFrame home = new Synergy_HomePatientt();
+        JFrame home = new Synergy_HomePatientt(userKey);
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
 
@@ -347,7 +357,7 @@ public class Synergy_MedicalRecord extends javax.swing.JFrame {
 
     private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
         dispose();
-        JFrame medRec = new Synergy_MedicalRecord();
+        JFrame medRec = new Synergy_MedicalRecord(userKey);
         medRec.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         medRec.setVisible(true);
 
@@ -355,7 +365,7 @@ public class Synergy_MedicalRecord extends javax.swing.JFrame {
 
     private void PatientSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientSettingsActionPerformed
             dispose();
-        JFrame settings = new Synergy_SettingsPatientt();
+        JFrame settings = new Synergy_SettingsPatientt(userKey);
         settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         settings.setVisible(true);
     }//GEN-LAST:event_PatientSettingsActionPerformed

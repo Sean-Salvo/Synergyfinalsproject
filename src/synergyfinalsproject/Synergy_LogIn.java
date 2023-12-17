@@ -13,10 +13,7 @@ import javax.swing.JFrame;
  * @author Ken Computer
  */
 public class Synergy_LogIn extends javax.swing.JFrame {
-
-    /**
-     * Creates new form LogIn
-     */
+    
     public Synergy_LogIn() {
         initComponents();
 
@@ -135,8 +132,8 @@ public class Synergy_LogIn extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-         dispose();
-        
+        dispose();
+
         JFrame back = new Synergy_Registration();
         back.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         back.setVisible(true);
@@ -153,11 +150,12 @@ public class Synergy_LogIn extends javax.swing.JFrame {
 
         String logUsername = tf_Username.getText();
         String logPassword = tf_Password.getText();
-
+        
         if (db.getUsernameDB().contains(logUsername) && db.getPasswordDB().contains(logPassword)) {
-
-            JFrame homePatient = new Synergy_HomePatientt(logUsername);
             
+            int logUserKey = db.getUsernameDB().indexOf(logUsername);
+            
+            JFrame homePatient = new Synergy_HomePatientt(logUserKey);
             homePatient.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             homePatient.setVisible(true);
 
@@ -171,8 +169,8 @@ public class Synergy_LogIn extends javax.swing.JFrame {
             errorMSG.displayError.append(("\nInvalid Username or Password Error: \nUsername or Password is not Found."));
 
         }
-        
-        
+
+
     }//GEN-LAST:event_login2ActionPerformed
 
     /**
