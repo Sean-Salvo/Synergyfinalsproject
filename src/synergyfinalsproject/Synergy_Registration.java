@@ -531,6 +531,8 @@ public class Synergy_Registration extends javax.swing.JFrame {
         7. Gender Selection Error: A gender must be selected in the jComboBox.
         8. Status Selection Error: A martial status must be selected in the jComboBox.
         9. T&C Unchecked Error: if the user left the terms and condition box unchecked.
+        10. Day TextField Error: if the day textfield includes a letter or symbol.
+        11. Year TextField Error: if the year textfield includes a letter or symbol.
 
          */
         //-------------------------------------------------------------------------------------------
@@ -616,7 +618,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
 
                         if (TF_number.getText().matches(".*[a-zA-Z].*") || TF_number.getText().matches(".*[^\\d].*")) { // [5]
                             errorMSG.setVisible(true);
-                            errorMSG.displayError.append("Phone Number Letter and/or Symbol Error: \nPhone Number TextField has a Letter and/or Number in it.");
+                            errorMSG.displayError.append("Phone Number Letter and/or Symbol Error: \nPhone Number TextField have a Letter and/or Symbol in it.");
 
                         } else {
 
@@ -629,54 +631,72 @@ public class Synergy_Registration extends javax.swing.JFrame {
                                 if (CB_gender.getSelectedIndex() == 0) { // [7]
 
                                     errorMSG.setVisible(true);
-                                    errorMSG.displayError.append("Gender Selection Error: \nUser must select a gender from the list.");
+                                    errorMSG.displayError.append("Gender Selection Error: \nUser must Select a Gender From the List.");
 
                                 } else {
 
-                                    if (CB_status.getSelectedIndex() == 0) {
+                                    if (CB_status.getSelectedIndex() == 0) { // [8]
 
                                         errorMSG.setVisible(true);
-                                        errorMSG.displayError.append("Status Selection Error: \nUser must select a martial status from the list.");
+                                        errorMSG.displayError.append("Status Selection Error: \nUser must Select a Martial Status From the lList.");
 
                                     } else {
 
-                                        if (!jCheckBox1.isSelected()) {
+                                        if (!jCheckBox1.isSelected()) { // [9]
 
                                             errorMSG.setVisible(true);
-                                            errorMSG.displayError.append("T&C unchecked Error: \nTerms And Condition Must be checked before you can create an account.");
+                                            errorMSG.displayError.append("T&C unchecked Error: \nTerms And Condition Must be Checked Before you can Create an Account.");
 
                                         } else {
 
-                                            dataBaseV2 db = new dataBaseV2();
-                                            
-                                            // this is for the user's account.
-                                            String regUsername = TF_username.getText();
-                                            String regPassword = TF_password.getText();
+                                            if (TF_day.getText().matches(".*[a-zA-Z].*") || TF_day.getText().matches(".*[^\\d].*")) { // [10]
 
-                                            db.addAccountData(regUsername, regPassword);
-                                            
-                                            // this is for the user's information.
-                                            String regFirstName = TF_firstname.getText();
-                                            String regMiddleName = TF_middlename.getText();
-                                            String regSurName = TF_surname.getText();
-                                            String regMonth = TF_month.getText();
-                                            String regDay = TF_day.getText();
-                                            String regYear = TF_year.getText();
-                                            String regEmail = TF_year.getText();
-                                            String regNumber = TF_number.getText();
-                                            String regAddress = TF_address.getText();
-                                            
-                                            String regGender = String.valueOf(CB_gender.getSelectedItem());
-                                            String regStatus = String.valueOf(CB_status.getSelectedItem());
-                                            
-                                            db.addUserInformation(regFirstName, regMiddleName, regSurName, regMonth, regDay, regYear, regEmail, regNumber, regAddress, regGender, regStatus);
-                                            
-                                            JFrame login = new Synergy_LogIn();
-                                            login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                                            login.setVisible(true);
+                                                errorMSG.setVisible(true);
+                                                errorMSG.displayError.append("Day TextField Error: \nDay Texfield have a letter and/or symbol in it.");
 
-                                            if (this.isVisible()) {
-                                                this.dispose();
+                                            } else {
+
+                                                if (TF_year.getText().matches(".*[a-zA-Z].*") || TF_year.getText().matches(".*[^\\d].*")) { // [11]
+
+                                                    errorMSG.setVisible(true);
+                                                    errorMSG.displayError.append("Year TextField Error: \nYear Texfield have a letter and/or symbol in it.");
+
+                                                } else {
+
+                                                    dataBaseV2 db = new dataBaseV2();
+
+                                                    // this is for the user's account.
+                                                    String regUsername = TF_username.getText();
+                                                    String regPassword = TF_password.getText();
+
+                                                    db.addAccountData(regUsername, regPassword);
+
+                                                    // this is for the user's information.
+                                                    String regFirstName = TF_firstname.getText();
+                                                    String regMiddleName = TF_middlename.getText();
+                                                    String regSurName = TF_surname.getText();
+                                                    String regMonth = TF_month.getText();
+                                                    String regDay = TF_day.getText();
+                                                    String regYear = TF_year.getText();
+                                                    String regEmail = TF_year.getText();
+                                                    String regNumber = TF_number.getText();
+                                                    String regAddress = TF_address.getText();
+
+                                                    String regGender = String.valueOf(CB_gender.getSelectedItem());
+                                                    String regStatus = String.valueOf(CB_status.getSelectedItem());
+
+                                                    db.addUserInformation(regFirstName, regMiddleName, regSurName, regMonth, regDay, regYear, regEmail, regNumber, regAddress, regGender, regStatus);
+
+                                                    JFrame login = new Synergy_LogIn();
+                                                    login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                                                    login.setVisible(true);
+
+                                                    if (this.isVisible()) {
+                                                        this.dispose();
+                                                    }
+
+                                                }
+
                                             }
 
                                         }
