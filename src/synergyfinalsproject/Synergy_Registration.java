@@ -686,7 +686,10 @@ public class Synergy_Registration extends javax.swing.JFrame {
                                                     String regStatus = String.valueOf(CB_status.getSelectedItem());
 
                                                     db.addUserInformation(regFirstName, regMiddleName, regSurName, regMonth, regDay, regYear, regEmail, regNumber, regAddress, regGender, regStatus);
-
+                                                    
+                                                    // creates a new linkedlist for reminders.
+                                                    db.createNewPatientReminders();
+                                                    
                                                     JFrame login = new Synergy_LogIn();
                                                     login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                                                     login.setVisible(true);

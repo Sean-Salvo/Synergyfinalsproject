@@ -1,37 +1,45 @@
 package synergyfinalsproject;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class dataBaseV2 {
-
-    // NOTE: This class is only experimental. Made by ken.
     
     // this is set of linkedlist is for the user's account.
-    private static LinkedList <String> usernameDB = new LinkedList<>();
-    private static LinkedList <String> passwordDB = new LinkedList<>();
-    
-    // this set of linkedlist is for the user's personal information.
-    private static LinkedList <String> firstNameDB = new LinkedList<>();
-    private static LinkedList <String> middleNameDB = new LinkedList<>();
-    private static LinkedList <String> surNameDB = new LinkedList<>();
-    private static LinkedList <String> monthDB = new LinkedList<>();
-    private static LinkedList <String> dayDB = new LinkedList<>();
-    private static LinkedList <String> yearDB = new LinkedList<>();
-    private static LinkedList <String> emailDB = new LinkedList<>();
-    private static LinkedList <String> numberDB = new LinkedList<>();
-    private static LinkedList <String> addressDB = new LinkedList<>();
-    private static LinkedList <String> genderDB = new LinkedList<>();
-    private static LinkedList <String> statusDB = new LinkedList<>();
+    private static LinkedList<String> usernameDB = new LinkedList<>();
+    private static LinkedList<String> passwordDB = new LinkedList<>();
 
+    // this set of linkedlist is for the user's personal information.
+    private static LinkedList<String> firstNameDB = new LinkedList<>();
+    private static LinkedList<String> middleNameDB = new LinkedList<>();
+    private static LinkedList<String> surNameDB = new LinkedList<>();
+    private static LinkedList<String> monthDB = new LinkedList<>();
+    private static LinkedList<String> dayDB = new LinkedList<>();
+    private static LinkedList<String> yearDB = new LinkedList<>();
+    private static LinkedList<String> emailDB = new LinkedList<>();
+    private static LinkedList<String> numberDB = new LinkedList<>();
+    private static LinkedList<String> addressDB = new LinkedList<>();
+    private static LinkedList<String> genderDB = new LinkedList<>();
+    private static LinkedList<String> statusDB = new LinkedList<>();
+
+    //for patient's reminder in dashboard.
+    private static ArrayList<LinkedList<String>> patientRemindersDB = new ArrayList<>();
+
+    
+    // ADD METHODS BELOW: ------------------------------------------------------
+    
+    
+    // add user's account credentials like username and password.
     public void addAccountData(String regUsername, String regPassword) {
 
         this.usernameDB.add(regUsername);
         this.passwordDB.add(regPassword);
 
     }
-    
-    public void addUserInformation(String regFirstName, String regMiddleName, String regSurname, String regMonth, String regDay, String regYear, String regEmail, String regNumber, String regAddress, String regGender, String regStatus){
-        
+
+    // add user's personal information like first name, address, phone num.
+    public void addUserInformation(String regFirstName, String regMiddleName, String regSurname, String regMonth, String regDay, String regYear, String regEmail, String regNumber, String regAddress, String regGender, String regStatus) {
+
         this.firstNameDB.add(regFirstName);
         this.middleNameDB.add(regMiddleName);
         this.surNameDB.add(regSurname);
@@ -43,85 +51,101 @@ public class dataBaseV2 {
         this.addressDB.add(regAddress);
         this.genderDB.add(regGender);
         this.statusDB.add(regStatus);
+
+    }
+
+    // a method that when called, creates a new linkedlist for the user's reminders.
+    public void createNewPatientReminders() {
+        
+        LinkedList<String> patientReminders = new LinkedList<>();
+        patientRemindersDB.add(patientReminders);
         
     }
     
-    public LinkedList<String> getUsernameDB(){
-        
+    
+    // GETTER METHODS BELOW: ---------------------------------------------------
+    
+    
+    public LinkedList<String> getUsernameDB() {
+
         return new LinkedList<>(usernameDB);
-        
+
     }
-    
-    public LinkedList<String> getPasswordDB(){
-        
+
+    public LinkedList<String> getPasswordDB() {
+
         return new LinkedList<>(passwordDB);
-        
+
     }
-    
-    public LinkedList<String> getfirstNameDB(){
-        
+
+    public LinkedList<String> getfirstNameDB() {
+
         return new LinkedList<>(firstNameDB);
-        
+
     }
-    
-    public LinkedList<String> getmiddleNameDB(){
-        
+
+    public LinkedList<String> getmiddleNameDB() {
+
         return new LinkedList<>(middleNameDB);
-        
+
     }
-    
-    public LinkedList<String> getsurNameDB(){
-        
+
+    public LinkedList<String> getsurNameDB() {
+
         return new LinkedList<>(surNameDB);
-        
+
     }
-    
-    public LinkedList<String> getmonthDB(){
-        
+
+    public LinkedList<String> getmonthDB() {
+
         return new LinkedList<>(monthDB);
-        
+
     }
-    
-    public LinkedList<String> getdayDB(){
-        
+
+    public LinkedList<String> getdayDB() {
+
         return new LinkedList<>(dayDB);
-        
+
     }
-    
-    public LinkedList<String> getyearDB(){
-        
+
+    public LinkedList<String> getyearDB() {
+
         return new LinkedList<>(yearDB);
-        
+
     }
-    
-    public LinkedList<String> getemailDB(){
-        
+
+    public LinkedList<String> getemailDB() {
+
         return new LinkedList<>(emailDB);
-        
+
     }
-    
-    public LinkedList<String> getnumberDB(){
-        
+
+    public LinkedList<String> getnumberDB() {
+
         return new LinkedList<>(numberDB);
-        
+
     }
-    
-    public LinkedList<String> getaddressDB(){
-        
+
+    public LinkedList<String> getaddressDB() {
+
         return new LinkedList<>(addressDB);
-        
+
     }
-    
-    public LinkedList<String> getGenderDB(){
-        
+
+    public LinkedList<String> getGenderDB() {
+
         return new LinkedList<>(genderDB);
-        
+
     }
-    
-    public LinkedList<String> getStatusDB(){
-        
+
+    public LinkedList<String> getStatusDB() {
+
         return new LinkedList<>(statusDB);
-        
+
     }
-    
+
+    public ArrayList<LinkedList<String>> getPatientRemindersDB() {
+        return patientRemindersDB;
+    }
+
 }

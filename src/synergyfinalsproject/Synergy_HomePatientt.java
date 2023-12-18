@@ -4,6 +4,7 @@
  */
 package synergyfinalsproject;
 
+import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 
 /**
@@ -14,16 +15,23 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
 
     private int userKey;
     
+    DefaultListModel<String> model = new DefaultListModel();
+    dataBaseV2 db = new dataBaseV2();
+    //Error_Display errorMSG = new Error_Display();
+    
     public Synergy_HomePatientt(int logUserKey) {
         initComponents();
         
         this.userKey = logUserKey;
-        dataBaseV2 db = new dataBaseV2();
-        Synergy_LogIn login = new Synergy_LogIn();
+        reminderList.setModel(model);
         
         L_firstName4.setText(db.getUsernameDB().get(userKey));
         
-        
+        for(int a = 0; a < db.getPatientRemindersDB().get(userKey).size(); a++){
+            
+            model.addElement(db.getPatientRemindersDB().get(userKey).get(a));
+            
+        }
         
     }
 
@@ -42,11 +50,11 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         Appointment = new javax.swing.JButton();
-        Discard = new javax.swing.JButton();
-        Save = new javax.swing.JButton();
-        reminder = new javax.swing.JTextField();
+        reminderDiscard = new javax.swing.JButton();
+        reminderSave = new javax.swing.JButton();
+        reminderTextField = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        reminderList = new javax.swing.JList<>();
         Greetings1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         L_firstName5 = new javax.swing.JLabel();
@@ -110,22 +118,27 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         jPanel1.add(Appointment);
         Appointment.setBounds(420, 30, 260, 110);
 
-        Discard.setText("Discard");
-        jPanel1.add(Discard);
-        Discard.setBounds(580, 350, 72, 23);
-
-        Save.setText("Save");
-        jPanel1.add(Save);
-        Save.setBounds(670, 350, 72, 23);
-        jPanel1.add(reminder);
-        reminder.setBounds(580, 320, 160, 22);
-
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
+        reminderDiscard.setText("Discard");
+        reminderDiscard.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reminderDiscardActionPerformed(evt);
+            }
         });
-        jScrollPane2.setViewportView(jList1);
+        jPanel1.add(reminderDiscard);
+        reminderDiscard.setBounds(580, 350, 76, 27);
+
+        reminderSave.setText("Save");
+        reminderSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reminderSaveActionPerformed(evt);
+            }
+        });
+        jPanel1.add(reminderSave);
+        reminderSave.setBounds(670, 350, 76, 27);
+        jPanel1.add(reminderTextField);
+        reminderTextField.setBounds(580, 320, 160, 26);
+
+        jScrollPane2.setViewportView(reminderList);
 
         jPanel1.add(jScrollPane2);
         jScrollPane2.setBounds(580, 180, 160, 130);
@@ -595,6 +608,39 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TF_EmergencyAddress1ActionPerformed
 
+    private void reminderSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reminderSaveActionPerformed
+        
+        String input = reminderTextField.getText();
+        
+        model.addElement(input);
+        db.getPatientRemindersDB().get(userKey).add(input);
+        
+        /*
+        FORMULA: db. -> calls the object database | .getPatientRemindersDB() -> a getter method that returns the private patientRemindersDB arraylist
+        .get -> a keyword to access the contents of the patientRemindersDB arraylist | (userKey) to identify which of the patientRemiders linkedlist needs to be accessed
+        . add -> sets the necessary input needed | (input); -> is the input from the jTextField.
+        */
+        
+    }//GEN-LAST:event_reminderSaveActionPerformed
+
+    private void reminderDiscardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reminderDiscardActionPerformed
+        
+        int select = reminderList.getSelectedIndex();
+        
+        try {
+            
+            model.removeElementAt(select);
+            db.getPatientRemindersDB().get(userKey).remove(select);
+            
+        } catch (ArrayIndexOutOfBoundsException ex) {
+            
+            //errorMSG.setVisible(true);
+            //errorMSG.displayError.append("\nEmpty Reminder List Error: \n");
+            
+        }
+        
+    }//GEN-LAST:event_reminderDiscardActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -632,7 +678,6 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Appointment;
-    private javax.swing.JButton Discard;
     private javax.swing.JLabel Greetings;
     private javax.swing.JLabel Greetings1;
     private javax.swing.JButton HomeButon;
@@ -658,7 +703,6 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     private javax.swing.JButton MedicalRec;
     private javax.swing.JButton PatientAbout;
     private javax.swing.JButton PatientSettings;
-    private javax.swing.JButton Save;
     private javax.swing.JLabel SideMenuu;
     private javax.swing.JTextField TF_Birthdate;
     private javax.swing.JTextField TF_EmergencyAddress1;
@@ -678,11 +722,13 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField reminder;
+    private javax.swing.JButton reminderDiscard;
+    private javax.swing.JList<String> reminderList;
+    private javax.swing.JButton reminderSave;
+    private javax.swing.JTextField reminderTextField;
     // End of variables declaration//GEN-END:variables
 }
