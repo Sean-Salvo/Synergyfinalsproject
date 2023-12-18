@@ -255,10 +255,10 @@
                               <Component id="L_firstName12" min="-2" pref="20" max="-2" attributes="0"/>
                               <Component id="L_firstName6" min="-2" pref="20" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="TF_birthdate2" min="-2" pref="20" max="-2" attributes="0"/>
-                              <Component id="TF_Gender1" min="-2" max="-2" attributes="0"/>
-                              <Component id="TF_MaritalStatus" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="TF_Gender1" max="32767" attributes="0"/>
+                              <Component id="TF_MaritalStatus" max="32767" attributes="0"/>
+                              <Component id="TF_birthdate2" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                           <Component id="L_firstName17" min="-2" pref="30" max="-2" attributes="0"/>
@@ -326,6 +326,12 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_initial">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_initialActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName8">
                   <Properties>
@@ -342,6 +348,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_Lname1">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName9">
                   <Properties>
@@ -372,6 +381,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_Fname2">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_Fname2ActionPerformed"/>
                   </Events>
@@ -391,6 +403,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_emailAd">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_emailAdActionPerformed"/>
                   </Events>
@@ -438,6 +453,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_birthdate2">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName15">
                   <Properties>
@@ -473,6 +491,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_address2">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_address2ActionPerformed"/>
                   </Events>
@@ -506,6 +527,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_phoneNum1">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_phoneNum1ActionPerformed"/>
                   </Events>
@@ -568,11 +592,17 @@
                   </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_MaritalStatus">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_MaritalStatusActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_Gender1">
+                  <Properties>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_Gender1ActionPerformed"/>
                   </Events>

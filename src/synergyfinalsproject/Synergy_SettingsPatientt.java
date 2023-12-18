@@ -144,10 +144,19 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
         L_firstName7.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName7.setText("Emergency Contact Information");
 
+        TF_initial.setEnabled(false);
+        TF_initial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TF_initialActionPerformed(evt);
+            }
+        });
+
         L_firstName8.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName8.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName8.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName8.setText("Middle Initial:");
+
+        TF_Lname1.setEnabled(false);
 
         L_firstName9.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName9.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
@@ -159,6 +168,7 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
         L_firstName10.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName10.setText("First Name: ");
 
+        TF_Fname2.setEnabled(false);
         TF_Fname2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_Fname2ActionPerformed(evt);
@@ -170,6 +180,7 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
         L_firstName11.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName11.setText("Email:");
 
+        TF_emailAd.setEnabled(false);
         TF_emailAd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_emailAdActionPerformed(evt);
@@ -191,6 +202,8 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
         L_firstName14.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName14.setText("Contact Number:");
 
+        TF_birthdate2.setEnabled(false);
+
         L_firstName15.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName15.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName15.setForeground(new java.awt.Color(108, 108, 108));
@@ -207,6 +220,7 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
         L_firstName16.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName16.setText("Address:");
 
+        TF_address2.setEnabled(false);
         TF_address2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_address2ActionPerformed(evt);
@@ -223,6 +237,7 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
         L_firstName18.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName18.setText("Birthdate: ");
 
+        TF_phoneNum1.setEnabled(false);
         TF_phoneNum1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_phoneNum1ActionPerformed(evt);
@@ -262,12 +277,14 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
             }
         });
 
+        TF_MaritalStatus.setEnabled(false);
         TF_MaritalStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_MaritalStatusActionPerformed(evt);
             }
         });
 
+        TF_Gender1.setEnabled(false);
         TF_Gender1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TF_Gender1ActionPerformed(evt);
@@ -363,10 +380,10 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
                     .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(L_firstName12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TF_birthdate2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TF_Gender1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TF_MaritalStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(TF_Gender1)
+                    .addComponent(TF_MaritalStatus)
+                    .addComponent(TF_birthdate2))
                 .addGap(18, 18, 18)
                 .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -573,6 +590,10 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
         medRec.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         medRec.setVisible(true);
     }//GEN-LAST:event_MedicalRecActionPerformed
+
+    private void TF_initialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_initialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TF_initialActionPerformed
 
     /**
      * @param args the command line arguments

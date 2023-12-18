@@ -4,17 +4,18 @@
  */
 package synergyfinalsproject;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Test
  */
 public class Synergy_Appointment extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Synergy_Appointmentt
-     */
+        private int userKey;
     public Synergy_Appointment() {
         initComponents();
+        
     }
 
     /**
@@ -27,6 +28,7 @@ public class Synergy_Appointment extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        MedicalRec = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jList2 = new javax.swing.JList<>();
         jLabel9 = new javax.swing.JLabel();
@@ -64,6 +66,17 @@ public class Synergy_Appointment extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
+
+        MedicalRec.setBackground(new java.awt.Color(221, 238, 249));
+        MedicalRec.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newMedRec (1).png"))); // NOI18N
+        MedicalRec.setBorder(null);
+        MedicalRec.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MedicalRecActionPerformed(evt);
+            }
+        });
+        jPanel1.add(MedicalRec);
+        MedicalRec.setBounds(30, 150, 30, 30);
 
         jList2.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -236,24 +249,39 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         PatientAbout.setBackground(new java.awt.Color(221, 238, 249));
         PatientAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newInfo (1).png"))); // NOI18N
         PatientAbout.setBorder(null);
+        PatientAbout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatientAboutActionPerformed(evt);
+            }
+        });
         jPanel1.add(PatientAbout);
-        PatientAbout.setBounds(30, 220, 30, 30);
+        PatientAbout.setBounds(30, 270, 30, 30);
 
         PatientSettings.setBackground(new java.awt.Color(221, 238, 249));
         PatientSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newGear (2).png"))); // NOI18N
         PatientSettings.setBorder(null);
+        PatientSettings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PatientSettingsActionPerformed(evt);
+            }
+        });
         jPanel1.add(PatientSettings);
-        PatientSettings.setBounds(30, 150, 30, 30);
+        PatientSettings.setBounds(30, 210, 30, 30);
 
         LogOut.setBackground(new java.awt.Color(221, 238, 249));
         LogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogOuy (1).png"))); // NOI18N
         LogOut.setBorder(null);
         jPanel1.add(LogOut);
-        LogOut.setBounds(30, 290, 30, 30);
+        LogOut.setBounds(30, 330, 30, 30);
 
         HomeButon.setBackground(new java.awt.Color(221, 238, 249));
         HomeButon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newHome (1).png"))); // NOI18N
         HomeButon.setBorder(null);
+        HomeButon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HomeButonActionPerformed(evt);
+            }
+        });
         jPanel1.add(HomeButon);
         HomeButon.setBounds(30, 90, 30, 30);
 
@@ -318,6 +346,34 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CancelActionPerformed
 
+    private void HomeButonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButonActionPerformed
+      dispose();
+        JFrame home = new Synergy_HomePatientt(userKey);
+      home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+      home.setVisible(true);
+    }//GEN-LAST:event_HomeButonActionPerformed
+
+    private void PatientSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientSettingsActionPerformed
+       dispose();
+        JFrame settings = new Synergy_SettingsPatientt(userKey);
+      settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+      settings.setVisible(true);
+    }//GEN-LAST:event_PatientSettingsActionPerformed
+
+    private void PatientAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientAboutActionPerformed
+       dispose();
+        JFrame info = new Synergy_InfoAboutUS(userKey);
+      info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+      info.setVisible(true);
+    }//GEN-LAST:event_PatientAboutActionPerformed
+
+    private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
+        dispose();
+        JFrame medRec = new Synergy_MedicalRecord(userKey);
+        medRec.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        medRec.setVisible(true);
+    }//GEN-LAST:event_MedicalRecActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -364,6 +420,7 @@ public class Synergy_Appointment extends javax.swing.JFrame {
     private javax.swing.JLabel L_firstName17;
     private javax.swing.JLabel L_firstName18;
     private javax.swing.JButton LogOut;
+    private javax.swing.JButton MedicalRec;
     private javax.swing.JButton PatientAbout;
     private javax.swing.JButton PatientSettings;
     private javax.swing.JButton Save;

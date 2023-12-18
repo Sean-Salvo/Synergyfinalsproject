@@ -89,7 +89,13 @@ public class Synergy_PasswordChange extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void SaveNewPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveNewPasswordActionPerformed
-        JFrame cancel = new Synergy_SettingsPatientt();
+        dispose();
+        
+        JFrame cancel = new Synergy_SettingsAdmin();
+        cancel.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        cancel.setVisible(true);
+        
+        
     }//GEN-LAST:event_SaveNewPasswordActionPerformed
 
     /**

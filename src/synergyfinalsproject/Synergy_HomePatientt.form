@@ -258,7 +258,7 @@
                                   <Component id="L_firstName6" min="-2" pref="100" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="TF_Birthdate" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <Component id="TF_birthdate2" min="-2" pref="130" max="-2" attributes="0"/>
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Component id="TF_Gender1" min="-2" pref="130" max="-2" attributes="0"/>
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
@@ -326,7 +326,7 @@
                               <Component id="L_firstName6" min="-2" pref="20" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="TF_Birthdate" min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="TF_birthdate2" min="-2" pref="20" max="-2" attributes="0"/>
                               <Component id="TF_Gender1" min="-2" pref="20" max="-2" attributes="0"/>
                               <Component id="TF_MaritalStatus" min="-2" pref="20" max="-2" attributes="0"/>
                           </Group>
@@ -414,6 +414,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_Lname1">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_Lname1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName9">
                   <Properties>
@@ -444,6 +447,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_Fname2">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_Fname2ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName11">
                   <Properties>
@@ -636,7 +642,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_EmergencyContact1ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_Birthdate">
+                <Component class="javax.swing.JTextField" name="TF_birthdate2">
                 </Component>
                 <Component class="javax.swing.JTextField" name="TF_Gender1">
                 </Component>

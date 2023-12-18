@@ -32,6 +32,18 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
             model.addElement(db.getPatientRemindersDB().get(userKey).get(a));
             
         }
+         dataBaseV2 db = new dataBaseV2();
+        
+        TF_Fname2.setText(db.getfirstNameDB().get(userKey));
+        TF_Lname1.setText(db.getsurNameDB().get(userKey));
+        TF_initial.setText(db.getmiddleNameDB().get(userKey));
+        TF_birthdate2.setText(db.getmonthDB().get(userKey) + " " + db.getdayDB().get(userKey) + " " + db.getyearDB().get(userKey));
+        TF_Gender1.setText(db.getGenderDB().get(userKey));
+        TF_MaritalStatus.setText(db.getStatusDB().get(userKey));
+        
+        TF_address2.setText(db.getaddressDB().get(userKey));
+        TF_emailAd.setText(db.getaddressDB().get(userKey));
+        TF_phoneNum1.setText(db.getnumberDB().get(userKey));
         
     }
 
@@ -88,7 +100,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         TF_EmergencyName2 = new javax.swing.JTextField();
         L_firstName21 = new javax.swing.JLabel();
         TF_EmergencyContact1 = new javax.swing.JTextField();
-        TF_Birthdate = new javax.swing.JTextField();
+        TF_birthdate2 = new javax.swing.JTextField();
         TF_Gender1 = new javax.swing.JTextField();
         TF_EmergencyAddress1 = new javax.swing.JTextField();
         PatientAbout = new javax.swing.JButton();
@@ -125,7 +137,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
             }
         });
         jPanel1.add(reminderDiscard);
-        reminderDiscard.setBounds(580, 350, 76, 27);
+        reminderDiscard.setBounds(580, 350, 72, 23);
 
         reminderSave.setText("Save");
         reminderSave.addActionListener(new java.awt.event.ActionListener() {
@@ -134,9 +146,9 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
             }
         });
         jPanel1.add(reminderSave);
-        reminderSave.setBounds(670, 350, 76, 27);
+        reminderSave.setBounds(670, 350, 72, 23);
         jPanel1.add(reminderTextField);
-        reminderTextField.setBounds(580, 320, 160, 26);
+        reminderTextField.setBounds(580, 320, 160, 22);
 
         jScrollPane2.setViewportView(reminderList);
 
@@ -193,6 +205,12 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         L_firstName8.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName8.setText("Middle Initial:");
 
+        TF_Lname1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TF_Lname1ActionPerformed(evt);
+            }
+        });
+
         L_firstName9.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName9.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName9.setForeground(new java.awt.Color(108, 108, 108));
@@ -202,6 +220,12 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         L_firstName10.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
         L_firstName10.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName10.setText("First Name: ");
+
+        TF_Fname2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TF_Fname2ActionPerformed(evt);
+            }
+        });
 
         L_firstName11.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName11.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
@@ -333,7 +357,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
                         .addGap(40, 40, 40)
                         .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(TF_Birthdate, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(TF_birthdate2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(TF_Gender1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
@@ -387,7 +411,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
                     .addComponent(L_firstName12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TF_Birthdate, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_birthdate2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TF_Gender1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TF_MaritalStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20)
@@ -641,6 +665,14 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         
     }//GEN-LAST:event_reminderDiscardActionPerformed
 
+    private void TF_Fname2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_Fname2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TF_Fname2ActionPerformed
+
+    private void TF_Lname1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_Lname1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TF_Lname1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -704,7 +736,6 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     private javax.swing.JButton PatientAbout;
     private javax.swing.JButton PatientSettings;
     private javax.swing.JLabel SideMenuu;
-    private javax.swing.JTextField TF_Birthdate;
     private javax.swing.JTextField TF_EmergencyAddress1;
     private javax.swing.JTextField TF_EmergencyContact;
     private javax.swing.JTextField TF_EmergencyContact1;
@@ -715,6 +746,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     private javax.swing.JTextField TF_MaritalStatus;
     private javax.swing.JTextField TF_RStoPatient;
     private javax.swing.JTextField TF_address2;
+    private javax.swing.JTextField TF_birthdate2;
     private javax.swing.JTextField TF_emailAd;
     private javax.swing.JTextField TF_initial;
     private javax.swing.JTextField TF_phoneNum1;
