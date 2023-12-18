@@ -29,8 +29,8 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        PasswordSettings = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
         L_firstName22 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -80,21 +80,16 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
+        PasswordSettings.setText("jPasswordField1");
+        jPanel1.add(PasswordSettings);
+        PasswordSettings.setBounds(580, 120, 150, 22);
+
         jButton1.setFont(new java.awt.Font("Karma Light", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(6, 61, 134));
         jButton1.setText("Change Password");
         jButton1.setBorder(null);
         jPanel1.add(jButton1);
         jButton1.setBounds(580, 160, 150, 30);
-
-        jTextField1.setText("*************");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(580, 120, 150, 22);
 
         L_firstName22.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName22.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
@@ -266,77 +261,59 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
                 .addComponent(Editbutton)
                 .addGap(20, 20, 20))
             .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addComponent(L_firstName10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40)
                         .addComponent(L_firstName9, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(L_firstName8, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addComponent(TF_Fname2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(TF_Lname1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(TF_initial, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40)
                         .addComponent(L_firstName12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40)
                         .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addComponent(TF_birthdate2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(TF_Gender1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(TF_MaritalStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addComponent(L_firstName16, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(140, 140, 140)
                         .addComponent(L_firstName11, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addComponent(TF_address2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addComponent(TF_emailAd, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(L_firstName15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TF_phoneNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName7, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(L_firstName15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(TF_phoneNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(L_firstName7, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addComponent(L_firstName20, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(140, 140, 140)
                         .addComponent(L_firstName14, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addComponent(TF_EmergencyName2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(TF_EmergencyContact1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(TF_EmergencyContact, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addComponent(L_firstName21, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(140, 140, 140)
                         .addComponent(L_firstName19, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(TF_EmergencyAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(TF_EmergencyAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -551,10 +528,6 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
         home.setVisible(true);
     }//GEN-LAST:event_HomeButonActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -611,6 +584,7 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel L_firstName8;
     private javax.swing.JLabel L_firstName9;
     private javax.swing.JButton LogOut;
+    private javax.swing.JPasswordField PasswordSettings;
     private javax.swing.JButton PatientAbout;
     private javax.swing.JButton PatientSettings;
     private javax.swing.JLabel SideMenuu;
@@ -636,6 +610,5 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

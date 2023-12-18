@@ -52,6 +52,16 @@
         <Property name="useNullLayout" type="boolean" value="true"/>
       </Layout>
       <SubComponents>
+        <Component class="javax.swing.JPasswordField" name="PasswordSettings">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jPasswordField1"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="580" y="120" width="150" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -68,19 +78,6 @@
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="580" y="160" width="150" height="30"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="*************"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
-          </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="580" y="120" width="150" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -147,9 +144,9 @@
                           <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                                   <Component id="L_firstName10" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
                                   <Component id="L_firstName9" min="-2" pref="130" max="-2" attributes="0"/>
@@ -157,7 +154,6 @@
                                   <Component id="L_firstName8" min="-2" pref="130" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                                   <Component id="TF_Fname2" min="-2" pref="130" max="-2" attributes="0"/>
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Component id="TF_Lname1" min="-2" pref="130" max="-2" attributes="0"/>
@@ -165,7 +161,6 @@
                                   <Component id="TF_initial" min="-2" pref="130" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                                   <Component id="L_firstName18" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
                                   <Component id="L_firstName12" min="-2" pref="100" max="-2" attributes="0"/>
@@ -173,49 +168,32 @@
                                   <Component id="L_firstName6" min="-2" pref="100" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                                   <Component id="TF_birthdate2" min="-2" pref="130" max="-2" attributes="0"/>
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Component id="TF_Gender1" min="-2" pref="130" max="-2" attributes="0"/>
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Component id="TF_MaritalStatus" min="-2" pref="130" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="L_firstName17" alignment="0" min="-2" pref="182" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                                  <Component id="L_firstName17" min="-2" pref="182" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                                   <Component id="L_firstName16" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace min="140" pref="140" max="-2" attributes="0"/>
                                   <Component id="L_firstName11" min="-2" pref="100" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                                   <Component id="TF_address2" min="-2" pref="230" max="-2" attributes="0"/>
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Component id="TF_emailAd" min="-2" pref="170" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="L_firstName15" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="TF_phoneNum1" alignment="0" min="-2" pref="230" max="-2" attributes="0"/>
+                              <Component id="L_firstName7" alignment="0" min="-2" pref="280" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                                  <Component id="L_firstName15" min="-2" pref="100" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                                  <Component id="TF_phoneNum1" min="-2" pref="230" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                                  <Component id="L_firstName7" min="-2" pref="280" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                                   <Component id="L_firstName20" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace min="140" pref="140" max="-2" attributes="0"/>
                                   <Component id="L_firstName14" min="-2" pref="100" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                                   <Component id="TF_EmergencyName2" min="-2" pref="230" max="-2" attributes="0"/>
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -224,15 +202,11 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                                   <Component id="L_firstName21" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace min="140" pref="140" max="-2" attributes="0"/>
                                   <Component id="L_firstName19" min="-2" pref="130" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                                  <Component id="TF_EmergencyAddress" min="-2" pref="230" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="TF_EmergencyAddress" alignment="0" min="-2" pref="230" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
