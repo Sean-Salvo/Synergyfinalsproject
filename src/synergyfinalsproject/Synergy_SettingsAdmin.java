@@ -29,44 +29,16 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        PasswordSettings = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        L_firstName25 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        L_firstName24 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         L_firstName22 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jPanel3 = new javax.swing.JPanel();
-        L_firstName6 = new javax.swing.JLabel();
-        L_firstName7 = new javax.swing.JLabel();
-        TF_initial = new javax.swing.JTextField();
-        L_firstName8 = new javax.swing.JLabel();
-        TF_Lname1 = new javax.swing.JTextField();
-        L_firstName9 = new javax.swing.JLabel();
-        L_firstName10 = new javax.swing.JLabel();
-        TF_Fname2 = new javax.swing.JTextField();
-        L_firstName11 = new javax.swing.JLabel();
-        TF_emailAd = new javax.swing.JTextField();
-        L_firstName12 = new javax.swing.JLabel();
-        L_firstName13 = new javax.swing.JLabel();
-        L_firstName14 = new javax.swing.JLabel();
-        TF_birthdate2 = new javax.swing.JTextField();
-        L_firstName15 = new javax.swing.JLabel();
-        TF_EmergencyContact = new javax.swing.JTextField();
-        L_firstName16 = new javax.swing.JLabel();
-        TF_address2 = new javax.swing.JTextField();
-        L_firstName17 = new javax.swing.JLabel();
-        L_firstName18 = new javax.swing.JLabel();
-        TF_phoneNum1 = new javax.swing.JTextField();
-        L_firstName19 = new javax.swing.JLabel();
-        TF_EmergencyAddress = new javax.swing.JTextField();
-        L_firstName20 = new javax.swing.JLabel();
-        TF_EmergencyName2 = new javax.swing.JTextField();
-        L_firstName21 = new javax.swing.JLabel();
-        TF_EmergencyContact1 = new javax.swing.JTextField();
-        TF_MaritalStatus = new javax.swing.JTextField();
-        TF_Gender1 = new javax.swing.JTextField();
-        Editbutton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         PatientAbout = new javax.swing.JButton();
         PatientSettings = new javax.swing.JButton();
         LogOut = new javax.swing.JButton();
@@ -74,29 +46,53 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
         SideMenuu = new javax.swing.JLabel();
         WholeBackground = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
+        L_firstName23 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
+        jPanel1.add(jTextField4);
+        jTextField4.setBounds(130, 200, 300, 20);
+        jPanel1.add(jTextField3);
+        jTextField3.setBounds(130, 130, 300, 20);
 
-        PasswordSettings.setText("jPasswordField1");
-        jPanel1.add(PasswordSettings);
-        PasswordSettings.setBounds(580, 120, 150, 22);
+        L_firstName25.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName25.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
+        L_firstName25.setForeground(new java.awt.Color(6, 61, 134));
+        L_firstName25.setText("Email Recovery");
+        jPanel1.add(L_firstName25);
+        L_firstName25.setBounds(130, 170, 180, 30);
 
-        jButton1.setFont(new java.awt.Font("Karma Light", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(6, 61, 134));
-        jButton1.setText("Change Password");
-        jButton1.setBorder(null);
-        jPanel1.add(jButton1);
-        jButton1.setBounds(580, 160, 150, 30);
+        jButton2.setFont(new java.awt.Font("Karma Light", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(6, 61, 134));
+        jButton2.setText("Change Password");
+        jButton2.setBorder(null);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2);
+        jButton2.setBounds(130, 320, 300, 30);
+        jPanel1.add(jTextField2);
+        jTextField2.setBounds(130, 270, 300, 20);
+
+        L_firstName24.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName24.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
+        L_firstName24.setForeground(new java.awt.Color(6, 61, 134));
+        L_firstName24.setText("Admin Password");
+        jPanel1.add(L_firstName24);
+        L_firstName24.setBounds(130, 240, 180, 30);
+        jPanel1.add(jTextField1);
+        jTextField1.setBounds(130, 130, 300, 20);
 
         L_firstName22.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName22.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
         L_firstName22.setForeground(new java.awt.Color(6, 61, 134));
-        L_firstName22.setText("Password");
+        L_firstName22.setText("Admin Username");
         jPanel1.add(L_firstName22);
-        L_firstName22.setBounds(580, 90, 180, 30);
+        L_firstName22.setBounds(130, 100, 180, 30);
 
         jLabel4.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(6, 61, 134));
@@ -104,285 +100,9 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
         jPanel1.add(jLabel4);
         jLabel4.setBounds(120, 40, 190, 40);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setAutoscrolls(true);
-
-        L_firstName6.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName6.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName6.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName6.setText("Marital Status:");
-
-        L_firstName7.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName7.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
-        L_firstName7.setForeground(new java.awt.Color(6, 61, 134));
-        L_firstName7.setText("Emergency Contact Information");
-
-        L_firstName8.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName8.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName8.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName8.setText("Middle Initial:");
-
-        L_firstName9.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName9.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName9.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName9.setText("Last Name: ");
-
-        L_firstName10.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName10.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName10.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName10.setText("First Name: ");
-
-        TF_Fname2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_Fname2ActionPerformed(evt);
-            }
-        });
-
-        L_firstName11.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName11.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName11.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName11.setText("Email:");
-
-        TF_emailAd.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_emailAdActionPerformed(evt);
-            }
-        });
-
-        L_firstName12.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName12.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName12.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName12.setText("Sex:");
-
-        L_firstName13.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName13.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
-        L_firstName13.setForeground(new java.awt.Color(6, 61, 134));
-        L_firstName13.setText("Personal Information");
-
-        L_firstName14.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName14.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName14.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName14.setText("Contact Number:");
-
-        L_firstName15.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName15.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName15.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName15.setText("Contact Number");
-
-        TF_EmergencyContact.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_EmergencyContactActionPerformed(evt);
-            }
-        });
-
-        L_firstName16.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName16.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName16.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName16.setText("Address:");
-
-        TF_address2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_address2ActionPerformed(evt);
-            }
-        });
-
-        L_firstName17.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName17.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
-        L_firstName17.setForeground(new java.awt.Color(6, 61, 134));
-        L_firstName17.setText("Contact Information");
-
-        L_firstName18.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName18.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName18.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName18.setText("Birthdate: ");
-
-        TF_phoneNum1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_phoneNum1ActionPerformed(evt);
-            }
-        });
-
-        L_firstName19.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName19.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName19.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName19.setText("Relationship to the patient: ");
-
-        TF_EmergencyAddress.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_EmergencyAddressActionPerformed(evt);
-            }
-        });
-
-        L_firstName20.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName20.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName20.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName20.setText("Name:");
-
-        TF_EmergencyName2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_EmergencyName2ActionPerformed(evt);
-            }
-        });
-
-        L_firstName21.setBackground(new java.awt.Color(0, 0, 0));
-        L_firstName21.setFont(new java.awt.Font("Karma", 1, 10)); // NOI18N
-        L_firstName21.setForeground(new java.awt.Color(108, 108, 108));
-        L_firstName21.setText("Address: ");
-
-        TF_EmergencyContact1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_EmergencyContact1ActionPerformed(evt);
-            }
-        });
-
-        TF_MaritalStatus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_MaritalStatusActionPerformed(evt);
-            }
-        });
-
-        TF_Gender1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_Gender1ActionPerformed(evt);
-            }
-        });
-
-        Editbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/editButtonnn (1).png"))); // NOI18N
-        Editbutton.setBorder(null);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(L_firstName13, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Editbutton)
-                .addGap(20, 20, 20))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(L_firstName10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40)
-                        .addComponent(L_firstName9, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(L_firstName8, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(TF_Fname2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(TF_Lname1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(TF_initial, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40)
-                        .addComponent(L_firstName12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40)
-                        .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(TF_birthdate2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(TF_Gender1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(TF_MaritalStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(L_firstName16, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(140, 140, 140)
-                        .addComponent(L_firstName11, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(TF_address2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(TF_emailAd, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(L_firstName15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TF_phoneNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_firstName7, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(L_firstName20, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(140, 140, 140)
-                        .addComponent(L_firstName14, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(TF_EmergencyName2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TF_EmergencyContact1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(TF_EmergencyContact, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(L_firstName21, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(140, 140, 140)
-                        .addComponent(L_firstName19, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(TF_EmergencyAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(L_firstName13, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Editbutton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(L_firstName10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_firstName9, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_firstName8, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TF_Fname2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TF_Lname1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TF_initial, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_firstName12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TF_Gender1)
-                    .addComponent(TF_MaritalStatus)
-                    .addComponent(TF_birthdate2))
-                .addGap(18, 18, 18)
-                .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(L_firstName16, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_firstName11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TF_address2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TF_emailAd, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addComponent(L_firstName15, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(TF_phoneNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(L_firstName7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(L_firstName20, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_firstName14, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TF_EmergencyName2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TF_EmergencyContact1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TF_EmergencyContact, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(10, 10, 10)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(L_firstName21, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(L_firstName19, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addComponent(TF_EmergencyAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        jScrollPane1.setViewportView(jPanel3);
-
-        jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(110, 90, 450, 270);
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/BigBackgound (1).png"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(90, 50, 520, 350);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/requestAppointment (1).png"))); // NOI18N
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(570, 70, 200, 160);
 
         PatientAbout.setBackground(new java.awt.Color(221, 238, 249));
         PatientAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newInfo (1).png"))); // NOI18N
@@ -439,6 +159,13 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
         jPanel1.add(jSeparator8);
         jSeparator8.setBounds(440, 110, 260, 20);
 
+        L_firstName23.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName23.setFont(new java.awt.Font("Karma", 1, 15)); // NOI18N
+        L_firstName23.setForeground(new java.awt.Color(6, 61, 134));
+        L_firstName23.setText("Password");
+        jPanel1.add(L_firstName23);
+        L_firstName23.setBounds(580, 90, 180, 30);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -458,46 +185,6 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void TF_Fname2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_Fname2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_Fname2ActionPerformed
-
-    private void TF_emailAdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_emailAdActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_emailAdActionPerformed
-
-    private void TF_EmergencyContactActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_EmergencyContactActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_EmergencyContactActionPerformed
-
-    private void TF_address2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_address2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_address2ActionPerformed
-
-    private void TF_phoneNum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_phoneNum1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_phoneNum1ActionPerformed
-
-    private void TF_EmergencyAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_EmergencyAddressActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_EmergencyAddressActionPerformed
-
-    private void TF_EmergencyName2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_EmergencyName2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_EmergencyName2ActionPerformed
-
-    private void TF_EmergencyContact1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_EmergencyContact1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_EmergencyContact1ActionPerformed
-
-    private void TF_MaritalStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_MaritalStatusActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_MaritalStatusActionPerformed
-
-    private void TF_Gender1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_Gender1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TF_Gender1ActionPerformed
 
     private void PatientAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientAboutActionPerformed
         dispose();
@@ -527,6 +214,10 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
         home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         home.setVisible(true);
     }//GEN-LAST:event_HomeButonActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -564,51 +255,24 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Editbutton;
     private javax.swing.JButton HomeButon;
-    private javax.swing.JLabel L_firstName10;
-    private javax.swing.JLabel L_firstName11;
-    private javax.swing.JLabel L_firstName12;
-    private javax.swing.JLabel L_firstName13;
-    private javax.swing.JLabel L_firstName14;
-    private javax.swing.JLabel L_firstName15;
-    private javax.swing.JLabel L_firstName16;
-    private javax.swing.JLabel L_firstName17;
-    private javax.swing.JLabel L_firstName18;
-    private javax.swing.JLabel L_firstName19;
-    private javax.swing.JLabel L_firstName20;
-    private javax.swing.JLabel L_firstName21;
     private javax.swing.JLabel L_firstName22;
-    private javax.swing.JLabel L_firstName6;
-    private javax.swing.JLabel L_firstName7;
-    private javax.swing.JLabel L_firstName8;
-    private javax.swing.JLabel L_firstName9;
+    private javax.swing.JLabel L_firstName23;
+    private javax.swing.JLabel L_firstName24;
+    private javax.swing.JLabel L_firstName25;
     private javax.swing.JButton LogOut;
-    private javax.swing.JPasswordField PasswordSettings;
     private javax.swing.JButton PatientAbout;
     private javax.swing.JButton PatientSettings;
     private javax.swing.JLabel SideMenuu;
-    private javax.swing.JTextField TF_EmergencyAddress;
-    private javax.swing.JTextField TF_EmergencyContact;
-    private javax.swing.JTextField TF_EmergencyContact1;
-    private javax.swing.JTextField TF_EmergencyName2;
-    private javax.swing.JTextField TF_Fname2;
-    private javax.swing.JTextField TF_Gender1;
-    private javax.swing.JTextField TF_Lname1;
-    private javax.swing.JTextField TF_MaritalStatus;
-    private javax.swing.JTextField TF_address2;
-    private javax.swing.JTextField TF_birthdate2;
-    private javax.swing.JTextField TF_emailAd;
-    private javax.swing.JTextField TF_initial;
-    private javax.swing.JTextField TF_phoneNum1;
     private javax.swing.JLabel WholeBackground;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator8;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }

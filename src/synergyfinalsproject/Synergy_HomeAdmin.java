@@ -4,6 +4,7 @@
  */
 package synergyfinalsproject;
 
+import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 
 /**
@@ -12,11 +13,16 @@ import javax.swing.JFrame;
  */
 public class Synergy_HomeAdmin extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Synergy_HomeAdmin
-     */
+     private int userKey;
+    DefaultListModel<String> model = new DefaultListModel();
+    
+    dataBaseV2 db = new dataBaseV2();
+    
+     
+     
     public Synergy_HomeAdmin() {
         initComponents();
+        adminName.setText(db.getAdminNameDB().get(userKey));
     }
 
     /**
@@ -41,7 +47,7 @@ public class Synergy_HomeAdmin extends javax.swing.JFrame {
         jList2 = new javax.swing.JList<>();
         jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        adminName = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         LogOut = new javax.swing.JButton();
@@ -111,11 +117,11 @@ public class Synergy_HomeAdmin extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(570, 210, 180, 210);
 
-        jLabel6.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(6, 61, 134));
-        jLabel6.setText("adminname");
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(240, 40, 180, 40);
+        adminName.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
+        adminName.setForeground(new java.awt.Color(6, 61, 134));
+        adminName.setText("adminname");
+        jPanel1.add(adminName);
+        adminName.setBounds(240, 40, 180, 40);
 
         jLabel5.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(6, 61, 134));
@@ -276,11 +282,11 @@ public class Synergy_HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JButton PatientSettings;
     private javax.swing.JLabel SideMenuu;
     private javax.swing.JLabel WholeBackground;
+    private javax.swing.JLabel adminName;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JList<String> jList1;

@@ -212,7 +212,7 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jList1);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(120, 130, 440, 220);
+        jScrollPane1.setBounds(110, 120, 450, 230);
 
         jLabel5.setFont(new java.awt.Font("Karma", 0, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(6, 61, 134));
