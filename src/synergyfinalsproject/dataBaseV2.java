@@ -112,4 +112,16 @@ public class dataBaseV2 {
         
     }
     
+    public LinkedList<String> getGenderDB(){
+        
+        return new LinkedList<>(genderDB);
+        
+    }
+    
+    public LinkedList<String> getStatusDB(){
+        
+        return new LinkedList<>(statusDB);
+        
+    }
+    
 }

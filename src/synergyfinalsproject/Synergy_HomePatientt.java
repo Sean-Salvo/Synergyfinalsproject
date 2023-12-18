@@ -22,7 +22,6 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         Synergy_LogIn login = new Synergy_LogIn();
         
         L_firstName4.setText(db.getUsernameDB().get(userKey));
-        System.out.println(db.getPasswordDB().get(userKey));
         
         
         

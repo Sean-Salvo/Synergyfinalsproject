@@ -21,7 +21,6 @@ public class Synergy_MedicalRecord extends javax.swing.JFrame {
         
         dataBaseV2 db = new dataBaseV2();
         
-        System.out.println(db.getPasswordDB().get(userKey));
         
     }
 

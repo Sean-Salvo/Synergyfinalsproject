@@ -22,7 +22,18 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
         
         dataBaseV2 db = new dataBaseV2();
         
-        System.out.println(db.getPasswordDB().get(userKey));
+        TF_Fname2.setText(db.getfirstNameDB().get(userKey));
+        TF_Lname1.setText(db.getsurNameDB().get(userKey));
+        TF_initial.setText(db.getmiddleNameDB().get(userKey));
+        TF_birthdate2.setText(db.getmonthDB().get(userKey) + " " + db.getdayDB().get(userKey) + " " + db.getyearDB().get(userKey));
+        TF_Gender1.setText(db.getGenderDB().get(userKey));
+        TF_MaritalStatus.setText(db.getStatusDB().get(userKey));
+        
+        TF_address2.setText(db.getaddressDB().get(userKey));
+        TF_emailAd.setText(db.getaddressDB().get(userKey));
+        TF_phoneNum1.setText(db.getnumberDB().get(userKey));
+        
+        
         
     }
 
