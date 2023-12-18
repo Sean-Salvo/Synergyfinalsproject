@@ -82,11 +82,11 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="86" green="3d" red="6" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Schedule"/>
+                <Property name="text" type="java.lang.String" value="Schedule Request"/>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="10" y="0" width="140" height="40"/>
+                  <AbsoluteConstraints x="0" y="0" width="140" height="40"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -160,7 +160,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="Cancel">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Cancel"/>
+                <Property name="text" type="java.lang.String" value="Decline"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CancelActionPerformed"/>
@@ -173,14 +173,14 @@
             </Component>
             <Component class="javax.swing.JButton" name="Save">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Save"/>
+                <Property name="text" type="java.lang.String" value="Accept"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SaveActionPerformed"/>
               </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="70" y="200" width="60" height="-1"/>
+                  <AbsoluteConstraints x="70" y="200" width="70" height="-1"/>
                 </Constraint>
               </Constraints>
             </Component>
@@ -297,6 +297,7 @@
                               <Component id="jScrollPane2" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                               <Component id="jTextField1" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace pref="24" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>

@@ -108,9 +108,9 @@ public class Synergy_PendingAppointment extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Karma", 0, 15)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(6, 61, 134));
-        jLabel6.setText("Schedule");
+        jLabel6.setText("Schedule Request");
         jPanel3.add(jLabel6);
-        jLabel6.setBounds(10, 0, 140, 40);
+        jLabel6.setBounds(0, 0, 140, 40);
 
         L_firstName22.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName22.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
@@ -150,7 +150,7 @@ public class Synergy_PendingAppointment extends javax.swing.JFrame {
         jPanel3.add(TF_AppoDay);
         TF_AppoDay.setBounds(10, 110, 111, 20);
 
-        Cancel.setText("Cancel");
+        Cancel.setText("Decline");
         Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CancelActionPerformed(evt);
@@ -159,14 +159,14 @@ public class Synergy_PendingAppointment extends javax.swing.JFrame {
         jPanel3.add(Cancel);
         Cancel.setBounds(0, 200, 70, 23);
 
-        Save.setText("Save");
+        Save.setText("Accept");
         Save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SaveActionPerformed(evt);
             }
         });
         jPanel3.add(Save);
-        Save.setBounds(70, 200, 60, 23);
+        Save.setBounds(70, 200, 70, 23);
 
         L_firstName25.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName25.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
@@ -298,7 +298,8 @@ public class Synergy_PendingAppointment extends javax.swing.JFrame {
                     .addComponent(L_firstName23, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         jScrollPane3.setViewportView(jPanel4);
