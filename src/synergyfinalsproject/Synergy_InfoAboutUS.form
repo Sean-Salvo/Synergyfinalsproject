@@ -193,11 +193,11 @@
                           <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="L_firstName27" min="-2" pref="120" max="-2" attributes="0"/>
-                              <Component id="L_firstName1" min="-2" pref="120" max="-2" attributes="0"/>
-                              <Component id="L_firstName3" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName2" min="-2" pref="620" max="-2" attributes="0"/>
                               <Component id="L_firstName8" min="-2" pref="620" max="-2" attributes="0"/>
                               <Component id="L_firstName5" min="-2" pref="620" max="-2" attributes="0"/>
-                              <Component id="L_firstName2" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName1" min="-2" pref="120" max="-2" attributes="0"/>
+                              <Component id="L_firstName3" min="-2" pref="620" max="-2" attributes="0"/>
                               <Component id="L_firstName7" min="-2" pref="620" max="-2" attributes="0"/>
                               <Component id="L_firstName" min="-2" pref="620" max="-2" attributes="0"/>
                               <Component id="L_firstName11" min="-2" pref="620" max="-2" attributes="0"/>
@@ -218,7 +218,53 @@
                               <Component id="L_firstName23" min="-2" pref="620" max="-2" attributes="0"/>
                               <Component id="L_firstName24" min="-2" pref="620" max="-2" attributes="0"/>
                               <Component id="L_firstName25" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName28" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName29" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="jLabel5" min="-2" pref="300" max="-2" attributes="0"/>
+                              <Component id="L_firstName31" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName30" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName39" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName35" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName32" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName34" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName37" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName38" min="-2" pref="620" max="-2" attributes="0"/>
                               <Component id="L_firstName15" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName36" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName42" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName33" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName44" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName43" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName41" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName47" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName50" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName48" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName51" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName49" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName40" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName46" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName54" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName52" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName53" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName55" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName56" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName58" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName57" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName60" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName59" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName62" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName61" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName64" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName63" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName68" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName66" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName67" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName45" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName71" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName70" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName65" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName72" min="-2" pref="620" max="-2" attributes="0"/>
+                              <Component id="L_firstName69" min="-2" pref="620" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -230,14 +276,7 @@
                           <Component id="L_firstName27" min="-2" pref="30" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
-                                  <Component id="L_firstName1" min="-2" pref="40" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                                  <Component id="L_firstName3" min="-2" pref="30" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="L_firstName2" min="-2" pref="30" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <EmptySpace min="90" pref="90" max="-2" attributes="0"/>
                                   <Component id="L_firstName8" min="-2" max="-2" attributes="0"/>
@@ -246,7 +285,14 @@
                                   <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
                                   <Component id="L_firstName5" min="-2" pref="30" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="L_firstName2" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                                  <Component id="L_firstName1" min="-2" pref="40" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                                  <Component id="L_firstName3" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="L_firstName7" min="-2" max="-2" attributes="0"/>
@@ -288,18 +334,176 @@
                           <Component id="L_firstName26" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                           <Component id="L_firstName23" min="-2" pref="10" max="-2" attributes="0"/>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="L_firstName24" min="-2" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                                  <Component id="L_firstName25" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="L_firstName25" min="-2" pref="31" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                  <Component id="L_firstName28" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                  <Component id="L_firstName29" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jLabel5" min="-2" pref="40" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="L_firstName31" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="L_firstName30" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
+                                  <Component id="L_firstName39" min="-2" pref="40" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="90" pref="90" max="-2" attributes="0"/>
+                                  <Component id="L_firstName35" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                                  <Component id="L_firstName32" min="-2" pref="40" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="70" pref="70" max="-2" attributes="0"/>
+                                  <Component id="L_firstName34" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="L_firstName37" min="-2" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="L_firstName38" min="-2" pref="30" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
                                   <Component id="L_firstName15" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="L_firstName36" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="L_firstName42" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                          <Component id="L_firstName33" min="-2" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                                  <Component id="L_firstName44" min="-2" pref="40" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="L_firstName43" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="L_firstName41" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                  <Component id="L_firstName47" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="70" pref="70" max="-2" attributes="0"/>
+                                  <Component id="L_firstName50" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                                  <Component id="L_firstName48" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="L_firstName51" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                                  <Component id="L_firstName49" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="90" pref="90" max="-2" attributes="0"/>
+                                  <Component id="L_firstName40" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="L_firstName46" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                  <Component id="L_firstName54" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="L_firstName52" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="L_firstName53" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="L_firstName55" min="-2" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="L_firstName56" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                  <Component id="L_firstName58" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="L_firstName57" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                                  <Component id="L_firstName60" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="L_firstName59" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="50" pref="50" max="-2" attributes="0"/>
+                                  <Component id="L_firstName62" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                  <Component id="L_firstName61" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="80" pref="80" max="-2" attributes="0"/>
+                                  <Component id="L_firstName64" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="60" pref="60" max="-2" attributes="0"/>
+                                  <Component id="L_firstName63" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="L_firstName68" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <Component id="L_firstName66" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                                  <Component id="L_firstName67" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="L_firstName45" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="L_firstName71" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                          <Component id="L_firstName70" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                          <Component id="L_firstName65" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="L_firstName72" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                          <Component id="L_firstName69" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace pref="49" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -470,7 +674,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Karma Light" size="13" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="4.&#xa0;Secure Data Storage: Synergy prioritizes data security and confidentiality. Patient information is"/>
+                    <Property name="text" type="java.lang.String" value="that could damage, disable, or impair the functionality of the application."/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName16">
@@ -569,7 +773,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Karma Light" size="13" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="4.&#xa0;Secure Data Storage: Synergy prioritizes data security and confidentiality. Patient information is"/>
+                    <Property name="text" type="java.lang.String" value="With its focus on visual representation, Synergy offers a modern and intuitive solution for "/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName25">
@@ -580,7 +784,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Karma Light" size="13" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="4.&#xa0;Secure Data Storage: Synergy prioritizes data security and confidentiality. Patient information is"/>
+                    <Property name="text" type="java.lang.String" value="healthcare providers to efficiently manage patient information. By leveraging technology, Synergy"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName26">
@@ -606,6 +810,515 @@
                       <Color blue="86" green="3d" red="6" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="ABOUT US"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel5">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma" size="23" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="86" green="3d" red="6" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Terms and Conditions"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName28">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="aims to enhance patient care, improve workflow efficiency, and ultimately contribute to the overall"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName29">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Please read these Terms and Conditions carefully before using the Synergy application."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName30">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="1.&#xa0;Acceptance of Terms"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName31">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="By using the Synergy application, you agree to be bound by these Terms and Conditions. If you do "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName32">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="not agree with any part of these terms, please refrain from using the application."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName33">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="a. Your privacy is important to us. Please refer to our Privacy Policy for detailed information on how "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName34">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="a. Synergy is intended for use by healthcare professionals and authorized personnel only."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName35">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Unauthorized access or use of the application is strictly prohibited."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName36">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="b. You are responsible for maintaining the confidentiality of your login credentials and ensuring "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName37">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="that they are not shared with unauthorized individuals."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName38">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="c. You agree not to use the application for any unlawful or prohibited purpose or in any manner "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName39">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="2.&#xa0;Use of the Application"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName40">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="from the Synergy application without prior written consent from the owners."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName41">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="we collect, use, and protect your personal data."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName42">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="3.&#xa0;Privacy Policy"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName43">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="b. By using the Synergy application, you consent to the collection and use of your personal"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName44">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="information in accordance with our Privacy Policy."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName45">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="the modified terms."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName46">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="a. The Synergy application and all its contents, including but not limited to text, graphics, logos, "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName47">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="button icons, images, audio clips, and software, are the property of the application&apos;s owners and are"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName48">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="protected by intellectual property laws."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName49">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="b. You may not modify, reproduce, distribute, transmit, display, perform, publish, license, create "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName50">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="derivative works from, transfer, or sell any information, software, products, or services obtained "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName51">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="4.&#xa0;Intellectual Property"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName52">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="5.&#xa0;Disclaimer of Warranties"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName53">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="a. The Synergy application is provided on an &quot;as is&quot; and &quot;as available&quot; basis. We make no warranties, "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName54">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="express or implied, regarding the application&apos;s accuracy, reliability, or availability."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName55">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="b. We do not guarantee that the application will be error-free, uninterrupted, or free from viruses or"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName56">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="other harmful components."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName57">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="&#x2028;c. Any reliance you place on the information provided by the Synergy application is at your own "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName58">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="risk."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName59">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="6.&#xa0;Limitation of Liability"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName60">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="a. In no event shall the owners of the Synergy application be liable for any direct, indirect, "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName61">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="incidental, special, or consequential damages arising out of or in any way connected with the use of"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName62">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="the application or the inability to use it."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName63">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="b. We shall not be liable for any loss or damage caused by unauthorized access to or alteration of "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName64">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="your data."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName65">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="jurisdiction in which the application&apos;s owners are located."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName66">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="We reserve the right to modify or replace these Terms and Conditions at any time without prior "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName67">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="notice. Your continued use of the Synergy application after any changes signifies your acceptance of"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName68">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="7.&#xa0;Modifications to the Terms and Conditions"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName69">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="86" green="3d" red="6" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Synergy@google.com."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName70">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="These Terms and Conditions shall be governed by and construed in accordance with the laws of the"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName71">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="8.&#xa0;Governing Law"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="L_firstName72">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Karma Light" size="13" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="If you have any questions or concerns regarding these Terms and Conditions, please contact us at "/>
                   </Properties>
                 </Component>
               </SubComponents>

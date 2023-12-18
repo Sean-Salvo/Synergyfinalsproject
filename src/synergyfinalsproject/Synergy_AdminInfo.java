@@ -63,6 +63,52 @@ public class Synergy_AdminInfo extends javax.swing.JFrame {
         L_firstName25 = new javax.swing.JLabel();
         L_firstName26 = new javax.swing.JLabel();
         L_firstName27 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        L_firstName28 = new javax.swing.JLabel();
+        L_firstName29 = new javax.swing.JLabel();
+        L_firstName30 = new javax.swing.JLabel();
+        L_firstName31 = new javax.swing.JLabel();
+        L_firstName32 = new javax.swing.JLabel();
+        L_firstName33 = new javax.swing.JLabel();
+        L_firstName34 = new javax.swing.JLabel();
+        L_firstName35 = new javax.swing.JLabel();
+        L_firstName36 = new javax.swing.JLabel();
+        L_firstName37 = new javax.swing.JLabel();
+        L_firstName38 = new javax.swing.JLabel();
+        L_firstName39 = new javax.swing.JLabel();
+        L_firstName40 = new javax.swing.JLabel();
+        L_firstName41 = new javax.swing.JLabel();
+        L_firstName42 = new javax.swing.JLabel();
+        L_firstName43 = new javax.swing.JLabel();
+        L_firstName44 = new javax.swing.JLabel();
+        L_firstName45 = new javax.swing.JLabel();
+        L_firstName46 = new javax.swing.JLabel();
+        L_firstName47 = new javax.swing.JLabel();
+        L_firstName48 = new javax.swing.JLabel();
+        L_firstName49 = new javax.swing.JLabel();
+        L_firstName50 = new javax.swing.JLabel();
+        L_firstName51 = new javax.swing.JLabel();
+        L_firstName52 = new javax.swing.JLabel();
+        L_firstName53 = new javax.swing.JLabel();
+        L_firstName54 = new javax.swing.JLabel();
+        L_firstName55 = new javax.swing.JLabel();
+        L_firstName56 = new javax.swing.JLabel();
+        L_firstName57 = new javax.swing.JLabel();
+        L_firstName58 = new javax.swing.JLabel();
+        L_firstName59 = new javax.swing.JLabel();
+        L_firstName60 = new javax.swing.JLabel();
+        L_firstName61 = new javax.swing.JLabel();
+        L_firstName62 = new javax.swing.JLabel();
+        L_firstName63 = new javax.swing.JLabel();
+        L_firstName64 = new javax.swing.JLabel();
+        L_firstName65 = new javax.swing.JLabel();
+        L_firstName66 = new javax.swing.JLabel();
+        L_firstName67 = new javax.swing.JLabel();
+        L_firstName68 = new javax.swing.JLabel();
+        L_firstName69 = new javax.swing.JLabel();
+        L_firstName70 = new javax.swing.JLabel();
+        L_firstName71 = new javax.swing.JLabel();
+        L_firstName72 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         L_firstName4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -123,171 +169,571 @@ public class Synergy_AdminInfo extends javax.swing.JFrame {
         HomeButon.setBounds(110, 30, 30, 30);
 
         jPanel2.setBackground(new java.awt.Color(221, 238, 249));
-        jPanel2.setLayout(null);
 
         L_firstName.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName.setText("This comprehensive system ensures accurate and up-to-date patient data.");
-        jPanel2.add(L_firstName);
-        L_firstName.setBounds(50, 190, 620, 40);
 
         L_firstName1.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName1.setFont(new java.awt.Font("Karma", 1, 13)); // NOI18N
         L_firstName1.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName1.setText("Features");
-        jPanel2.add(L_firstName1);
-        L_firstName1.setBounds(50, 130, 120, 40);
 
         L_firstName2.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName2.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName2.setText("Synergy is a visual HMS (Hospital Management System) application designed to ");
-        jPanel2.add(L_firstName2);
-        L_firstName2.setBounds(50, 70, 620, 30);
 
         L_firstName3.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName3.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName3.setText("revolutionize the way patient information is provided. With its user-friendly interface and ");
-        jPanel2.add(L_firstName3);
-        L_firstName3.setBounds(50, 90, 620, 30);
 
         L_firstName5.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName5.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName5.setText("advanced features, Synergy aims to streamline healthcare processes and enhance patient care.");
-        jPanel2.add(L_firstName5);
-        L_firstName5.setBounds(50, 110, 620, 30);
 
         L_firstName6.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName6.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName6.setText("enhances user experience and reduces the learning curve for new users.");
-        jPanel2.add(L_firstName6);
-        L_firstName6.setBounds(50, 260, 620, 40);
 
         L_firstName7.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName7.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName7.setText("patient records, including personal details, medical history, allergies, and medication information.");
-        jPanel2.add(L_firstName7);
-        L_firstName7.setBounds(50, 180, 620, 20);
 
         L_firstName8.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName8.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName8.setText("1. Patient Information Management: Synergy allows healthcare providers to efficiently manage ");
-        jPanel2.add(L_firstName8);
-        L_firstName8.setBounds(50, 160, 620, 20);
 
         L_firstName9.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName9.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName9.setText("access or breaches.");
-        jPanel2.add(L_firstName9);
-        L_firstName9.setBounds(50, 400, 620, 20);
 
         L_firstName10.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName10.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName10.setText("to navigate through the application and access patient information quickly. The intuitive design ");
-        jPanel2.add(L_firstName10);
-        L_firstName10.setBounds(50, 250, 620, 20);
 
         L_firstName11.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName11.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName11.setText(" 2. Visual Interface: Synergy's visually appealing interface makes it easy for healthcare professionals ");
-        jPanel2.add(L_firstName11);
-        L_firstName11.setBounds(50, 230, 620, 20);
 
         L_firstName12.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName12.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName12.setText("3. Streamlined Workflow: By automating various administrative tasks, Synergy optimizes workflow ");
-        jPanel2.add(L_firstName12);
-        L_firstName12.setBounds(50, 300, 620, 20);
 
         L_firstName13.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName13.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName13.setText("efficiency within healthcare facilities. It enables seamless coordination between different ");
-        jPanel2.add(L_firstName13);
-        L_firstName13.setBounds(50, 320, 620, 10);
 
         L_firstName14.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName14.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName14.setText("departments, ensuring smooth communication and timely access to patient data.");
-        jPanel2.add(L_firstName14);
-        L_firstName14.setBounds(50, 330, 620, 20);
 
         L_firstName15.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName15.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
-        L_firstName15.setText("4. Secure Data Storage: Synergy prioritizes data security and confidentiality. Patient information is");
-        jPanel2.add(L_firstName15);
-        L_firstName15.setBounds(50, 630, 620, 20);
+        L_firstName15.setText("that could damage, disable, or impair the functionality of the application.");
 
         L_firstName16.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName16.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName16.setText("securely stored in compliance with industry standards, protecting sensitive data from unauthorized");
-        jPanel2.add(L_firstName16);
-        L_firstName16.setBounds(50, 390, 620, 10);
 
         L_firstName17.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName17.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName17.setText("4. Secure Data Storage: Synergy prioritizes data security and confidentiality. Patient information is");
-        jPanel2.add(L_firstName17);
-        L_firstName17.setBounds(50, 370, 620, 20);
 
         L_firstName18.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName18.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName18.setText("5.Synergy is a cutting-edge visual HMS (Hospital Management System) application designed to revolutionize the way patient information is provided. With its user-friendly interface and advanced features, Synergy aims to streamline healthcare processes and enhance patient care.  Features:  1. Patient Information Management: Synergy allows healthcare providers to efficiently manage patient records, including personal details, medical history, allergies, and medication information. This comprehensive system ensures accurate and up-to-date patient data.  2. Visual Interface: Synergy's visually appealing interface makes it easy for healthcare professionals to navigate through the application and access patient information quickly. The intuitive design enhances user experience and reduces the learning curve for new users.  3. Streamlined Workflow: By automating various administrative tasks, Synergy optimizes workflow efficiency within healthcare facilities. It enables seamless coordination between different departments, ensuring smooth communication and timely access to patient data.  4. Secure Data Storage: Synergy prioritizes data security and confidentiality. Patient information is securely stored in compliance with industry standards, protecting sensitive data from unauthorized access or breaches.  5. Integration Capabilities: Synergy seamlessly integrates with existing hospital systems, such as electronic health records (EHR) and laboratory information management systems (LIMS). This integration eliminates data silos and enables comprehensive patient care.  6. Analytics and Reporting: Synergy provides powerful analytics and reporting tools, allowing healthcare administrators to gain valuable insights into patient demographics, treatment outcomes, and resource utilization. This data-driven approach enables informed decision-making and continuous improvement.  With its focus on visual representation, Synergy offers a modern and intuitive solution for healthcare providers to efficiently manage patient information. By leveraging technology, Synergy aims to enhance patient care,  improve workflow efficiency, and ultimately contribute to the overall advancement of the healthcare industry.  ");
-        jPanel2.add(L_firstName18);
-        L_firstName18.setBounds(50, 450, 620, 20);
 
         L_firstName19.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName19.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName19.setText("electronic health records (EHR) and laboratory information management systems (LIMS). This ");
-        jPanel2.add(L_firstName19);
-        L_firstName19.setBounds(50, 470, 620, 10);
 
         L_firstName20.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName20.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName20.setText("integration eliminates data silos and enables comprehensive patient care.");
-        jPanel2.add(L_firstName20);
-        L_firstName20.setBounds(50, 480, 620, 20);
 
         L_firstName21.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName21.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName21.setText("6. Analytics and Reporting: Synergy provides powerful analytics and reporting tools, allowing ");
-        jPanel2.add(L_firstName21);
-        L_firstName21.setBounds(50, 530, 620, 20);
 
         L_firstName22.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName22.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName22.setText("healthcare administrators to gain valuable insights into patient demographics, treatment /");
-        jPanel2.add(L_firstName22);
-        L_firstName22.setBounds(50, 550, 620, 10);
 
         L_firstName23.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName23.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName23.setText("and continuous improvement.");
-        jPanel2.add(L_firstName23);
-        L_firstName23.setBounds(50, 580, 620, 10);
 
         L_firstName24.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName24.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
-        L_firstName24.setText("4. Secure Data Storage: Synergy prioritizes data security and confidentiality. Patient information is");
-        jPanel2.add(L_firstName24);
-        L_firstName24.setBounds(50, 600, 620, 20);
+        L_firstName24.setText("With its focus on visual representation, Synergy offers a modern and intuitive solution for ");
 
         L_firstName25.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName25.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
-        L_firstName25.setText("4. Secure Data Storage: Synergy prioritizes data security and confidentiality. Patient information is");
-        jPanel2.add(L_firstName25);
-        L_firstName25.setBounds(50, 610, 620, 30);
+        L_firstName25.setText("healthcare providers to efficiently manage patient information. By leveraging technology, Synergy");
 
         L_firstName26.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName26.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
         L_firstName26.setText("outcomes, and resource utilization. This data-driven approach enables informed decision-making ");
-        jPanel2.add(L_firstName26);
-        L_firstName26.setBounds(50, 560, 620, 20);
 
         L_firstName27.setBackground(new java.awt.Color(0, 0, 0));
         L_firstName27.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
         L_firstName27.setForeground(new java.awt.Color(6, 61, 134));
         L_firstName27.setText("ABOUT US");
-        jPanel2.add(L_firstName27);
-        L_firstName27.setBounds(50, 30, 120, 30);
+
+        jLabel5.setFont(new java.awt.Font("Karma", 0, 23)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(6, 61, 134));
+        jLabel5.setText("Terms and Conditions");
+
+        L_firstName28.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName28.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName28.setText("aims to enhance patient care, improve workflow efficiency, and ultimately contribute to the overall");
+
+        L_firstName29.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName29.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName29.setText("Please read these Terms and Conditions carefully before using the Synergy application.");
+
+        L_firstName30.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName30.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName30.setText("1. Acceptance of Terms");
+
+        L_firstName31.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName31.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName31.setText("By using the Synergy application, you agree to be bound by these Terms and Conditions. If you do ");
+
+        L_firstName32.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName32.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName32.setText("not agree with any part of these terms, please refrain from using the application.");
+
+        L_firstName33.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName33.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName33.setText("a. Your privacy is important to us. Please refer to our Privacy Policy for detailed information on how ");
+
+        L_firstName34.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName34.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName34.setText("a. Synergy is intended for use by healthcare professionals and authorized personnel only.");
+
+        L_firstName35.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName35.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName35.setText("Unauthorized access or use of the application is strictly prohibited.");
+
+        L_firstName36.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName36.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName36.setText("b. You are responsible for maintaining the confidentiality of your login credentials and ensuring ");
+
+        L_firstName37.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName37.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName37.setText("that they are not shared with unauthorized individuals.");
+
+        L_firstName38.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName38.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName38.setText("c. You agree not to use the application for any unlawful or prohibited purpose or in any manner ");
+
+        L_firstName39.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName39.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName39.setText("2. Use of the Application");
+
+        L_firstName40.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName40.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName40.setText("from the Synergy application without prior written consent from the owners.");
+
+        L_firstName41.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName41.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName41.setText("we collect, use, and protect your personal data.");
+
+        L_firstName42.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName42.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName42.setText("3. Privacy Policy");
+
+        L_firstName43.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName43.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName43.setText("b. By using the Synergy application, you consent to the collection and use of your personal");
+
+        L_firstName44.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName44.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName44.setText("information in accordance with our Privacy Policy.");
+
+        L_firstName45.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName45.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName45.setText("the modified terms.");
+
+        L_firstName46.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName46.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName46.setText("a. The Synergy application and all its contents, including but not limited to text, graphics, logos, ");
+
+        L_firstName47.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName47.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName47.setText("button icons, images, audio clips, and software, are the property of the application's owners and are");
+
+        L_firstName48.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName48.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName48.setText("protected by intellectual property laws.");
+
+        L_firstName49.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName49.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName49.setText("b. You may not modify, reproduce, distribute, transmit, display, perform, publish, license, create ");
+
+        L_firstName50.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName50.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName50.setText("derivative works from, transfer, or sell any information, software, products, or services obtained ");
+
+        L_firstName51.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName51.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName51.setText("4. Intellectual Property");
+
+        L_firstName52.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName52.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName52.setText("5. Disclaimer of Warranties");
+
+        L_firstName53.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName53.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName53.setText("a. The Synergy application is provided on an \"as is\" and \"as available\" basis. We make no warranties, ");
+
+        L_firstName54.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName54.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName54.setText("express or implied, regarding the application's accuracy, reliability, or availability.");
+
+        L_firstName55.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName55.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName55.setText("b. We do not guarantee that the application will be error-free, uninterrupted, or free from viruses or");
+
+        L_firstName56.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName56.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName56.setText("other harmful components.");
+
+        L_firstName57.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName57.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName57.setText(" c. Any reliance you place on the information provided by the Synergy application is at your own ");
+
+        L_firstName58.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName58.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName58.setText("risk.");
+
+        L_firstName59.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName59.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName59.setText("6. Limitation of Liability");
+
+        L_firstName60.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName60.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName60.setText("a. In no event shall the owners of the Synergy application be liable for any direct, indirect, ");
+
+        L_firstName61.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName61.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName61.setText("incidental, special, or consequential damages arising out of or in any way connected with the use of");
+
+        L_firstName62.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName62.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName62.setText("the application or the inability to use it.");
+
+        L_firstName63.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName63.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName63.setText("b. We shall not be liable for any loss or damage caused by unauthorized access to or alteration of ");
+
+        L_firstName64.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName64.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName64.setText("your data.");
+
+        L_firstName65.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName65.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName65.setText("jurisdiction in which the application's owners are located.");
+
+        L_firstName66.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName66.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName66.setText("We reserve the right to modify or replace these Terms and Conditions at any time without prior ");
+
+        L_firstName67.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName67.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName67.setText("notice. Your continued use of the Synergy application after any changes signifies your acceptance of");
+
+        L_firstName68.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName68.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName68.setText("7. Modifications to the Terms and Conditions");
+
+        L_firstName69.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName69.setFont(new java.awt.Font("Karma Light", 1, 14)); // NOI18N
+        L_firstName69.setForeground(new java.awt.Color(6, 61, 134));
+        L_firstName69.setText("Synergy@google.com.");
+
+        L_firstName70.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName70.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName70.setText("These Terms and Conditions shall be governed by and construed in accordance with the laws of the");
+
+        L_firstName71.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName71.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName71.setText("8. Governing Law");
+
+        L_firstName72.setBackground(new java.awt.Color(0, 0, 0));
+        L_firstName72.setFont(new java.awt.Font("Karma Light", 0, 13)); // NOI18N
+        L_firstName72.setText("If you have any questions or concerns regarding these Terms and Conditions, please contact us at ");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName27, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName2, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName8, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName5, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName3, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName7, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName11, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName10, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName12, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName13, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName14, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName16, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName9, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName19, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName20, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName21, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName22, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName26, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName23, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName24, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName25, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName28, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName29, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName31, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName30, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName39, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName35, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName32, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName34, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName37, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName38, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName15, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName36, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName42, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName33, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName44, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName43, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName41, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName47, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName50, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName48, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName51, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName49, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName40, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName46, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName54, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName52, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName53, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName55, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName56, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName58, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName57, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName60, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName59, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName62, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName61, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName64, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName63, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName68, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName66, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName67, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName45, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName71, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName70, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName65, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName72, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(L_firstName69, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(L_firstName27, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(L_firstName8))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(L_firstName5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(L_firstName1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(L_firstName3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName7)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(L_firstName11)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName10)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(L_firstName12)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName14)
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName17)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName16, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName9)
+                .addGap(30, 30, 30)
+                .addComponent(L_firstName18)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName19, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName20)
+                .addGap(30, 30, 30)
+                .addComponent(L_firstName21)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName22, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName26)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName23, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName24)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName25, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(L_firstName28)))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(L_firstName29))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName31, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(L_firstName30)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(L_firstName39, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(L_firstName35))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(L_firstName32, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(L_firstName34, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(L_firstName37, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName38, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(L_firstName15))
+                    .addComponent(L_firstName36))
+                .addGap(10, 10, 10)
+                .addComponent(L_firstName42)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName33, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(L_firstName44, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName43, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(L_firstName41))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(L_firstName47))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(L_firstName50, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(L_firstName48, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(L_firstName51)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(L_firstName49))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(90, 90, 90)
+                        .addComponent(L_firstName40))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName46, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(L_firstName54))
+                    .addComponent(L_firstName52)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName53, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(L_firstName55, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName56)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(L_firstName58))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName57, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(L_firstName60))
+                    .addComponent(L_firstName59, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(L_firstName62))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(L_firstName61, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(L_firstName64))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(60, 60, 60)
+                        .addComponent(L_firstName63, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(L_firstName68)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(L_firstName66, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(L_firstName67)))
+                .addComponent(L_firstName45, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName71)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName70, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName65)
+                .addGap(20, 20, 20)
+                .addComponent(L_firstName72)
+                .addGap(0, 0, 0)
+                .addComponent(L_firstName69, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
 
         jScrollPane1.setViewportView(jPanel2);
 
@@ -413,17 +859,63 @@ public class Synergy_AdminInfo extends javax.swing.JFrame {
     private javax.swing.JLabel L_firstName25;
     private javax.swing.JLabel L_firstName26;
     private javax.swing.JLabel L_firstName27;
+    private javax.swing.JLabel L_firstName28;
+    private javax.swing.JLabel L_firstName29;
     private javax.swing.JLabel L_firstName3;
+    private javax.swing.JLabel L_firstName30;
+    private javax.swing.JLabel L_firstName31;
+    private javax.swing.JLabel L_firstName32;
+    private javax.swing.JLabel L_firstName33;
+    private javax.swing.JLabel L_firstName34;
+    private javax.swing.JLabel L_firstName35;
+    private javax.swing.JLabel L_firstName36;
+    private javax.swing.JLabel L_firstName37;
+    private javax.swing.JLabel L_firstName38;
+    private javax.swing.JLabel L_firstName39;
     private javax.swing.JLabel L_firstName4;
+    private javax.swing.JLabel L_firstName40;
+    private javax.swing.JLabel L_firstName41;
+    private javax.swing.JLabel L_firstName42;
+    private javax.swing.JLabel L_firstName43;
+    private javax.swing.JLabel L_firstName44;
+    private javax.swing.JLabel L_firstName45;
+    private javax.swing.JLabel L_firstName46;
+    private javax.swing.JLabel L_firstName47;
+    private javax.swing.JLabel L_firstName48;
+    private javax.swing.JLabel L_firstName49;
     private javax.swing.JLabel L_firstName5;
+    private javax.swing.JLabel L_firstName50;
+    private javax.swing.JLabel L_firstName51;
+    private javax.swing.JLabel L_firstName52;
+    private javax.swing.JLabel L_firstName53;
+    private javax.swing.JLabel L_firstName54;
+    private javax.swing.JLabel L_firstName55;
+    private javax.swing.JLabel L_firstName56;
+    private javax.swing.JLabel L_firstName57;
+    private javax.swing.JLabel L_firstName58;
+    private javax.swing.JLabel L_firstName59;
     private javax.swing.JLabel L_firstName6;
+    private javax.swing.JLabel L_firstName60;
+    private javax.swing.JLabel L_firstName61;
+    private javax.swing.JLabel L_firstName62;
+    private javax.swing.JLabel L_firstName63;
+    private javax.swing.JLabel L_firstName64;
+    private javax.swing.JLabel L_firstName65;
+    private javax.swing.JLabel L_firstName66;
+    private javax.swing.JLabel L_firstName67;
+    private javax.swing.JLabel L_firstName68;
+    private javax.swing.JLabel L_firstName69;
     private javax.swing.JLabel L_firstName7;
+    private javax.swing.JLabel L_firstName70;
+    private javax.swing.JLabel L_firstName71;
+    private javax.swing.JLabel L_firstName72;
     private javax.swing.JLabel L_firstName8;
     private javax.swing.JLabel L_firstName9;
     private javax.swing.JButton LogOut;
     private javax.swing.JButton PatientAbout;
     private javax.swing.JButton PatientSettings;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
