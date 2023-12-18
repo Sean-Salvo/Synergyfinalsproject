@@ -8,6 +8,10 @@ public class dataBaseV2 {
     // this is set of linkedlist is for the user's account.
     private static LinkedList<String> usernameDB = new LinkedList<>();
     private static LinkedList<String> passwordDB = new LinkedList<>();
+    //admin
+    private static LinkedList<String> adminNameDB = new LinkedList<>();
+    private static LinkedList<String> adminPassDB = new LinkedList<>();
+
 
     // this set of linkedlist is for the user's personal information.
     private static LinkedList<String> firstNameDB = new LinkedList<>();
@@ -52,6 +56,15 @@ public class dataBaseV2 {
         this.genderDB.add(regGender);
         this.statusDB.add(regStatus);
 
+    }
+    public void addAdminAccount(String adminUsername, String adminPassword) {
+        this.adminNameDB.add(adminUsername);
+        this.adminPassDB.add(adminPassword);
+    }
+
+     public dataBaseV2() {
+        // Add pre-made admin credentials when the database is created
+        addAdminAccount("admin", "admin123");
     }
 
     // a method that when called, creates a new linkedlist for the user's reminders.
@@ -142,6 +155,16 @@ public class dataBaseV2 {
 
         return new LinkedList<>(statusDB);
 
+    }
+     public LinkedList<String> getAdminNameDB() {
+        
+        return new LinkedList<>(adminNameDB);
+        
+    }
+    
+    public LinkedList<String> getAdminPassDB() {
+        
+        return new LinkedList<>(adminPassDB);
     }
 
     public ArrayList<LinkedList<String>> getPatientRemindersDB() {

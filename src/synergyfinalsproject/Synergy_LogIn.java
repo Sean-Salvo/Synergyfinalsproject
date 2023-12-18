@@ -150,11 +150,11 @@ public class Synergy_LogIn extends javax.swing.JFrame {
 
         String logUsername = tf_Username.getText();
         String logPassword = tf_Password.getText();
-        
+
         if (db.getUsernameDB().contains(logUsername) && db.getPasswordDB().contains(logPassword)) {
-            
+
             int logUserKey = db.getUsernameDB().indexOf(logUsername);
-            
+
             JFrame homePatient = new Synergy_HomePatientt(logUserKey);
             homePatient.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             homePatient.setVisible(true);
@@ -163,14 +163,21 @@ public class Synergy_LogIn extends javax.swing.JFrame {
                 this.dispose();
             }
 
+        } else if (db.getAdminNameDB().contains(logUsername) && db.getAdminPassDB().contains(logPassword)) {
+            // Admin login successful
+            JFrame adminHome = new Synergy_HomeAdmin(); // Replace with the actual class for the admin's home
+            adminHome.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            adminHome.setVisible(true);
+
+            if (this.isVisible()) {
+                this.dispose();
+            }
         } else {
 
             errorMSG.setVisible(true);
             errorMSG.displayError.append(("\nInvalid Username or Password Error: \nUsername or Password is not Found."));
 
         }
-
-
     }//GEN-LAST:event_login2ActionPerformed
 
     /**
