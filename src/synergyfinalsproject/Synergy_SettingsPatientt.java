@@ -520,7 +520,7 @@ public class Synergy_SettingsPatientt extends javax.swing.JFrame {
 
     private void PatientAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientAboutActionPerformed
       dispose();
-        JFrame info = new Synergy_InfoAboutUS();
+        JFrame info = new Synergy_InfoAboutUS(userKey);
         info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         info.setVisible(true);
 

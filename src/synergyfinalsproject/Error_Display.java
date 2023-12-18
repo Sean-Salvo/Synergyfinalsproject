@@ -3,6 +3,7 @@ package synergyfinalsproject;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -23,6 +24,8 @@ public class Error_Display extends javax.swing.JFrame {
         
         Image image = new ImageIcon(this.getClass().getResource("Synergy (Resized Logo).jpg")).getImage();
         this.setIconImage(image);
+        
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
     }
 
