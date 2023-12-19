@@ -17,7 +17,6 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
     
     DefaultListModel<String> model = new DefaultListModel();
     dataBaseV2 db = new dataBaseV2();
-    //Error_Display errorMSG = new Error_Display();
     
     public Synergy_HomePatientt(int logUserKey) {
         initComponents();
@@ -27,12 +26,11 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         
         L_firstName4.setText(db.getUsernameDB().get(userKey));
         
-        for(int a = 0; a < db.getPatientRemindersDB().get(userKey).size(); a++){
+        for(int a = 0; a < db.getRemindersDB().get(userKey).size(); a++){
             
-            model.addElement(db.getPatientRemindersDB().get(userKey).get(a));
+            model.addElement(db.getRemindersDB().get(userKey).get(a));
             
         }
-         dataBaseV2 db = new dataBaseV2();
         
         TF_Fname2.setText(db.getfirstNameDB().get(userKey));
         TF_Lname1.setText(db.getsurNameDB().get(userKey));
@@ -44,7 +42,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         TF_address2.setText(db.getaddressDB().get(userKey));
         TF_emailAd.setText(db.getaddressDB().get(userKey));
         TF_phoneNum1.setText(db.getnumberDB().get(userKey));
-        
+
     }
 
     private Synergy_HomePatientt() {
@@ -586,7 +584,6 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
 
     private void TF_RStoPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_RStoPatientActionPerformed
         // TODO add your handling code here:
-        // TODO add your handling code here:
     }//GEN-LAST:event_TF_RStoPatientActionPerformed
 
     private void TF_EmergencyName2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_EmergencyName2ActionPerformed
@@ -640,7 +637,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
 
     private void AppointmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AppointmentActionPerformed
          dispose();
-        JFrame app = new Synergy_Appointment();
+        JFrame app = new Synergy_Appointment(userKey);
         app.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         app.setVisible(true);
 
@@ -655,7 +652,7 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         String input = reminderTextField.getText();
         
         model.addElement(input);
-        db.getPatientRemindersDB().get(userKey).add(input);
+        db.getRemindersDB().get(userKey).add(input);
         
         /*
         FORMULA: db. -> calls the object database | .getPatientRemindersDB() -> a getter method that returns the private patientRemindersDB arraylist
@@ -672,12 +669,11 @@ public class Synergy_HomePatientt extends javax.swing.JFrame {
         try {
             
             model.removeElementAt(select);
-            db.getPatientRemindersDB().get(userKey).remove(select);
+            db.getRemindersDB().get(userKey).remove(select);
             
         } catch (ArrayIndexOutOfBoundsException ex) {
             
-            //errorMSG.setVisible(true);
-            //errorMSG.displayError.append("\nEmpty Reminder List Error: \n");
+            
             
         }
         

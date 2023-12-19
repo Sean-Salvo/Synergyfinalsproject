@@ -1,28 +1,53 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package synergyfinalsproject;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 
-/**
- *
- * @author Test
- */
 public class Synergy_HomeAdmin extends javax.swing.JFrame {
 
-     private int userKey;
-    DefaultListModel<String> model = new DefaultListModel();
-    
+    DefaultListModel<String> modelPendingList = new DefaultListModel();
+    DefaultListModel<String> modelAdminHistory = new DefaultListModel();
     dataBaseV2 db = new dataBaseV2();
     
-     
-     
     public Synergy_HomeAdmin() {
         initComponents();
-        adminName.setText(db.getAdminNameDB().get(userKey));
+        
+        pendingList.setModel(modelPendingList);
+        adminHistory.setModel(modelAdminHistory);
+        
+        if(!db.getAppointmentsDB().isEmpty()){
+        
+        for(int a = 0; a < db.getAppointmentsDB().size(); a++){
+            
+            for(int b = 0; b < db.getAppointmentsDB().get(a).size(); b++){
+                
+                modelPendingList.addElement(db.getUsernameDB().get(b) + "   " + db.getAppointmentsDB().get(a).get(b));
+                
+            }
+            
+        }
+        
+        } else {
+            
+            System.out.println("Error");
+            
+        }
+        
+        if(!db.getAppointmentsSuccessDB().isEmpty()){
+            
+            for(int a = 0; a < db.getAppointmentsSuccessDB().size(); a++){
+            
+            for(int b = 0; b < db.getAppointmentsSuccessDB().get(a).size(); b++){
+                
+                modelAdminHistory.addElement(db.getUsernameDB().get(b) + "   " + db.getAppointmentsSuccessDB().get(a).get(b));
+                
+            }
+            
+        }
+            
+        }
+        
+        
     }
 
     /**
@@ -40,11 +65,11 @@ public class Synergy_HomeAdmin extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jList3 = new javax.swing.JList<>();
+        adminHistory = new javax.swing.JList<>();
         jLabel8 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jList2 = new javax.swing.JList<>();
+        pendingList = new javax.swing.JList<>();
         jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         adminName = new javax.swing.JLabel();
@@ -75,14 +100,9 @@ public class Synergy_HomeAdmin extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTextArea1);
 
         jPanel1.add(jScrollPane3);
-        jScrollPane3.setBounds(584, 140, 140, 86);
+        jScrollPane3.setBounds(584, 140, 140, 90);
 
-        jList3.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Appointment history 1", "Appointment history 2", "Appointment history 3" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane4.setViewportView(jList3);
+        jScrollPane4.setViewportView(adminHistory);
 
         jPanel1.add(jScrollPane4);
         jScrollPane4.setBounds(110, 90, 440, 280);
@@ -97,12 +117,12 @@ public class Synergy_HomeAdmin extends javax.swing.JFrame {
         jPanel1.add(jLabel3);
         jLabel3.setBounds(570, 90, 180, 160);
 
-        jList2.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
+        pendingList.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pendingListMouseClicked(evt);
+            }
         });
-        jScrollPane2.setViewportView(jList2);
+        jScrollPane2.setViewportView(pendingList);
 
         jPanel1.add(jScrollPane2);
         jScrollPane2.setBounds(580, 280, 150, 100);
@@ -240,6 +260,16 @@ public class Synergy_HomeAdmin extends javax.swing.JFrame {
         login.setVisible(true);
     }//GEN-LAST:event_LogOutActionPerformed
 
+    private void pendingListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pendingListMouseClicked
+
+        int select = pendingList.getSelectedIndex();
+
+        Synergy_PendingAppointment pending = new Synergy_PendingAppointment(select);
+        pending.setVisible(true);
+        dispose();
+
+    }//GEN-LAST:event_pendingListMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -282,6 +312,7 @@ public class Synergy_HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JButton PatientSettings;
     private javax.swing.JLabel SideMenuu;
     private javax.swing.JLabel WholeBackground;
+    private javax.swing.JList<String> adminHistory;
     private javax.swing.JLabel adminName;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -290,13 +321,12 @@ public class Synergy_HomeAdmin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JList<String> jList1;
-    private javax.swing.JList<String> jList2;
-    private javax.swing.JList<String> jList3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JList<String> pendingList;
     // End of variables declaration//GEN-END:variables
 }

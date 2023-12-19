@@ -1,21 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package synergyfinalsproject;
 
+import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 
-/**
- *
- * @author Test
- */
 public class Synergy_Appointment extends javax.swing.JFrame {
 
-        private int userKey;
-    public Synergy_Appointment() {
+    private int userKey;
+    dataBaseV2 db = new dataBaseV2();
+    
+    public Synergy_Appointment(int logUserKey) {
         initComponents();
-        
+
+    }
+    
+    private Synergy_Appointment() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
@@ -40,13 +40,13 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         L_firstName15 = new javax.swing.JLabel();
         TF_AppoYear = new javax.swing.JTextField();
         L_firstName17 = new javax.swing.JLabel();
-        TF_AppoMonth1 = new javax.swing.JTextField();
+        TF_details = new javax.swing.JTextField();
         L_firstName18 = new javax.swing.JLabel();
         TF_AppoDay = new javax.swing.JTextField();
         Cancel = new javax.swing.JButton();
         Save = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        patientHistory = new javax.swing.JList<>();
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         L_firstName16 = new javax.swing.JLabel();
@@ -126,9 +126,9 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         L_firstName17.setForeground(new java.awt.Color(108, 108, 108));
         L_firstName17.setText("Month");
 
-        TF_AppoMonth1.addActionListener(new java.awt.event.ActionListener() {
+        TF_details.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TF_AppoMonth1ActionPerformed(evt);
+                TF_detailsActionPerformed(evt);
             }
         });
 
@@ -175,7 +175,7 @@ public class Synergy_Appointment extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(TF_AppoYear, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
                         .addComponent(TF_AppoDay, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(TF_AppoMonth1, javax.swing.GroupLayout.Alignment.LEADING))))
+                        .addComponent(TF_details, javax.swing.GroupLayout.Alignment.LEADING))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -184,7 +184,7 @@ public class Synergy_Appointment extends javax.swing.JFrame {
                 .addGap(0, 0, 0)
                 .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(TF_AppoMonth1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TF_details, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(L_firstName18, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -204,12 +204,7 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         jPanel1.add(jScrollPane2);
         jScrollPane2.setBounds(580, 240, 150, 120);
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(patientHistory);
 
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(110, 120, 450, 230);
@@ -326,9 +321,9 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void TF_AppoMonth1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_AppoMonth1ActionPerformed
+    private void TF_detailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_detailsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TF_AppoMonth1ActionPerformed
+    }//GEN-LAST:event_TF_detailsActionPerformed
 
     private void TF_AppoDayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_AppoDayActionPerformed
         // TODO add your handling code here:
@@ -339,32 +334,38 @@ public class Synergy_Appointment extends javax.swing.JFrame {
     }//GEN-LAST:event_TF_AppoYearActionPerformed
 
     private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
-        // TODO add your handling code here:
+
+        String info = TF_details.getText();
+        
+        db.getAppointmentsDB().get(userKey).add(info);
+        
     }//GEN-LAST:event_SaveActionPerformed
 
     private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
-        // TODO add your handling code here:
+
+        TF_details.setText("");
+
     }//GEN-LAST:event_CancelActionPerformed
 
     private void HomeButonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeButonActionPerformed
-      dispose();
+        dispose();
         JFrame home = new Synergy_HomePatientt(userKey);
-      home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-      home.setVisible(true);
+        home.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        home.setVisible(true);
     }//GEN-LAST:event_HomeButonActionPerformed
 
     private void PatientSettingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientSettingsActionPerformed
-       dispose();
+        dispose();
         JFrame settings = new Synergy_SettingsPatientt(userKey);
-      settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-      settings.setVisible(true);
+        settings.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        settings.setVisible(true);
     }//GEN-LAST:event_PatientSettingsActionPerformed
 
     private void PatientAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientAboutActionPerformed
-       dispose();
+        dispose();
         JFrame info = new Synergy_InfoAboutUS(userKey);
-      info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-      info.setVisible(true);
+        info.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        info.setVisible(true);
     }//GEN-LAST:event_PatientAboutActionPerformed
 
     private void MedicalRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MedicalRecActionPerformed
@@ -426,8 +427,8 @@ public class Synergy_Appointment extends javax.swing.JFrame {
     private javax.swing.JButton Save;
     private javax.swing.JLabel SideMenuu;
     private javax.swing.JTextField TF_AppoDay;
-    private javax.swing.JTextField TF_AppoMonth1;
     private javax.swing.JTextField TF_AppoYear;
+    private javax.swing.JTextField TF_details;
     private javax.swing.JLabel WholeBackground;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -437,7 +438,6 @@ public class Synergy_Appointment extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JList<String> jList2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -445,5 +445,6 @@ public class Synergy_Appointment extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator8;
+    private javax.swing.JList<String> patientHistory;
     // End of variables declaration//GEN-END:variables
 }

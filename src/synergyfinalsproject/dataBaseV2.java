@@ -5,15 +5,18 @@ import java.util.LinkedList;
 
 public class dataBaseV2 {
     
-    // this is set of linkedlist is for the user's account.
+    // user accounts
     private static LinkedList<String> usernameDB = new LinkedList<>();
     private static LinkedList<String> passwordDB = new LinkedList<>();
-    //admin
+    
+    // admin accounts
     private static LinkedList<String> adminNameDB = new LinkedList<>();
     private static LinkedList<String> adminPassDB = new LinkedList<>();
-
-
-    // this set of linkedlist is for the user's personal information.
+    
+    // users key
+    private static LinkedList<Integer> keysDB = new LinkedList<>();
+    
+    // users personal information
     private static LinkedList<String> firstNameDB = new LinkedList<>();
     private static LinkedList<String> middleNameDB = new LinkedList<>();
     private static LinkedList<String> surNameDB = new LinkedList<>();
@@ -26,9 +29,15 @@ public class dataBaseV2 {
     private static LinkedList<String> genderDB = new LinkedList<>();
     private static LinkedList<String> statusDB = new LinkedList<>();
 
-    //for patient's reminder in dashboard.
-    private static ArrayList<LinkedList<String>> patientRemindersDB = new ArrayList<>();
-
+    // patient's reminder
+    private static ArrayList<LinkedList<String>> remindersDB = new ArrayList<>();
+    
+    // patient's appointment
+    private static ArrayList<LinkedList<String>> appointmentsDB = new ArrayList<>();
+    
+    // patient's success appointment
+    private static ArrayList<LinkedList<String>> appointmentsSuccessDB = new ArrayList<>();
+    
     
     // ADD METHODS BELOW: ------------------------------------------------------
     
@@ -62,16 +71,33 @@ public class dataBaseV2 {
         this.adminPassDB.add(adminPassword);
     }
 
-     public dataBaseV2() {
+     public dataBaseV2() { // default constructor
+         
         // Add pre-made admin credentials when the database is created
-        addAdminAccount("admin", "admin123");
+        addAdminAccount("ad", "ad");
+        
     }
 
     // a method that when called, creates a new linkedlist for the user's reminders.
     public void createNewPatientReminders() {
         
         LinkedList<String> patientReminders = new LinkedList<>();
-        patientRemindersDB.add(patientReminders);
+        remindersDB.add(patientReminders);
+        
+    }
+    
+    // a method that when called, creates a new linkedlist for the user's appointments.
+    public void createNewPatientAppointments() {
+        
+        LinkedList<String> patientAppointments = new LinkedList<>();
+        appointmentsDB.add(patientAppointments);
+        
+    }
+    
+    public void createNewPatientSuccessAppointments() {
+        
+        LinkedList<String> patientAppointmentsSucess = new LinkedList<>();
+        appointmentsSuccessDB.add(patientAppointmentsSucess);
         
     }
     
@@ -167,8 +193,21 @@ public class dataBaseV2 {
         return new LinkedList<>(adminPassDB);
     }
 
-    public ArrayList<LinkedList<String>> getPatientRemindersDB() {
-        return patientRemindersDB;
+    public ArrayList<LinkedList<String>> getRemindersDB() {
+        return remindersDB;
     }
-
+    
+    public ArrayList<LinkedList<String>> getAppointmentsDB() {
+        return appointmentsDB;
+    }
+    
+    public ArrayList<LinkedList<String>> getAppointmentsSuccessDB() {
+        return appointmentsSuccessDB;
+    }
+    
+    public LinkedList <Integer> getKeysDB() {
+        return keysDB;
+    }
+    
+    
 }

@@ -14,11 +14,14 @@ import javax.swing.JFrame;
  */
 public class Synergy_LogIn extends javax.swing.JFrame {
     
+    int userKey;
+    
     public Synergy_LogIn() {
         initComponents();
 
         Image image = new ImageIcon(this.getClass().getResource("Synergy (Resized Logo).jpg")).getImage();
         this.setIconImage(image);
+        
     }
 
     /**
@@ -66,7 +69,6 @@ public class Synergy_LogIn extends javax.swing.JFrame {
 
         tf_Username.setFont(new java.awt.Font("Karma", 0, 14)); // NOI18N
         tf_Username.setForeground(new java.awt.Color(204, 204, 204));
-        tf_Username.setText("Email");
         tf_Username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tf_UsernameActionPerformed(evt);
@@ -77,7 +79,6 @@ public class Synergy_LogIn extends javax.swing.JFrame {
 
         tf_Password.setFont(new java.awt.Font("Karma", 0, 18)); // NOI18N
         tf_Password.setForeground(new java.awt.Color(204, 204, 204));
-        tf_Password.setText("Password");
         jPanel1.add(tf_Password);
         tf_Password.setBounds(370, 200, 339, 30);
 
@@ -150,12 +151,13 @@ public class Synergy_LogIn extends javax.swing.JFrame {
 
         String logUsername = tf_Username.getText();
         String logPassword = tf_Password.getText();
-
+        this.userKey = db.getUsernameDB().indexOf(logUsername);
+        
         if (db.getUsernameDB().contains(logUsername) && db.getPasswordDB().contains(logPassword)) {
-
-            int logUserKey = db.getUsernameDB().indexOf(logUsername);
-
-            JFrame homePatient = new Synergy_HomePatientt(logUserKey);
+            
+            this.userKey = db.getUsernameDB().indexOf(logUsername);
+            
+            JFrame homePatient = new Synergy_HomePatientt(userKey);
             homePatient.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             homePatient.setVisible(true);
 
@@ -164,7 +166,7 @@ public class Synergy_LogIn extends javax.swing.JFrame {
             }
 
         } else if (db.getAdminNameDB().contains(logUsername) && db.getAdminPassDB().contains(logPassword)) {
-            // Admin login successful
+            
             JFrame adminHome = new Synergy_HomeAdmin(); // Replace with the actual class for the admin's home
             adminHome.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             adminHome.setVisible(true);

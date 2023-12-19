@@ -187,7 +187,7 @@
                               <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="TF_AppoYear" alignment="0" pref="111" max="32767" attributes="0"/>
                                   <Component id="TF_AppoDay" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="TF_AppoMonth1" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TF_details" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -200,7 +200,7 @@
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                           <Component id="L_firstName17" min="-2" pref="20" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                          <Component id="TF_AppoMonth1" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="TF_details" min="-2" pref="20" max="-2" attributes="0"/>
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Component id="L_firstName18" min="-2" pref="20" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
@@ -263,9 +263,9 @@
                     <Property name="text" type="java.lang.String" value="Month"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TF_AppoMonth1">
+                <Component class="javax.swing.JTextField" name="TF_details">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_AppoMonth1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_detailsActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="L_firstName18">
@@ -319,18 +319,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JList" name="jList1">
-              <Properties>
-                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                  <StringArray count="5">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
-                    <StringItem index="4" value="Item 5"/>
-                  </StringArray>
-                </Property>
-              </Properties>
+            <Component class="javax.swing.JList" name="patientHistory">
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>

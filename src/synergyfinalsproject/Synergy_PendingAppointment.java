@@ -12,11 +12,30 @@ import javax.swing.JFrame;
  */
 public class Synergy_PendingAppointment extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Synergy_Appointmentt
-     */
-    public Synergy_PendingAppointment() {
+    private int select;
+    private int userKey; // for names. do not remove.
+    dataBaseV2 db = new dataBaseV2();
+
+    public Synergy_PendingAppointment(int logSelect) {
         initComponents();
+
+        this.select = logSelect;
+
+        TF_Fname2.setText(db.getfirstNameDB().get(select));
+        TF_Lname1.setText(db.getsurNameDB().get(select));
+        TF_initial.setText(db.getmiddleNameDB().get(select));
+        TF_Birthdate.setText(db.getmonthDB().get(select) + " - " + db.getdayDB().get(select) + " - " + db.getyearDB().get(select));
+        TF_Gender1.setText(db.getGenderDB().get(select));
+        TF_MaritalStatus.setText(db.getStatusDB().get(select));
+
+        TF_address2.setText(db.getaddressDB().get(select));
+        TF_emailAd.setText(db.getaddressDB().get(select));
+        TF_phoneNum1.setText(db.getnumberDB().get(select));
+
+    }
+
+    private Synergy_PendingAppointment() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
@@ -665,7 +684,21 @@ public class Synergy_PendingAppointment extends javax.swing.JFrame {
     }//GEN-LAST:event_CancelActionPerformed
 
     private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
-        // TODO add your handling code here:
+
+
+            Synergy_HomeAdmin home = new Synergy_HomeAdmin();
+
+            db.getAppointmentsSuccessDB().add(db.getAppointmentsDB().get(select));
+
+            db.getAppointmentsDB().get(select).remove(); // CODE HAS ERROR.
+
+            home.modelPendingList.removeElementAt(select);
+            home.modelAdminHistory.addElement(db.getAppointmentsSuccessDB().get(select).get(0));
+            home.setVisible(true);
+            dispose();
+
+
+
     }//GEN-LAST:event_SaveActionPerformed
 
     private void TF_emailAdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TF_emailAdActionPerformed
