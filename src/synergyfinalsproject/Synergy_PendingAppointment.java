@@ -690,8 +690,11 @@ public class Synergy_PendingAppointment extends javax.swing.JFrame {
 
             db.getAppointmentsSuccessDB().add(db.getAppointmentsDB().get(select));
 
-            db.getAppointmentsDB().get(select).remove(); // CODE HAS ERROR.
-
+            db.getAppointmentsDB().remove(select); // CODE HAS ERROR.
+            
+            
+            System.out.println(db.getAppointmentsDB());
+            
             home.modelPendingList.removeElementAt(select);
             home.modelAdminHistory.addElement(db.getAppointmentsSuccessDB().get(select).get(0));
             home.setVisible(true);

@@ -180,8 +180,9 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addGap(15, 15, 15)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(L_firstName17, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(TF_details, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -266,6 +267,11 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         LogOut.setBackground(new java.awt.Color(221, 238, 249));
         LogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogOuy (1).png"))); // NOI18N
         LogOut.setBorder(null);
+        LogOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogOutActionPerformed(evt);
+            }
+        });
         jPanel1.add(LogOut);
         LogOut.setBounds(30, 330, 30, 30);
 
@@ -339,6 +345,12 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         
         db.getAppointmentsDB().get(userKey).add(info);
         
+        String appoointment = TF_details.getText();
+        
+        db.createNewPatientAppointments();
+        
+        
+        
     }//GEN-LAST:event_SaveActionPerformed
 
     private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
@@ -374,6 +386,14 @@ public class Synergy_Appointment extends javax.swing.JFrame {
         medRec.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         medRec.setVisible(true);
     }//GEN-LAST:event_MedicalRecActionPerformed
+
+    private void LogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogOutActionPerformed
+       
+        JFrame logout = new Synergy_LogIn();
+       logout.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+       logout.setVisible(true);
+       dispose();
+    }//GEN-LAST:event_LogOutActionPerformed
 
     /**
      * @param args the command line arguments

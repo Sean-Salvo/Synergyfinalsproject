@@ -536,7 +536,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
 
          */
         //-------------------------------------------------------------------------------------------
-        /*if (TF_firstname.getText().isEmpty()) { // [1]
+        if (TF_firstname.getText().isEmpty()) { // [1]
 
             errorMSG.setVisible(true);
             errorMSG.displayError.append(("\nEmpty TextField Error: \nOne or More TextField is Empty."));
@@ -686,10 +686,16 @@ public class Synergy_Registration extends javax.swing.JFrame {
                                                     String regStatus = String.valueOf(CB_status.getSelectedItem());
 
                                                     db.addUserInformation(regFirstName, regMiddleName, regSurName, regMonth, regDay, regYear, regEmail, regNumber, regAddress, regGender, regStatus);
-                                                    
+
                                                     // creates a new linkedlist for reminders.
                                                     db.createNewPatientReminders();
-                                                    
+
+                                                    // creates a new linkedlist for appointments.
+                                                    db.createNewPatientAppointments();
+
+                                                    // creates a new key for the user
+                                                    db.getKeysDB().add(db.getUsernameDB().indexOf(regUsername));
+
                                                     JFrame login = new Synergy_LogIn();
                                                     login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                                                     login.setVisible(true);
@@ -718,48 +724,7 @@ public class Synergy_Registration extends javax.swing.JFrame {
 
             }
 
-        }*/
-        dataBaseV2 db = new dataBaseV2();
-
-        // this is for the user's account.
-        String regUsername = TF_username.getText();
-        String regPassword = TF_password.getText();
-
-        db.addAccountData(regUsername, regPassword);
-
-        // this is for the user's information.
-        String regFirstName = TF_firstname.getText();
-        String regMiddleName = TF_middlename.getText();
-        String regSurName = TF_surname.getText();
-        String regMonth = TF_month.getText();
-        String regDay = TF_day.getText();
-        String regYear = TF_year.getText();
-        String regEmail = TF_year.getText();
-        String regNumber = TF_number.getText();
-        String regAddress = TF_address.getText();
-
-        String regGender = String.valueOf(CB_gender.getSelectedItem());
-        String regStatus = String.valueOf(CB_status.getSelectedItem());
-
-        db.addUserInformation(regFirstName, regMiddleName, regSurName, regMonth, regDay, regYear, regEmail, regNumber, regAddress, regGender, regStatus);
-
-        // creates a new linkedlist for reminders.
-        db.createNewPatientReminders();
-        
-        // creates a new linkedlist for appointments.
-        db.createNewPatientAppointments();
-        
-        // creates a new key for the user
-        db.getKeysDB().add(db.getUsernameDB().indexOf(regUsername));
-
-        JFrame login = new Synergy_LogIn();
-        login.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        login.setVisible(true);
-
-        if (this.isVisible()) {
-            this.dispose();
         }
-
     }//GEN-LAST:event_registerActionPerformed
 
     private void B_registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_registerActionPerformed

@@ -124,7 +124,7 @@ public class Synergy_SettingsAdmin extends javax.swing.JFrame {
             }
         });
         jPanel1.add(PatientSettings);
-        PatientSettings.setBounds(30, 160, 30, 30);
+        PatientSettings.setBounds(30, 150, 30, 30);
 
         LogOut.setBackground(new java.awt.Color(221, 238, 249));
         LogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/synergyfinalsproject/newLogOuy (1).png"))); // NOI18N
